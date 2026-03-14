@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | California CPRA Choices - XitSource',
-  description: 'California Privacy Notice, CCPA/CPRA disclosures, and AI interaction notices for XitSource Megacorporation.',
+  description: 'California Privacy Notice, CCPA/CPRA disclosures, and AI interaction notices for XitSource.',
 };
 
 export default function PrivacyPage() {

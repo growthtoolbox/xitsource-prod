@@ -59,10 +59,10 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#1a1a1a]/50 flex flex-col items-center justify-center space-y-3">
         <p className="text-xs text-gray-600">
-          &copy; 2026 XitSource Megacorporation. All rights reserved.
+          &copy; 2026 XitSource. All rights reserved.
         </p>
         <p className="text-xs font-medium text-gray-600/70">
-          Made in Roseville, California
+          John Poindexter & Ryan Peterson | Made in Roseville, California
         </p>
       </div>
     </footer>

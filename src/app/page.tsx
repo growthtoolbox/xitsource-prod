@@ -83,40 +83,19 @@ export default function Home() {
 
         {/* GrowthToolBox Marketing Section */}
         <section id="marketing" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-#52D017/30 bg-#52D017/10 mb-6 text-xs font-semibold tracking-widest text-#52D017 uppercase">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
               GrowthToolBox.app
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">Digital Ecosystem Expansion</h2>
-            <p className="text-slate-400 text-lg leading-relaxed">
-              At GrowthToolBox.app, we don&apos;t just market; we build. We provide high-performance, SEO-optimized website builds integrated directly with your social media marketing campaigns for a seamless, high-conversion workflow.
+            <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
+              GrowthToolBox.app is the digital acceleration arm of XitSource. We provide optimized web builds and social media scaling to ensure your physical assets have a high-performance digital presence.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 rounded-sm hover:border-#52D017/50 transition-colors">
-              <div className="w-12 h-12 bg-#52D017/10 rounded-full flex items-center justify-center mb-6">
-                 <svg className="w-6 h-6 text-#52D017" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-200 mb-3">Social Media Scaling</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Lead generation and high-visibility digital campaigns designed for rapid audience acquisition.</p>
-            </div>
-            
-            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 rounded-sm hover:border-purple-500/50 transition-colors">
-              <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-200 mb-3">Strategic Consulting</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">Deep operational optimization and strategic business alignment for established enterprises.</p>
-            </div>
-            
-            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 rounded-sm hover:border-pink-500/50 transition-colors">
-              <div className="w-12 h-12 bg-pink-500/10 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-pink-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-200 mb-3">Optimized Web Builds</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">High-conversion infrastructure featuring the &apos;Next.js 15&apos; advantage for unparalleled speed and SEO performance.</p>
-            </div>
+          <div className="flex justify-center">
+            <a href="#" className="px-8 py-4 bg-transparent border border-[#52D017] text-[#52D017] font-semibold rounded-sm hover:bg-[#52D017]/10 transition-colors">
+              Visit GrowthToolBox (Coming Soon)
+            </a>
           </div>
         </section>
 
@@ -205,7 +184,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-200 mb-2">John Poindexter</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-                Specializing in Real Estate Acquisitions, Business Strategy, and Marketing. Focus on RV parks, laundromats, and raw land development. John bridges the gap between digital growth and physical asset structuring.
+                John specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities across diverse sectors.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
@@ -225,7 +204,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-200 mb-2">Ryan Peterson</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-                Specializing in Operations and Strategic Scaling. Working closely with owners to optimize organizational transitions and identify high-value off-market growth opportunities across multiple sectors.
+                Ryan specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses deep expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
