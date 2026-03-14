@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "XitSource | Advanced Cyberkinetics & Enterprise Hub",
   description: "XitSource is a high-authority global network hub and megacorporation incubator specializing in next-generation cybernetic and technological enterprises.",
+  keywords: ["Roseville Web Design", "Roseville Business Strategy", "Northern California Business Acquisitions"],
 };
 
 export default function RootLayout({

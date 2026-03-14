@@ -58,9 +58,12 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-800/50 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-800/50 flex flex-col items-center justify-center space-y-3">
         <p className="text-xs text-gray-600">
           &copy; 2026 XitSource Megacorporation. All rights reserved.
+        </p>
+        <p className="text-xs font-medium text-gray-600/70">
+          Made in Roseville, California
         </p>
       </div>
     </footer>
