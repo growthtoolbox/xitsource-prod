@@ -13,11 +13,10 @@ export default function Footer() {
             XITSOURCE
           </div>
           <p className="text-sm text-gray-500 mb-6">
-            Pioneering the next stage of human evolution through advanced cyberkinetics, bio-engineering, and global infrastructure.
+            Strategic Acquisitions and Growth Experts based in Roseville, California. Providing clear paths forward for business exits and operational optimization.
           </p>
           <address className="not-italic text-sm text-gray-500 leading-relaxed">
-            123 Silicon Way<br />
-            San Francisco, CA 94105<br />
+            Roseville, CA 95678<br />
             United States
           </address>
         </div>

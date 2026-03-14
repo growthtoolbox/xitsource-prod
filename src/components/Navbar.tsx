@@ -14,9 +14,10 @@ export default function Navbar() {
           <Image 
             src="/logo.png" 
             alt="XitSource Logo" 
-            width={48} 
-            height={48} 
-            className="h-10 w-auto md:h-12"
+            width={180} 
+            height={60} 
+            className="h-[60px] w-auto"
+            priority
           />
         </Link>
         

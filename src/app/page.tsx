@@ -7,15 +7,15 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "NeuroNet Solutions", desc: "Brain-computer interfaces & neural enhancements for enterprise efficiency.", color: "cyan" },
-  { id: 2, name: "Neon Drift Logistics", desc: "Sub-orbital hover-courier services across mega-cities.", color: "white" },
-  { id: 3, name: "CyberDyne", desc: "Next-gen cybernetic limbs & corporate bio-mods.", color: "gray" },
-  { id: 4, name: "HoloWeave Media", desc: "Immersive VR construction & holoscapes.", color: "white" },
-  { id: 5, name: "Aegis ICE", desc: "Corporate netrunning & proactive enterprise defense.", color: "cyan" },
-  { id: 6, name: "SynthoFoods Inc.", desc: "Lab-grown nutrient synthesis & vertical farming.", color: "gray" },
-  { id: 7, name: "Quantum Grid", desc: "Zero-point energy harvesting & distribution.", color: "white" },
-  { id: 8, name: "Chroma Genetics", desc: "Designer bio-traits & rapid DNA sequencing.", color: "gray" },
-  { id: 9, name: "Voidwalker Aero", desc: "Low-orbit logistics & asteroid mining frameworks.", color: "cyan" },
+  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan" },
+  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white" },
+  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray" },
+  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white" },
+  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan" },
+  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Comprehensive social media marketing and lead generation infrastructure.", color: "gray" },
+  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white" },
+  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray" },
+  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan" },
 ];
 
 export default function Home() {
@@ -40,21 +40,21 @@ export default function Home() {
         <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#1a1a1a] bg-[#161616]/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-slate-400 uppercase">
              <span className="w-1.5 h-1.5 bg-#52D017 rounded-full animate-pulse"></span>
-             Global Network Hub
+             Strategy & Acquisition Hub
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-200 mb-6">
-            The Nexus of <br className="hidden md:block" />
-            <span className="text-slate-400">Next-Generation</span> Enterprise.
+            Strategic Partnerships for <br className="hidden md:block" />
+            <span className="text-slate-400">NorCal Business & Real Estate.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed mb-10">
-            XitSource is a high-authority global network hub and megacorporation incubator specializing in cybernetics, zero-point energy, and neural architectures.
+            We help Northern California owners navigate business exits, optimize operations, and grow asset value through strategic acquisitions and modern marketing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
              <a href="#briefing" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
-                Request Briefing
+                Contact Our Team
              </a>
-             <a href="#subsidiaries" className="px-8 py-4 bg-transparent border border-gray-700 text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
-                Explore Subsidiaries
+             <a href="#subsidiaries" className="px-8 py-4 bg-transparent border border-[#1a1a1a] text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
+                View Our Sectors
              </a>
           </div>
         </section>
@@ -63,7 +63,7 @@ export default function Home() {
         <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-slate-200 mb-4">Sector Directory</h2>
-            <p className="text-slate-400 max-w-2xl">Access detailed intelligence on our 9 primary operating subsidiaries across global markets.</p>
+            <p className="text-slate-400 max-w-2xl">Explore our current operational focus areas across Real Estate and Business Services in Northern California.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-[#1a1a1a]/40 p-[1px]">
@@ -124,9 +124,9 @@ export default function Home() {
         <section id="briefing" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl font-bold text-slate-200 mb-4">Request a Corporate Briefing</h2>
+              <h2 className="text-3xl font-bold text-slate-200 mb-4">Start a Conversation</h2>
               <p className="text-slate-400 mb-8 leading-relaxed">
-                Connect with our executive liaisons to discuss how XitSource architecture can integrate into your existing supply chains and cybersecurity frameworks.
+                Whether you are looking to exit your business, sell a property, or scale your marketing, John and Ryan are ready to discuss the next step for your assets.
               </p>
               
               <div className="mt-12 bg-[#0a0a0a] border border-[#1a1a1a] p-6 rounded-sm">
@@ -156,7 +156,7 @@ export default function Home() {
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Corporate Email</label>
+                  <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Address</label>
                   <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-#52D017 transition-colors" />
                 </div>
 
@@ -182,6 +182,59 @@ export default function Home() {
                   {formStatus === 'idle' ? 'Submit Inquiry' : formStatus === 'submitting' ? 'Transmitting...' : 'Node Established ✔'}
                 </button>
               </form>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
+          <div className="max-w-4xl mx-auto mb-16 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">The Partnership: <br className="md:hidden"/> John Poindexter & Ryan Peterson</h2>
+            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville, California.</p>
+            <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
+              XitSource was founded on a simple principle: providing business owners with a reliable path forward. Whether you are preparing for retirement, transitioning from a property, or looking to scale your current operations, our team provides the strategic expertise to unlock long-term value.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* John Bio */}
+            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
+              <div className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden">
+                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors">JP</span>
+              </div>
+              <h3 className="text-2xl font-bold text-slate-200 mb-2">John Poindexter</h3>
+              <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                Specializing in Real Estate Acquisitions, Business Strategy, and Marketing. Focus on RV parks, laundromats, and raw land development. John bridges the gap between digital growth and physical asset structuring.
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61579536145410" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Ryan Bio */}
+            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
+              <div className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden">
+                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors">RP</span>
+              </div>
+              <h3 className="text-2xl font-bold text-slate-200 mb-2">Ryan Peterson</h3>
+              <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+                Specializing in Operations and Strategic Scaling. Working closely with owners to optimize organizational transitions and identify high-value off-market growth opportunities across multiple sectors.
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61579536145410" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>

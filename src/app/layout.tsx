@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "XitSource | Advanced Cyberkinetics & Enterprise Hub",
-  description: "XitSource is a high-authority global network hub and megacorporation incubator specializing in next-generation cybernetic and technological enterprises.",
-  keywords: ["Roseville Web Design", "Roseville Business Strategy", "Northern California Business Acquisitions"],
+  title: "XitSource | NorCal Business & Real Estate Acquisitions",
+  description: "XitSource provides strategic partnerships for Northern California owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing.",
+  keywords: ["Roseville Web Design", "Roseville Business Strategy", "Northern California Business Acquisitions", "Real Estate Transitions"],
 };
 
 export default function RootLayout({
