@@ -30,7 +30,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex">
           <button className="px-5 py-2.5 text-sm font-medium bg-white text-black hover:bg-gray-200 transition-colors rounded-sm shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-            Get a Briefing
+            Contact Us
           </button>
         </div>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           <Link href="/#solutions" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">Solutions</Link>
           <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">About</Link>
           <button className="w-full mt-4 min-h-[44px] px-5 py-3 text-sm font-medium bg-white text-black hover:bg-gray-200 transition-colors rounded-sm">
-            Get a Briefing
+            Contact Us
           </button>
         </div>
       )}

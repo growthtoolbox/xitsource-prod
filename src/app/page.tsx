@@ -73,8 +73,8 @@ export default function Home() {
                 <div className="text-sm font-mono text-gray-500 mb-4 tracking-widest">0{biz.id} {"// SEC"}</div>
                 <h3 className="text-xl font-semibold text-slate-200 mb-3 group-hover:text-#52D017 transition-colors">{biz.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
-                <div className="flex items-center text-xs font-semibold text-gray-500 group-hover:text-slate-200 transition-colors uppercase tracking-widest mt-auto">
-                  Access Node <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                <div className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
+                  Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>
             ))}
@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-slate-200 mb-4">Start a Conversation</h2>
               <p className="text-slate-400 mb-8 leading-relaxed">
-                Whether you are looking to exit your business, sell a property, or scale your marketing, John and Ryan are ready to discuss the next step for your assets.
+                Reach out to discuss your business transition or real estate goals. John and Ryan personally review all inquiries.
               </p>
               
               <div className="mt-12 bg-[#0a0a0a] border border-[#1a1a1a] p-6 rounded-sm">
@@ -134,10 +134,14 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Address</label>
-                  <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-#52D017 transition-colors" />
-                </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Address</label>
+                    <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-#52D017 transition-colors" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Phone Number</label>
+                    <input type="tel" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-#52D017 transition-colors" />
+                  </div>
 
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Inquiry Details</label>
@@ -158,7 +162,7 @@ export default function Home() {
                   disabled={formStatus !== 'idle'}
                   className="w-full bg-white text-black font-semibold rounded-sm py-4 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {formStatus === 'idle' ? 'Submit Inquiry' : formStatus === 'submitting' ? 'Transmitting...' : 'Node Established ✔'}
+                  {formStatus === 'idle' ? 'Send Message' : formStatus === 'submitting' ? 'Transmitting...' : 'Message Sent ✔'}
                 </button>
               </form>
             </div>
