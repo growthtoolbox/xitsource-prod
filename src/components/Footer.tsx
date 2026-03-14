@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className="col-span-1 md:col-span-1">
-          <h3 className="text-sm font-semibold text-slate-200 uppercase tracking-wider mb-6">AI Interface</h3>
+          <h3 className="text-sm font-semibold text-slate-200 uppercase tracking-wider mb-6">Strategic Partners</h3>
           <div className="bg-[#050505] border border-[#1a1a1a] p-4 rounded-sm">
             <div className="text-xs text-#52D017 font-semibold mb-2">SB 1001 Disclosure</div>
             <p className="text-xs text-slate-400 leading-relaxed italic">

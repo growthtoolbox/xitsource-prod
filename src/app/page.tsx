@@ -188,7 +188,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-200 mb-2">John Poindexter</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-                John specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities across diverse sectors.
+                Based in Roseville, CA. Specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
@@ -208,7 +208,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-200 mb-2">Ryan Peterson</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-                Ryan specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses deep expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.
+                Based in South Lake Tahoe. Specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors">
