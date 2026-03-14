@@ -38,16 +38,16 @@ export default function Home() {
       <main className="relative z-10">
         {/* Hero Section */}
         <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#1a1a1a] bg-[#161616]/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-slate-400 uppercase">
-             <span className="w-1.5 h-1.5 bg-#52D017 rounded-full animate-pulse"></span>
-             Strategy & Acquisition Hub
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#1a1a1a] bg-[#161616]/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+             <span className="w-1.5 h-1.5 bg-[#52D017] rounded-full animate-pulse"></span>
+             Strategic Solutions
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-200 mb-6">
-            Strategic Partnerships for <br className="hidden md:block" />
-            <span className="text-slate-400">NorCal Business & Real Estate.</span>
+            Strategic Solutions for <br className="hidden md:block" />
+            <span className="text-[#52D017]">NorCal Business & Real Estate.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed mb-10">
-            We help Northern California owners navigate business exits, optimize operations, and grow asset value through strategic acquisitions and modern marketing.
+            The Poindexter & Peterson partnership provides the roadmap for business exits, asset optimization, and digital growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
              <a href="#briefing" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
@@ -61,9 +61,9 @@ export default function Home() {
 
         {/* Sector Grid (Subsidiaries) */}
         <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-200 mb-4">Sector Directory</h2>
-            <p className="text-slate-400 max-w-2xl">Explore our current operational focus areas across Real Estate and Business Services in Northern California.</p>
+          <div className="mb-16 border-l-4 border-[#52D017] pl-6">
+            <h2 className="text-3xl font-bold text-slate-200 mb-4">Strategic <span className="text-[#52D017]">Focus Areas</span></h2>
+            <p className="text-slate-400 max-w-2xl">Expertise across high-yield physical assets and digital-first scaling.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-[#1a1a1a]/40 p-[1px]">
