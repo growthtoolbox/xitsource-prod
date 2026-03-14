@@ -1,26 +1,30 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#121212]/80 backdrop-blur-lg border-b border-cyan-500/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050505]/80 backdrop-blur-lg border-b border-[#52D017]/20">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-          <div className="w-8 h-8 bg-cyan-500/10 border border-cyan-500/40 rounded flex items-center justify-center">
-            <div className="w-3 h-3 bg-cyan-400"></div>
-          </div>
-          XITSOURCE
+        <Link href="/" className="flex items-center gap-3">
+          <Image 
+            src="/logo.png" 
+            alt="XitSource Logo" 
+            width={48} 
+            height={48} 
+            className="h-10 w-auto md:h-12"
+          />
         </Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="/#subsidiaries" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">Subsidiaries</Link>
-          <Link href="/#solutions" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">Solutions</Link>
-          <Link href="/#about" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">About</Link>
+          <Link href="/#subsidiaries" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors">Subsidiaries</Link>
+          <Link href="/#solutions" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors">Solutions</Link>
+          <Link href="/#about" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors">About</Link>
         </div>
 
         <div className="hidden md:flex">
@@ -32,7 +36,7 @@ export default function Navbar() {
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
           <button 
-            className="p-2 -mr-2 text-gray-400 hover:text-white min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="p-2 -mr-2 text-slate-400 hover:text-slate-200 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
           >
@@ -49,7 +53,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[#121212] border-b border-cyan-500/20 px-6 py-4 flex flex-col space-y-4">
+        <div className="md:hidden bg-[#050505] border-b border-#52D017/20 px-6 py-4 flex flex-col space-y-4">
           <Link href="/#subsidiaries" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">Subsidiaries</Link>
           <Link href="/#solutions" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">Solutions</Link>
           <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">About</Link>
