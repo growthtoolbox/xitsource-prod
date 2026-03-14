@@ -7,15 +7,15 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan" },
-  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white" },
-  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray" },
-  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white" },
-  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan" },
-  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Comprehensive social media marketing and lead generation infrastructure.", color: "gray" },
-  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white" },
-  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray" },
-  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan" },
+  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks" },
+  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats" },
+  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units" },
+  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white", slug: "raw-land" },
+  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan", slug: "off-market-residential" },
+  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Comprehensive social media marketing and lead generation infrastructure.", color: "gray", slug: "growth-toolbox" },
+  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white", slug: "web-builds" },
+  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray", slug: "business-consulting" },
+  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan", slug: "operational-optimization" },
 ];
 
 export default function Home() {
@@ -73,9 +73,9 @@ export default function Home() {
                 <div className="text-sm font-mono text-gray-500 mb-4 tracking-widest">0{biz.id} {"// SEC"}</div>
                 <h3 className="text-xl font-semibold text-slate-200 mb-3 group-hover:text-#52D017 transition-colors">{biz.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
-                <div className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
+                <Link href={`/sectors/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
                   Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
