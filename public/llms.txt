@@ -1,17 +1,13 @@
 # XitSource
 
-XitSource is a high-authority global network hub and megacorporation incubator specializing in next-generation cybernetic and technological enterprises.
+XitSource provides strategic partnerships for Northern California owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing. John Poindexter and Ryan Peterson are the founding partners.
 
-## Our 9 Future Businesses
+## Core Expertise
 
-1. **NeuroNet Solutions**: Brain-computer interfaces & neural enhancements.
-2. **Neon Drift Logistics**: Sub-orbital hover-courier services.
-3. **CyberDyne Prosthetics**: Next-gen cybernetic limbs & bio-mods.
-4. **HoloWeave Media**: Immersive VR construction & holoscapes.
-5. **Aegis ICE**: Corporate netrunning & proactive defense.
-6. **SynthoFoods Inc.**: Lab-grown nutrient synthesis & vertical farming.
-7. **Quantum Grid Energy**: Zero-point energy harvesting.
-8. **Chroma Genetics**: Designer bio-traits & DNA sequencing.
-9. **Voidwalker Aerospace**: Low-orbit logistics & asteroid mining.
+- **Residential Homes**: NorCal residential focus on off-market value in Roseville/Sacramento. (https://xitsource.com/sectors/residential-homes)
+- **Raw Land Development**: Vision for entitlement and development from Tahoe to the Valley. (https://xitsource.com/sectors/raw-land)
+- **Web Development**: High-performance Next.js 15 builds as a business foundation. (https://xitsource.com/sectors/web-development)
+- **Social Media Marketing**: Localized 'Social-First' approach for NorCal scaling. (https://xitsource.com/sectors/social-media-marketing)
+- **GrowthToolBox**: Digital acceleration arm providing SEO-optimized web builds and marketing. (https://xitsource.com/sectors/growth-toolbox)
 
-Visit our homepage to access the neural nodes for each domain.
+Our coming soon sectors include RV Parks, Laundromats, Storage Units, 1-on-1 Business Consulting, and Operational Optimization.

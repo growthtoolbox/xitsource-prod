@@ -7,15 +7,15 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks" },
-  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats" },
-  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units" },
-  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white", slug: "raw-land" },
-  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan", slug: "off-market-residential" },
-  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Comprehensive social media marketing and lead generation infrastructure.", color: "gray", slug: "growth-toolbox" },
-  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white", slug: "web-builds" },
-  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray", slug: "business-consulting" },
-  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan", slug: "operational-optimization" },
+  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks", active: false },
+  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats", active: false },
+  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units", active: false },
+  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white", slug: "raw-land", active: true },
+  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan", slug: "residential-homes", active: true },
+  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Localized 'Social-First' approach for NorCal scaling.", color: "gray", slug: "social-media-marketing", active: true },
+  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white", slug: "web-development", active: true },
+  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray", slug: "business-consulting", active: false },
+  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan", slug: "operational-optimization", active: false },
 ];
 
 export default function Home() {
@@ -68,14 +68,24 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-[#1a1a1a]/40 p-[1px]">
             {businesses.map((biz) => (
-              <div key={biz.id} className="bg-[#050505] p-8 group hover:bg-[#161616] transition-colors relative overflow-hidden h-full flex flex-col">
+              <div key={biz.id} className={`bg-[#050505] p-8 group relative overflow-hidden h-full flex flex-col transition-all ${biz.active ? 'hover:bg-[#161616]' : 'opacity-75'}`}>
                 <div className={`absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ${biz.color === 'cyan' ? 'bg-#52D017' : biz.color === 'white' ? 'bg-white' : 'bg-gray-500'}`}></div>
                 <div className="text-sm font-mono text-gray-500 mb-4 tracking-widest">0{biz.id} {"// SEC"}</div>
                 <h3 className="text-xl font-semibold text-slate-200 mb-3 group-hover:text-#52D017 transition-colors">{biz.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
-                <Link href={`/sectors/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
-                  Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                </Link>
+                
+                {biz.active ? (
+                  <Link href={`/sectors/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
+                    Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  </Link>
+                ) : (
+                  <div className="mt-auto">
+                     <p className="text-xs text-gray-500 mb-3 italic">Direct consultation available.</p>
+                     <a href="#briefing" className="inline-flex items-center text-xs font-semibold text-gray-500 transition-colors uppercase tracking-widest border border-gray-800 px-3 py-1.5 rounded-sm hover:border-gray-500 hover:text-gray-300">
+                       Coming Soon <span className="ml-2">↓</span>
+                     </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>
