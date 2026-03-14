@@ -43,18 +43,18 @@ export default function Home() {
              Strategic Solutions
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-200 mb-6">
-            Strategic Solutions for <br className="hidden md:block" />
-            <span className="text-[#52D017]">NorCal Business & Real Estate.</span>
+            A Partnership Built on <br className="hidden md:block" />
+            <span className="text-[#52D017]">Real Connections.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed mb-10">
-            The Poindexter & Peterson partnership provides the roadmap for business exits, asset optimization, and digital growth.
+            We bridge the gap between complex asset transitions and sustainable growth. Focused on direct relationships and transparent acquisitions across Northern California.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-             <a href="#briefing" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
-                Contact Our Team
+             <a href="#subsidiaries" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
+                Explore Our Focus
              </a>
-             <a href="#subsidiaries" className="px-8 py-4 bg-transparent border border-[#1a1a1a] text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
-                View Our Sectors
+             <a href="#briefing" className="px-8 py-4 bg-transparent border border-[#1a1a1a] text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
+                Start a Conversation
              </a>
           </div>
         </section>
@@ -182,10 +182,10 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
           <div className="max-w-4xl mx-auto mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">The Partnership: <br className="md:hidden"/> John Poindexter & Ryan Peterson</h2>
-            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville, California.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">Grounded in <br className="md:hidden"/> <span className="text-[#52D017]">Northern California</span></h2>
+            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville and Lake Tahoe.</p>
             <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
-              XitSource was founded on a simple principle: providing business owners with a reliable path forward. Whether you are preparing for retirement, transitioning from a property, or looking to scale your current operations, our team provides the strategic expertise to unlock long-term value.
+              Our partnership is focused on real connections and local expertise. We believe the best transitions happen when goals are aligned and communication is direct. From Roseville to Lake Tahoe, we work alongside owners to unlock the true value of their business and real estate assets.
             </p>
           </div>
 
