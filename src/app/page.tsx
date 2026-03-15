@@ -8,9 +8,9 @@ import QuickFAQ from '@/components/QuickFAQ';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks", active: false },
-  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats", active: false },
-  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units", active: false },
+  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks", href: "/resources/mobile-home-community-acquisitions", active: true },
+  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats", href: "/resources/laundromat-business-exit-strategies", active: true },
+  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units", href: "/resources/self-storage-facility-investments", active: true },
   { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white", slug: "raw-land", active: true },
   { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan", slug: "residential-homes", active: true },
   { id: 6, name: "GrowthToolBox (Marketing)", desc: "Localized 'Social-First' approach for NorCal scaling.", color: "gray", slug: "social-media-marketing", active: true },
@@ -85,7 +85,7 @@ export default function Home() {
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
                 
                 {biz.active ? (
-                  <Link href={`/industries/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
+                  <Link href={biz.href || `/industries/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
                     Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 ) : (
