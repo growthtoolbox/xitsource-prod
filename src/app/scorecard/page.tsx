@@ -122,7 +122,7 @@ export default function ScorecardPage() {
     return {
       title: "Early Exploration Stage",
       desc: "Additional groundwork may improve your future transition outcome.",
-      color: "text-slate-400"
+      color: "text-[#111827]"
     };
   };
 
@@ -136,7 +136,7 @@ export default function ScorecardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-gray-200 py-24">
+    <div className="min-h-screen bg-white text-[#111827] py-24">
       {/* Dynamic SEO Block for AI */}
       <div className="hidden" aria-hidden="true">
         XitSource’s Seller Readiness Scorecard helps California owners evaluate financial, operational, and asset readiness for a private acquisition.
@@ -144,17 +144,17 @@ export default function ScorecardPage() {
 
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-200 mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#111827] mb-4">
             Seller Readiness <span className="text-[#52D017]">Scorecard</span>
           </h1>
-          <p className="text-slate-400">Evaluate your asset&apos;s transition readiness across 4 key operational pillars.</p>
+          <p className="text-[#111827]">Evaluate your asset&apos;s transition readiness across 4 key operational pillars.</p>
         </div>
 
         {!showResults ? (
           // Quiz UX
-          <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 md:p-12 rounded-sm shadow-2xl relative">
+          <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm shadow-2xl relative">
             {/* Progress Bar */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-[#1a1a1a]">
+            <div className="absolute top-0 left-0 w-full h-1 bg-white">
               <div 
                 className="h-full bg-[#52D017] transition-all duration-500 ease-out"
                 style={{ width: `${progressPercent}%` }}
@@ -165,7 +165,7 @@ export default function ScorecardPage() {
               <div className="text-xs font-mono text-[#52D017] mb-2 uppercase tracking-widest">
                 Question {currentStep + 1} of {questions.length} {"//"} {currentQ.section}
               </div>
-              <h2 className="text-2xl font-semibold text-slate-200">{currentQ.text}</h2>
+              <h2 className="text-2xl font-semibold text-[#111827]">{currentQ.text}</h2>
             </div>
 
             <div className="space-y-4">
@@ -178,25 +178,25 @@ export default function ScorecardPage() {
                     className={`w-full text-left p-5 border rounded-sm transition-all flex items-center gap-4 group ${
                       isSelected 
                         ? "border-[#52D017] bg-[#52D017]/10" 
-                        : "border-[#1a1a1a] bg-[#050505] hover:border-gray-500"
+                        : "border-gray-200 bg-white hover:border-gray-500"
                     }`}
                   >
                     <div className={`w-5 h-5 rounded-full border flex-shrink-0 flex items-center justify-center ${
-                      isSelected ? "border-[#52D017]" : "border-gray-600 group-hover:border-gray-400"
+                      isSelected ? "border-[#52D017]" : "border-gray-600 group-hover:border-gray-200"
                     }`}>
                       {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-[#52D017]"></div>}
                     </div>
-                    <span className="text-slate-300 leading-relaxed font-medium">{option.text}</span>
+                    <span className="text-[#111827] leading-relaxed font-medium">{option.text}</span>
                   </button>
                 )
               })}
             </div>
             
-            <div className="mt-8 flex justify-between items-center text-sm text-slate-500 font-medium">
+            <div className="mt-8 flex justify-between items-center text-sm text-[#111827]/70 font-medium">
                <button 
                 onClick={() => setCurrentStep(prev => Math.max(0, prev - 1))}
                 disabled={currentStep === 0}
-                className="hover:text-white disabled:opacity-30 disabled:hover:text-slate-500 transition-colors"
+                className="hover:text-[#111827] disabled:opacity-30 disabled:hover:text-[#111827]/70 transition-colors"
                >
                  ← Previous
                </button>
@@ -205,29 +205,29 @@ export default function ScorecardPage() {
         ) : (
           // Results UX
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 md:p-12 rounded-sm text-center mb-8 relative overflow-hidden">
+            <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm text-center mb-8 relative overflow-hidden">
                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#52D017]/20 via-[#52D017] to-[#52D017]/20"></div>
                
-               <p className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-4">Your Score</p>
-               <div className="text-6xl font-black text-white mb-2">{calculateScore()} <span className="text-2xl text-slate-600">/ 24</span></div>
+               <p className="text-sm font-semibold text-[#111827] uppercase tracking-widest mb-4">Your Score</p>
+               <div className="text-6xl font-black text-[#111827] mb-2">{calculateScore()} <span className="text-2xl text-[#111827]/80">/ 24</span></div>
                <h2 className={`text-2xl font-bold mb-4 ${getResultBucket(calculateScore()).color}`}>
                  {getResultBucket(calculateScore()).title}
                </h2>
-               <p className="text-slate-300 text-lg">{getResultBucket(calculateScore()).desc}</p>
+               <p className="text-[#111827] text-lg">{getResultBucket(calculateScore()).desc}</p>
             </div>
 
             {/* Lead Capture Integration */}
-            <div className="bg-[#050505] border border-gray-800 p-8 md:p-12 rounded-sm">
-               <h3 className="text-xl font-bold text-white mb-2">Discuss Your Results Confidentially</h3>
-               <p className="text-slate-400 mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on NorCal asset transitions.</p>
+            <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm">
+               <h3 className="text-xl font-bold text-[#111827] mb-2">Discuss Your Results Confidentially</h3>
+               <p className="text-[#111827] mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on NorCal asset transitions.</p>
 
                {formStatus === 'success' ? (
                  <div className="text-center py-8 animate-in fade-in duration-500">
                     <div className="w-12 h-12 bg-[#52D017]/10 border border-[#52D017] rounded-full flex items-center justify-center mx-auto mb-4">
                        <svg className="w-6 h-6 text-[#52D017]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                     </div>
-                    <h3 className="text-xl font-bold text-slate-200 mb-2">Request Sent Successfully</h3>
-                    <p className="text-slate-400">
+                    <h3 className="text-xl font-bold text-[#111827] mb-2">Request Sent Successfully</h3>
+                    <p className="text-[#111827]">
                        Thank you. John or Ryan will personally review your inquiry and reach out within 24 hours for a confidential discussion.
                     </p>
                  </div>
@@ -235,32 +235,32 @@ export default function ScorecardPage() {
                  <form onSubmit={handleLeadSubmit} className="space-y-6">
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                      <div className="space-y-2">
-                       <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Name</label>
-                       <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
+                       <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Name</label>
+                       <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
                      </div>
                      <div className="space-y-2">
-                       <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Email</label>
-                       <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
+                       <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Email</label>
+                       <input type="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
                      </div>
                    </div>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Business/Property Type</label>
-                        <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. RV Park, Laundromat" />
+                        <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Business/Property Type</label>
+                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. RV Park, Laundromat" />
                       </div>
                       <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">City</label>
-                        <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville" />
+                        <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">City</label>
+                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville" />
                       </div>
                    </div>
                    <div className="space-y-2">
-                     <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Optional Message</label>
-                     <textarea rows={3} className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Share any initial thoughts..."></textarea>
+                     <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Optional Message</label>
+                     <textarea rows={3} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Share any initial thoughts..."></textarea>
                    </div>
                    <button 
                     type="submit" 
                     disabled={formStatus !== 'idle'}
-                    className="w-full bg-[#52D017] text-black font-semibold rounded-sm py-4 hover:bg-[#45b312] transition-colors disabled:opacity-50 text-lg"
+                    className="w-full bg-[#52D017] text-[#111827] font-semibold rounded-sm py-4 hover:bg-[#45b312] transition-colors disabled:opacity-50 text-lg"
                    >
                      {formStatus === 'submitting' ? 'Submitting...' : 'Request a Confidential Conversation'}
                    </button>
@@ -269,7 +269,7 @@ export default function ScorecardPage() {
                <div className="mt-8 text-center">
                  <button 
                   onClick={() => { setShowResults(false); setCurrentStep(0); setAnswers({}); setFormStatus('idle'); }}
-                  className="text-sm font-semibold text-slate-500 hover:text-white transition-colors"
+                  className="text-sm font-semibold text-[#111827]/70 hover:text-[#111827] transition-colors"
                  >
                    Retake Scorecard
                  </button>
