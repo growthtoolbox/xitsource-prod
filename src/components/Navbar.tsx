@@ -28,13 +28,13 @@ export default function Navbar() {
             <Link href="/#subsidiaries" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors inline-flex items-center">
               Industries <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
             </Link>
-            <div className="absolute left-0 mt-2 w-56 rounded-sm shadow-xl bg-[#0a0a0a] border border-[#1a1a1a] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Residential</Link>
-              <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Raw Land</Link>
-              <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">RV Parks</Link>
+            <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-[#0a0a0a] border border-[#1a1a1a] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Residential Real Estate</Link>
+              <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Raw Land Development</Link>
+              <Link href="/resources/sell-rv-park-california" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">RV Parks & Campgrounds</Link>
               <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Mobile Home Communities</Link>
-              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Laundromats</Link>
-              <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017]">Storage</Link>
+              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017] border-b border-[#1a1a1a]">Laundromat Businesses</Link>
+              <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017]">Self Storage Facilities</Link>
             </div>
           </div>
           <Link href="/locations/roseville" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors relative group">

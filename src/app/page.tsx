@@ -8,15 +8,12 @@ import QuickFAQ from '@/components/QuickFAQ';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "RV Parks & Mobile Home Communities", desc: "Strategic acquisition and management of high-yield residential communities.", color: "cyan", slug: "rv-parks", href: "/resources/mobile-home-community-acquisitions", active: true },
-  { id: 2, name: "Laundromats & Owner-Operated Biz", desc: "Identifying and optimizing cash-flowing community businesses.", color: "white", slug: "laundromats", href: "/resources/laundromat-business-exit-strategies", active: true },
-  { id: 3, name: "Storage Units & Industrial Assets", desc: "Securing and expanding physical asset portfolios across Northern CA.", color: "gray", slug: "storage-units", href: "/resources/self-storage-facility-investments", active: true },
-  { id: 4, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", color: "white", slug: "raw-land", active: true },
-  { id: 5, name: "Off-Market Residential Acquisitions", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", color: "cyan", slug: "residential-homes", active: true },
-  { id: 6, name: "GrowthToolBox (Marketing)", desc: "Localized 'Social-First' approach for NorCal scaling.", color: "gray", slug: "social-media-marketing", active: true },
-  { id: 7, name: "Full-Stack Website Builds", desc: "High-performance digital storefronts built on Next.js 15 for max conversion.", color: "white", slug: "web-development", active: true },
-  { id: 8, name: "1-on-1 Business Consulting", desc: "Direct strategic guidance for scaling operations and positioning for sale.", color: "gray", slug: "business-consulting", active: false },
-  { id: 9, name: "Operational Optimization", desc: "Streamlining workflows, integrating AI, and maximizing enterprise valuation.", color: "cyan", slug: "operational-optimization", active: false },
+  { id: 1, name: "Residential Real Estate", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", href: "/industries/residential-homes" },
+  { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land" },
+  { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of high-yield residential communities.", href: "/resources/sell-rv-park-california" },
+  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions" },
+  { id: 5, name: "Laundromat Businesses", desc: "Identifying and optimizing cash-flowing community businesses.", href: "/resources/laundromat-business-exit-strategies" },
+  { id: 6, name: "Self Storage Facilities", desc: "Securing and expanding physical asset portfolios across Northern CA.", href: "/resources/self-storage-facility-investments" },
 ];
 
 export default function Home() {
@@ -78,46 +75,20 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-[#1a1a1a]/40 p-[1px]">
             {businesses.map((biz) => (
-              <div key={biz.id} className={`bg-[#050505] p-8 group relative overflow-hidden h-full flex flex-col transition-all ${biz.active ? 'hover:bg-[#161616]' : 'opacity-75'}`}>
-                <div className={`absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ${biz.color === 'cyan' ? 'bg-#52D017' : biz.color === 'white' ? 'bg-white' : 'bg-gray-500'}`}></div>
-                <div className="text-sm font-mono text-gray-500 mb-4 tracking-widest">0{biz.id} {"// SEC"}</div>
-                <h3 className="text-xl font-semibold text-slate-200 mb-3 group-hover:text-#52D017 transition-colors">{biz.name}</h3>
+              <Link href={biz.href} key={biz.id} className="bg-[#050505] p-8 group relative overflow-hidden h-full flex flex-col transition-all hover:bg-[#161616]">
+                <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 bg-[#52D017]"></div>
+                <h3 className="text-xl font-semibold text-slate-200 mb-3 group-hover:text-white transition-colors">{biz.name}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
                 
-                {biz.active ? (
-                  <Link href={biz.href || `/industries/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
-                    Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                  </Link>
-                ) : (
-                  <div className="mt-auto">
-                     <p className="text-xs text-gray-500 mb-3 italic">Direct consultation available.</p>
-                     <a href="#briefing" className="inline-flex items-center text-xs font-semibold text-gray-500 transition-colors uppercase tracking-widest border border-gray-800 px-3 py-1.5 rounded-sm hover:border-gray-500 hover:text-gray-300">
-                       Coming Soon <span className="ml-2">↓</span>
-                     </a>
-                  </div>
-                )}
-              </div>
+                <div className="inline-flex items-center justify-center px-4 py-3 mt-auto border border-[#52D017] text-[#52D017] text-xs font-bold uppercase tracking-widest rounded-sm group-hover:bg-[#52D017] group-hover:text-[#050505] transition-colors">
+                  Learn More
+                </div>
+              </Link>
             ))}
           </div>
         </section>
 
-        {/* GrowthToolBox Marketing Section */}
-        <section id="marketing" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-              GrowthToolBox.app
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">Digital Ecosystem Expansion</h2>
-            <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
-              GrowthToolBox.app is the digital acceleration arm of XitSource. We provide optimized web builds and social media scaling to ensure your physical assets have a high-performance digital presence.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <a href="#" className="px-8 py-4 bg-transparent border border-[#52D017] text-[#52D017] font-semibold rounded-sm hover:bg-[#52D017]/10 transition-colors">
-              Visit GrowthToolBox (Coming Soon)
-            </a>
-          </div>
-        </section>
+
 
         {/* Lead Form Section with AI Consent */}
         <section id="briefing" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
