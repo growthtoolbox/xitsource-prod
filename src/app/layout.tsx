@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "XitSource | NorCal Business & Real Estate Acquisitions",
-  description: "XitSource provides strategic partnerships for Northern California owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing.",
-  keywords: ["Roseville Web Design", "Roseville Business Strategy", "Northern California Business Acquisitions", "Real Estate Transitions"],
+  description: "XitSource provides strategic partnerships for Northern California and South Lake Tahoe, CA owners navigating business exits, optimizing operations, and growing asset value through acquisitions.",
+  keywords: ["Roseville Web Design", "Roseville Business Strategy", "Northern California Business Acquisitions", "Real Estate Transitions", "South Lake Tahoe, CA"],
 };
 
 export default function RootLayout({
@@ -42,7 +42,7 @@ export default function RootLayout({
                   "logo": "https://xitsource.com/logo.png",
                   "description": "Northern California Real Estate and Business Acquisition Specialists.",
                   "founder": [{"@type": "Person", "name": "John Poindexter"}, {"@type": "Person", "name": "Ryan Peterson"}],
-                  "areaServed": "Northern California"
+                  "areaServed": ["Northern California", "South Lake Tahoe, CA"]
                 },
                 {
                    "@type": "InvestmentEntity",

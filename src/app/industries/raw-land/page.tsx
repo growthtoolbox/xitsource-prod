@@ -21,7 +21,7 @@ export default function RawLandPage() {
             Raw Land Development
           </h1>
           <p className="text-xl text-slate-400 leading-relaxed">
-            Vision for entitlement and development from Tahoe to the Valley.
+            Vision for entitlement and development from South Lake Tahoe, CA to the Valley.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function RawLandPage() {
                 </div>
                 <div>
                   <div className="font-bold text-slate-200">Ryan Peterson</div>
-                  <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Tahoe</div>
+                  <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - South Lake Tahoe, CA</div>
                 </div>
               </div>
               <blockquote className="text-base italic text-slate-400 leading-relaxed">

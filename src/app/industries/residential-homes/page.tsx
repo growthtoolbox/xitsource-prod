@@ -43,7 +43,7 @@ export default function ResidentialHomesPage() {
                 </div>
                 <div>
                   <div className="font-bold text-slate-200">Ryan Peterson</div>
-                  <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Tahoe</div>
+                  <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - South Lake Tahoe, CA</div>
                 </div>
               </div>
               <blockquote className="text-base italic text-slate-400 leading-relaxed">

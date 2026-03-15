@@ -89,9 +89,14 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-[#1a1a1a]/50">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-600">
-            &copy; 2026 XitSource. All rights reserved.
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className="text-xs text-gray-600">
+              &copy; 2026 XitSource. All rights reserved.
+            </p>
+            <p className="text-xs font-medium text-gray-600/70">
+              Headquartered in Roseville, CA | Serving Northern California & South Lake Tahoe, CA
+            </p>
+          </div>
           
           <div className="flex gap-6 text-xs text-gray-600">
             <Link href="/privacy" className="hover:text-[#52D017] transition-colors">Privacy Policy</Link>

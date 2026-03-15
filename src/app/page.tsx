@@ -190,7 +190,7 @@ export default function Home() {
                    "jobTitle": "Real Estate Investment Specialist",
                    "homeLocation": {
                      "@type": "City",
-                     "name": "Lake Tahoe"
+                     "name": "South Lake Tahoe, CA"
                    },
                    "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "NorCal Off-Market Real Estate"]
                  }
@@ -203,9 +203,9 @@ export default function Home() {
         <section id="about" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">Grounded in <br className="md:hidden"/> <span className="text-[#52D017]">Northern California</span></h2>
-            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville and Lake Tahoe.</p>
+            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville and South Lake Tahoe, CA.</p>
             <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
-              The XitSource partnership, led by John Poindexter and Ryan Peterson, specializes in confidential asset acquisitions across Northern California. Based in Roseville and Lake Tahoe, we provide business owners with discreet exit strategies for residential portfolios, RV parks, laundromats, and raw land development, focusing on direct relationships rather than public listings.
+              The XitSource partnership, led by John Poindexter and Ryan Peterson, specializes in confidential asset acquisitions across Northern California. Based in Roseville and South Lake Tahoe, CA, we provide business owners with discreet exit strategies for residential portfolios, RV parks, laundromats, and raw land development, focusing on direct relationships rather than public listings.
             </p>
           </div>
 
@@ -247,7 +247,7 @@ export default function Home() {
               <div 
                 className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden"
                 role="img"
-                aria-label="Ryan Peterson, Real Estate Investment Partner at XitSource Lake Tahoe"
+                aria-label="Ryan Peterson, Real Estate Investment Partner in South Lake Tahoe, CA"
               >
                 <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">RP</span>
               </div>

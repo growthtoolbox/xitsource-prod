@@ -22,9 +22,9 @@ export default function LetterPage() {
           <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[#52D017] rounded-tl-sm opacity-50"></div>
           <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[#52D017] rounded-br-sm opacity-50"></div>
 
-          <div className="prose prose-invert prose-lg max-w-none prose-p:font-serif prose-p:leading-relaxed prose-p:text-slate-300">
-            <p>
-              Building a business, a residential portfolio, or a land legacy takes years of sacrifice, late nights, and relentless focus. We understand that for most owners in Roseville, the Bay Area, and Tahoe, your assets represent more than just a balance sheet—they represent your life&apos;s work.
+          <div className="prose prose-invert prose-lg max-w-none prose-p:font-serif prose-p:leading-relaxed">
+            <p className="text-lg text-slate-400 leading-relaxed mb-6">
+              Building a business, a residential portfolio, or a land legacy takes years of sacrifice, late nights, and relentless focus. We understand that for most owners in Roseville, the Bay Area, and South Lake Tahoe, CA, your assets represent more than just a balance sheet—they represent your life&apos;s work.
             </p>
             
             <p className="mt-6">
