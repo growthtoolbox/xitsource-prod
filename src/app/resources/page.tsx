@@ -1,4 +1,5 @@
 import QuickFAQ from '@/components/QuickFAQ';
+import Link from 'next/link';
 
 export default function ResourcesPage() {
   return (
@@ -27,9 +28,9 @@ export default function ResourcesPage() {
              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Guide</p>
              <h2 className="text-xl font-bold text-slate-200 mb-4 group-hover:text-[#52D017] transition-colors">How to Sell an RV Park in California</h2>
              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">A comprehensive look at valuing, preparing, and transitioning a mobile home or RV community in the NorCal market.</p>
-             <span className="text-[#52D017] text-sm font-semibold flex items-center mt-auto cursor-not-allowed opacity-50">
-               Coming Soon <span className="ml-2">→</span>
-             </span>
+             <Link href="/resources/sell-rv-park-california" className="text-[#52D017] text-sm font-semibold flex items-center mt-auto">
+               Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+             </Link>
           </article>
 
           <article className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 rounded-sm group hover:border-white/50 transition-colors flex flex-col h-full relative overflow-hidden">
@@ -37,9 +38,9 @@ export default function ResourcesPage() {
              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Guide</p>
              <h2 className="text-xl font-bold text-slate-200 mb-4 group-hover:text-white transition-colors">Exiting a Laundromat Business: A Step-by-Step Guide</h2>
              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">Understanding equipment depreciation, long-term leases, and cash-flow multiples for owner-operated facilities.</p>
-             <span className="text-white text-sm font-semibold flex items-center mt-auto cursor-not-allowed opacity-50">
-               Coming Soon <span className="ml-2">→</span>
-             </span>
+             <Link href="/resources/exit-laundromat-guide" className="text-white text-sm font-semibold flex items-center mt-auto">
+               Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+             </Link>
           </article>
 
           <article className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 rounded-sm group hover:border-cyan-500/50 transition-colors flex flex-col h-full relative overflow-hidden">
@@ -47,9 +48,9 @@ export default function ResourcesPage() {
              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Perspective</p>
              <h2 className="text-xl font-bold text-slate-200 mb-4 group-hover:text-cyan-500 transition-colors">Preparing Raw Land for Development Sale</h2>
              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">Strategic steps to navigate entitlement risks and position your parcel for maximum acquisition value.</p>
-             <span className="text-cyan-500 text-sm font-semibold flex items-center mt-auto cursor-not-allowed opacity-50">
-               Coming Soon <span className="ml-2">→</span>
-             </span>
+             <Link href="/resources/raw-land-development-perspective" className="text-cyan-500 text-sm font-semibold flex items-center mt-auto">
+               Read Perspective <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+             </Link>
           </article>
         </div>
 

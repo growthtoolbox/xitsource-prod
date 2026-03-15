@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import QuickFAQ from '@/components/QuickFAQ';
 
 export default function SellPage() {
   const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
@@ -100,8 +99,8 @@ export default function SellPage() {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="asset" className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Asset Category</label>
-                  <select id="asset" required className="w-full bg-[#050505] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors appearance-none">
-                    <option value="">Select Asset Type...</option>
+                  <select id="asset" required className="w-full bg-[#050505] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors appearance-none" defaultValue="">
+                    <option value="" disabled>Select Asset Type...</option>
                     <option value="residential">Residential Portfolio</option>
                     <option value="raw_land">Raw Land / Development</option>
                     <option value="rv_mhc">RV Park / Mobile Home Community</option>
@@ -134,10 +133,6 @@ export default function SellPage() {
         </div>
       </div>
       
-      {/* Global Quick FAQ */}
-      <div className="mt-24">
-        <QuickFAQ />
-      </div>
     </div>
   );
 }
