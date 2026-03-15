@@ -57,7 +57,35 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#1a1a1a]/50 flex flex-col items-center justify-center space-y-3">
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#1a1a1a]/50">
+        <h3 className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mb-4 text-center">Regions We Serve</h3>
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
+          <Link href="/locations/sacramento" className="hover:text-[#52D017] transition-colors">Sacramento</Link>
+          <Link href="/locations/roseville" className="hover:text-[#52D017] transition-colors">Roseville</Link>
+          <Link href="/locations/rocklin" className="hover:text-[#52D017] transition-colors">Rocklin</Link>
+          <Link href="/locations/folsom" className="hover:text-[#52D017] transition-colors">Folsom</Link>
+          <Link href="/locations/stockton" className="hover:text-[#52D017] transition-colors">Stockton</Link>
+          <Link href="/locations/modesto" className="hover:text-[#52D017] transition-colors">Modesto</Link>
+          <Link href="/locations/fresno" className="hover:text-[#52D017] transition-colors">Fresno</Link>
+          <Link href="/locations/chico" className="hover:text-[#52D017] transition-colors">Chico</Link>
+          <Link href="/locations/redding" className="hover:text-[#52D017] transition-colors">Redding</Link>
+          <Link href="/locations/san-francisco" className="hover:text-[#52D017] transition-colors">San Francisco</Link>
+          <Link href="/locations/san-jose" className="hover:text-[#52D017] transition-colors">San Jose</Link>
+          <Link href="/locations/oakland" className="hover:text-[#52D017] transition-colors">Oakland</Link>
+          <Link href="/locations/santa-rosa" className="hover:text-[#52D017] transition-colors">Santa Rosa</Link>
+          <Link href="/locations/walnut-creek" className="hover:text-[#52D017] transition-colors">Walnut Creek</Link>
+          <Link href="/locations/pleasanton" className="hover:text-[#52D017] transition-colors">Pleasanton</Link>
+          <Link href="/locations/palo-alto" className="hover:text-[#52D017] transition-colors">Palo Alto</Link>
+          <Link href="/locations/mountain-view" className="hover:text-[#52D017] transition-colors">Mountain View</Link>
+          <Link href="/locations/redwood-city" className="hover:text-[#52D017] transition-colors">Redwood City</Link>
+          <Link href="/locations/south-lake-tahoe" className="hover:text-[#52D017] transition-colors">South Lake Tahoe</Link>
+          <Link href="/locations/truckee" className="hover:text-[#52D017] transition-colors">Truckee</Link>
+          <Link href="/locations/carson-city" className="hover:text-[#52D017] transition-colors">Carson City</Link>
+          <Link href="/locations/reno" className="hover:text-[#52D017] transition-colors">Reno</Link>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-[#1a1a1a]/50 flex flex-col items-center justify-center space-y-3">
         <p className="text-xs text-gray-600">
           &copy; 2026 XitSource. All rights reserved.
         </p>

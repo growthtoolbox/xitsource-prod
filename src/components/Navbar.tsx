@@ -37,10 +37,50 @@ export default function Navbar() {
               <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-slate-300 hover:bg-[#161616] hover:text-[#52D017]">Self Storage Facilities</Link>
             </div>
           </div>
-          <Link href="/locations/roseville" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors relative group">
-            Locations
-             <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-[#52D017] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-          </Link>
+          <div className="relative group">
+            <span className="cursor-pointer text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors inline-flex items-center">
+              Locations <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </span>
+            <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-max rounded-sm shadow-xl bg-[#0a0a0a] border border-[#1a1a1a] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6 flex gap-12">
+              <div>
+                <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-[#1a1a1a] pb-2">NorCal</h4>
+                <div className="space-y-2.5">
+                  <Link href="/locations/sacramento" className="block text-sm text-slate-300 hover:text-white transition-colors">Sacramento</Link>
+                  <Link href="/locations/roseville" className="block text-sm text-slate-300 hover:text-white transition-colors">Roseville</Link>
+                  <Link href="/locations/rocklin" className="block text-sm text-slate-300 hover:text-white transition-colors">Rocklin</Link>
+                  <Link href="/locations/folsom" className="block text-sm text-slate-300 hover:text-white transition-colors">Folsom</Link>
+                  <Link href="/locations/stockton" className="block text-sm text-slate-300 hover:text-white transition-colors">Stockton</Link>
+                  <Link href="/locations/modesto" className="block text-sm text-slate-300 hover:text-white transition-colors">Modesto</Link>
+                  <Link href="/locations/fresno" className="block text-sm text-slate-300 hover:text-white transition-colors">Fresno</Link>
+                  <Link href="/locations/chico" className="block text-sm text-slate-300 hover:text-white transition-colors">Chico</Link>
+                  <Link href="/locations/redding" className="block text-sm text-slate-300 hover:text-white transition-colors">Redding</Link>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-[#1a1a1a] pb-2">Bay Area</h4>
+                <div className="space-y-2.5">
+                  <Link href="/locations/san-francisco" className="block text-sm text-slate-300 hover:text-white transition-colors">San Francisco</Link>
+                  <Link href="/locations/san-jose" className="block text-sm text-slate-300 hover:text-white transition-colors">San Jose</Link>
+                  <Link href="/locations/oakland" className="block text-sm text-slate-300 hover:text-white transition-colors">Oakland</Link>
+                  <Link href="/locations/santa-rosa" className="block text-sm text-slate-300 hover:text-white transition-colors">Santa Rosa</Link>
+                  <Link href="/locations/walnut-creek" className="block text-sm text-slate-300 hover:text-white transition-colors">Walnut Creek</Link>
+                  <Link href="/locations/pleasanton" className="block text-sm text-slate-300 hover:text-white transition-colors">Pleasanton</Link>
+                  <Link href="/locations/palo-alto" className="block text-sm text-slate-300 hover:text-white transition-colors">Palo Alto</Link>
+                  <Link href="/locations/mountain-view" className="block text-sm text-slate-300 hover:text-white transition-colors">Mountain View</Link>
+                  <Link href="/locations/redwood-city" className="block text-sm text-slate-300 hover:text-white transition-colors">Redwood City</Link>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-[#1a1a1a] pb-2">Tahoe / Reno</h4>
+                <div className="space-y-2.5">
+                  <Link href="/locations/south-lake-tahoe" className="block text-sm text-slate-300 hover:text-white transition-colors">South Lake Tahoe</Link>
+                  <Link href="/locations/truckee" className="block text-sm text-slate-300 hover:text-white transition-colors">Truckee</Link>
+                  <Link href="/locations/carson-city" className="block text-sm text-slate-300 hover:text-white transition-colors">Carson City</Link>
+                  <Link href="/locations/reno" className="block text-sm text-slate-300 hover:text-white transition-colors">Reno</Link>
+                </div>
+              </div>
+            </div>
+          </div>
           <Link href="/resources" className="text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors">Owner Resources</Link>
         </div>
 
