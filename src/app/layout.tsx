@@ -27,6 +27,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+             __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://xitsource.com/#service",
+                  "name": "XitSource Acquisitions",
+                  "url": "https://xitsource.com",
+                  "logo": "https://xitsource.com/logo.png",
+                  "description": "Northern California Real Estate and Business Acquisition Specialists.",
+                  "founder": [{"@type": "Person", "name": "John Poindexter"}, {"@type": "Person", "name": "Ryan Peterson"}],
+                  "areaServed": "Northern California"
+                },
+                {
+                   "@type": "InvestmentEntity",
+                   "@id": "https://xitsource.com/#investment",
+                   "name": "XitSource",
+                   "description": "Private acquisitions and strategic business transitions without broker fees.",
+                   "investmentType": ["Commercial Real Estate", "Residential Portfolios", "Owner-Operated Businesses"]
+                }
+              ]
+            })
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#050505] flex flex-col min-h-screen text-gray-200`}
       >

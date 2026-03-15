@@ -3,28 +3,28 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Raw Land Development | Entitlement in NorCal',
-  description: 'Vision for entitlement and development from Tahoe to the Valley.',
+  title: 'Social Media Marketing | Localized Scaling',
+  description: "Localized 'Social-First' approach for NorCal scaling.",
 };
 
-export default function RawLandPage() {
+export default function SocialMediaMarketingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    'name': 'Raw Land Development by XitSource',
-    'url': 'https://xitsource.com/sectors/raw-land',
+    'name': 'Social Media Marketing by XitSource',
+    'url': 'https://xitsource.com/sectors/social-media-marketing',
     'logo': 'https://xitsource.com/logo.png',
-    'description': 'Vision for entitlement and development from Tahoe to the Valley.',
+    'description': "Localized 'Social-First' approach for NorCal scaling.",
     'address': {
       '@type': 'PostalAddress',
-      'addressLocality': 'South Lake Tahoe',
+      'addressLocality': 'Roseville',
       'addressRegion': 'CA',
       'addressCountry': 'US'
     },
     'founder': [
       {
         '@type': 'Person',
-        'name': 'Ryan Peterson'
+        'name': 'John Poindexter'
       }
     ],
     'areaServed': 'Northern California'
@@ -50,10 +50,10 @@ export default function RawLandPage() {
               Sector Overview
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-200 mb-6">
-              Raw Land Development
+              Social Media Marketing
             </h1>
             <p className="text-xl text-slate-400 leading-relaxed">
-              Vision for entitlement and development from Tahoe to the Valley.
+              Localized &quot;Social-First&quot; approach for NorCal scaling.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function RawLandPage() {
             {/* Main Content Area */}
             <div className="md:col-span-2 space-y-8 text-slate-300 leading-relaxed text-lg">
               <p>
-                Transforming undeveloped parcels into strategic commercial and residential real estate through deep local expertise and methodical entitlement strategies.
+                Driving rapid growth and local market dominance requires a nuanced, social-first approach. We deploy hyper-localized campaigns focused on engagement, lead generation, and brand authority across Northern California.
               </p>
 
               {/* Callout Box */}
@@ -71,15 +71,15 @@ export default function RawLandPage() {
                 </h4>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center overflow-hidden">
-                    <span className="text-sm text-slate-600 font-bold">RP</span>
+                    <span className="text-sm text-slate-600 font-bold">JP</span>
                   </div>
                   <div>
-                    <div className="font-bold text-slate-200">Ryan Peterson</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Tahoe</div>
+                    <div className="font-bold text-slate-200">John Poindexter</div>
+                    <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Roseville</div>
                   </div>
                 </div>
                 <blockquote className="text-base italic text-slate-400 leading-relaxed">
-                  &quot;Based in South Lake Tahoe. Specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.&quot;
+                  &quot;Based in Roseville, CA. Specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities.&quot;
                 </blockquote>
               </div>
             </div>
@@ -87,9 +87,9 @@ export default function RawLandPage() {
             {/* Sidebar Data */}
             <div className="md:col-span-1 border-t md:border-t-0 md:border-l border-[#1a1a1a] pt-12 md:pt-0 md:pl-12">
               <div className="mt-6 pt-6 border-t border-[#1a1a1a]">
-                <a href="https://SellMyHouseNorCal.com" target="_blank" rel="noopener noreferrer" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
-                  SellMyHouseNorCal.com
-                </a>
+                <Link href="/sell" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
+                  Start a Confidential Conversation
+                </Link>
               </div>
             </div>
           </div>

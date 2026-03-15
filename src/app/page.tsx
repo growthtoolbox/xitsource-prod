@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from 'react';
-import Link from "next/link";
+import Link from 'next/link';
 import { Inter } from 'next/font/google';
+import QuickFAQ from '@/components/QuickFAQ';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,12 +51,21 @@ export default function Home() {
             We bridge the gap between complex asset transitions and sustainable growth. Focused on direct relationships and transparent acquisitions across Northern California.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-             <a href="#subsidiaries" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
-                Explore Our Focus
-             </a>
-             <a href="#briefing" className="px-8 py-4 bg-transparent border border-[#1a1a1a] text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
-                Start a Conversation
-             </a>
+             <Link href="/sell" className="px-8 py-4 bg-white text-black font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
+                Sell a Business or Property
+             </Link>
+             <Link href="/scorecard" className="px-8 py-4 bg-transparent border border-[#1a1a1a] text-slate-200 font-semibold rounded-sm hover:border-gray-500 transition-colors">
+                Take the Seller Scorecard
+             </Link>
+          </div>
+        </section>
+
+        {/* Trust Bar */}
+        <section className="bg-[#0a0a0a] border-y border-[#1a1a1a]">
+          <div className="container mx-auto px-6 py-6 text-center">
+            <p className="text-sm font-semibold tracking-widest text-slate-400 uppercase">
+              Acquisition Focus: <span className="text-[#52D017]">Residential | Raw Land | RV Parks | Mobile Home Communities | Laundromats | Storage</span>
+            </p>
           </div>
         </section>
 
@@ -75,7 +85,7 @@ export default function Home() {
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
                 
                 {biz.active ? (
-                  <Link href={`/sectors/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
+                  <Link href={`/industries/${biz.slug}`} className="flex items-center text-xs font-bold text-[#52D017]/80 group-hover:text-[#52D017] transition-colors uppercase tracking-widest mt-auto">
                     Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 ) : (
@@ -231,6 +241,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Global Quick FAQ */}
+        <QuickFAQ />
 
       </main>
     </div>

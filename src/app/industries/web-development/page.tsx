@@ -3,28 +3,28 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Residential Homes | Off-Market Value in NorCal',
-  description: 'NorCal residential focus on off-market value in Roseville/Sacramento.',
+  title: 'Web Development | High-Performance Info Structure',
+  description: 'High-performance Next.js 15 builds as a business foundation.',
 };
 
-export default function ResidentialHomesPage() {
+export default function WebDevelopmentPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    'name': 'Residential Acquisitions by XitSource',
-    'url': 'https://xitsource.com/sectors/residential-homes',
+    'name': 'Web Development by XitSource',
+    'url': 'https://xitsource.com/sectors/web-development',
     'logo': 'https://xitsource.com/logo.png',
-    'description': 'NorCal residential focus on off-market value in Roseville/Sacramento.',
+    'description': 'High-performance Next.js 15 builds as a business foundation.',
     'address': {
       '@type': 'PostalAddress',
-      'addressLocality': 'South Lake Tahoe',
+      'addressLocality': 'Roseville',
       'addressRegion': 'CA',
       'addressCountry': 'US'
     },
     'founder': [
       {
         '@type': 'Person',
-        'name': 'Ryan Peterson'
+        'name': 'John Poindexter'
       }
     ],
     'areaServed': 'Northern California'
@@ -50,10 +50,10 @@ export default function ResidentialHomesPage() {
               Sector Overview
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-200 mb-6">
-              Residential Homes
+              Web Development
             </h1>
             <p className="text-xl text-slate-400 leading-relaxed">
-              NorCal residential focus on off-market value in Roseville/Sacramento.
+              High-performance Next.js 15 builds as a business foundation.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function ResidentialHomesPage() {
             {/* Main Content Area */}
             <div className="md:col-span-2 space-y-8 text-slate-300 leading-relaxed text-lg">
               <p>
-                We execute strategic residential acquisitions throughout Northern California, leveraging localized knowledge and an expansive network to uncover high-value, off-market properties.
+                A business&apos;s digital infrastructure is its most critical asset for growth and acquisition valuation. We specialize in building lightning-fast, highly scalable web solutions using modern toolchains like Next.js 15.
               </p>
 
               {/* Callout Box */}
@@ -71,15 +71,15 @@ export default function ResidentialHomesPage() {
                 </h4>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center overflow-hidden">
-                    <span className="text-sm text-slate-600 font-bold">RP</span>
+                    <span className="text-sm text-slate-600 font-bold">JP</span>
                   </div>
                   <div>
-                    <div className="font-bold text-slate-200">Ryan Peterson</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Tahoe</div>
+                    <div className="font-bold text-slate-200">John Poindexter</div>
+                    <div className="text-xs text-slate-500 uppercase tracking-widest">Lead Consultant - Roseville</div>
                   </div>
                 </div>
                 <blockquote className="text-base italic text-slate-400 leading-relaxed">
-                  &quot;Based in South Lake Tahoe. Specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.&quot;
+                  &quot;Based in Roseville, CA. Specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities.&quot;
                 </blockquote>
               </div>
             </div>
@@ -87,9 +87,9 @@ export default function ResidentialHomesPage() {
             {/* Sidebar Data */}
             <div className="md:col-span-1 border-t md:border-t-0 md:border-l border-[#1a1a1a] pt-12 md:pt-0 md:pl-12">
               <div className="mt-6 pt-6 border-t border-[#1a1a1a]">
-                <a href="https://SellMyHouseNorCal.com" target="_blank" rel="noopener noreferrer" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
-                  SellMyHouseNorCal.com
-                </a>
+                <Link href="/sell" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
+                  Start a Confidential Conversation
+                </Link>
               </div>
             </div>
           </div>

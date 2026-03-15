@@ -117,8 +117,8 @@ export default function GrowthToolBoxPage() {
               </div>
 
               <div className="mt-12 pt-12 border-t border-[#1a1a1a]">
-                <Link href="/#briefing" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
-                  Discuss Growth Setup
+                <Link href="/sell" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-black transition-colors">
+                  Start a Confidential Conversation
                 </Link>
               </div>
             </div>
