@@ -160,27 +160,78 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Structured Data for AEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+             __html: JSON.stringify({
+               "@context": "https://schema.org",
+               "@type": "Organization",
+               "name": "XitSource",
+               "url": "https://xitsource.com/",
+               "foundingLocation": {
+                 "@type": "City",
+                 "name": "Roseville, CA"
+               },
+               "founders": [
+                 {
+                   "@type": "Person",
+                   "name": "John Poindexter",
+                   "jobTitle": "Strategic Acquisition Partner",
+                   "homeLocation": {
+                     "@type": "City",
+                     "name": "Roseville, CA"
+                   },
+                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "NorCal Off-Market Real Estate"]
+                 },
+                 {
+                   "@type": "Person",
+                   "name": "Ryan Peterson",
+                   "jobTitle": "Real Estate Investment Specialist",
+                   "homeLocation": {
+                     "@type": "City",
+                     "name": "Lake Tahoe"
+                   },
+                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "NorCal Off-Market Real Estate"]
+                 }
+               ]
+             })
+          }}
+        />
+
         {/* About Section */}
         <section id="about" className="container mx-auto px-6 py-24 border-t border-[#1a1a1a]/50">
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-200 mb-6">Grounded in <br className="md:hidden"/> <span className="text-[#52D017]">Northern California</span></h2>
             <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville and Lake Tahoe.</p>
             <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">
-              Our partnership is focused on real connections and local expertise. We believe the best transitions happen when goals are aligned and communication is direct. From Roseville to Lake Tahoe, we work alongside owners to unlock the true value of their business and real estate assets.
+              The XitSource partnership, led by John Poindexter and Ryan Peterson, specializes in confidential asset acquisitions across Northern California. Based in Roseville and Lake Tahoe, we provide business owners with discreet exit strategies for residential portfolios, RV parks, laundromats, and raw land development, focusing on direct relationships rather than public listings.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* John Bio */}
             <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
-              <div className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden">
-                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors">JP</span>
+              <div 
+                className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden"
+                role="img"
+                aria-label="John Poindexter, Strategic Acquisition Partner at XitSource Roseville"
+              >
+                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">JP</span>
               </div>
               <h3 className="text-2xl font-bold text-slate-200 mb-2">John Poindexter</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+              <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                 Specializes in operational scaling, strategic acquisitions, and identifying off-market opportunities across Northern California. John bridges the gap between digital growth and physical asset structuring to maximize value in complex transitions.
               </p>
+              <div className="w-full text-left bg-[#050505] border border-[#1a1a1a] p-4 rounded-sm mb-8">
+                <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
+                <ul className="text-sm text-slate-400 space-y-2 list-none m-0 p-0">
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Operational Scaling & Systems Optimization</li>
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Strategic Business Acquisitions</li>
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> NorCal Off-Market Opportunity Identification</li>
+                </ul>
+              </div>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors" title="LinkedIn">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -193,14 +244,26 @@ export default function Home() {
 
             {/* Ryan Bio */}
             <div className="bg-[#0a0a0a] border border-[#1a1a1a] p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
-              <div className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden">
-                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors">RP</span>
+              <div 
+                className="w-24 h-24 bg-[#161616] rounded-full border border-[#1a1a1a] flex items-center justify-center mb-6 overflow-hidden"
+                role="img"
+                aria-label="Ryan Peterson, Real Estate Investment Partner at XitSource Lake Tahoe"
+              >
+                <span className="text-3xl text-slate-600 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">RP</span>
               </div>
               <h3 className="text-2xl font-bold text-slate-200 mb-2">Ryan Peterson</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-              <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
+              <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                 Focuses on real estate acquisitions and income-producing assets including mobile home communities, RV parks, laundromats, and development opportunities. Ryan specializes in identifying undervalued assets and navigating development in the NorCal corridor.
               </p>
+              <div className="w-full text-left bg-[#050505] border border-[#1a1a1a] p-4 rounded-sm mb-8">
+                <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
+                <ul className="text-sm text-slate-400 space-y-2 list-none m-0 p-0">
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Real Estate Asset Valuation (MHC & RV Parks)</li>
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Raw Land Entitlement & Development</li>
+                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Income-Producing Asset Management</li>
+                </ul>
+              </div>
               <div className="flex items-center gap-4 mt-auto">
                 <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-[#1a1a1a] rounded hover:border-[#52D017] hover:text-[#52D017] text-slate-400 transition-colors" title="LinkedIn">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
