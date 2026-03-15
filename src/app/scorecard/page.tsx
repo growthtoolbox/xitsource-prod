@@ -221,39 +221,51 @@ export default function ScorecardPage() {
                <h3 className="text-xl font-bold text-white mb-2">Discuss Your Results Confidentially</h3>
                <p className="text-slate-400 mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on NorCal asset transitions.</p>
 
-               <form onSubmit={handleLeadSubmit} className="space-y-6">
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                   <div className="space-y-2">
-                     <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Name</label>
-                     <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
+               {formStatus === 'success' ? (
+                 <div className="text-center py-8 animate-in fade-in duration-500">
+                    <div className="w-12 h-12 bg-[#52D017]/10 border border-[#52D017] rounded-full flex items-center justify-center mx-auto mb-4">
+                       <svg className="w-6 h-6 text-[#52D017]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-200 mb-2">Request Sent Successfully</h3>
+                    <p className="text-slate-400">
+                       Thank you. John or Ryan will personally review your inquiry and reach out within 24 hours for a confidential discussion.
+                    </p>
+                 </div>
+               ) : (
+                 <form onSubmit={handleLeadSubmit} className="space-y-6">
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div className="space-y-2">
+                       <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Name</label>
+                       <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
+                     </div>
+                     <div className="space-y-2">
+                       <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Email</label>
+                       <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
+                     </div>
+                   </div>
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Business/Property Type</label>
+                        <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. RV Park, Laundromat" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">City</label>
+                        <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville" />
+                      </div>
                    </div>
                    <div className="space-y-2">
-                     <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Email</label>
-                     <input type="email" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
+                     <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Optional Message</label>
+                     <textarea rows={3} className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Share any initial thoughts..."></textarea>
                    </div>
-                 </div>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Business/Property Type</label>
-                      <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. RV Park, Laundromat" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">City</label>
-                      <input type="text" required className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville" />
-                    </div>
-                 </div>
-                 <div className="space-y-2">
-                   <label className="block text-xs font-semibold text-slate-400 uppercase tracking-widest">Optional Message</label>
-                   <textarea rows={3} className="w-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Share any initial thoughts..."></textarea>
-                 </div>
-                 <button 
-                  type="submit" 
-                  disabled={formStatus !== 'idle'}
-                  className="w-full bg-[#52D017] text-black font-semibold rounded-sm py-4 hover:bg-[#45b312] transition-colors disabled:opacity-50 text-lg"
-                 >
-                   {formStatus === 'idle' ? 'Request a Confidential Conversation' : formStatus === 'submitting' ? 'Submitting...' : 'Request Sent ✔'}
-                 </button>
-               </form>
+                   <button 
+                    type="submit" 
+                    disabled={formStatus !== 'idle'}
+                    className="w-full bg-[#52D017] text-black font-semibold rounded-sm py-4 hover:bg-[#45b312] transition-colors disabled:opacity-50 text-lg"
+                   >
+                     {formStatus === 'submitting' ? 'Submitting...' : 'Request a Confidential Conversation'}
+                   </button>
+                 </form>
+               )}
                <div className="mt-8 text-center">
                  <button 
                   onClick={() => { setShowResults(false); setCurrentStep(0); setAnswers({}); setFormStatus('idle'); }}
