@@ -27,11 +27,15 @@ export default function LetterPage() {
           <div className={`space-y-6 text-[#111827] text-lg md:text-xl leading-relaxed ${serif.className}`}>
             <p>Dear Owner,</p>
             
-            <p>Building a business isn&apos;t just a financial transaction; it&apos;s the culmination of decades of hard work. We&apos;ve heard your concerns: Is the process a headache? Will it be discreet? Can I trust the buyer?</p>
+            <p>When we founded XitSource, we did it with a simple realization: selling a business or a property isn&apos;t just a financial transaction. For most of the people we work with, it&apos;s the culmination of decades of hard work, late nights, and a deep commitment to their community.</p>
             
-            <p>We live in Northern California because we value the community here, but our partnership is built on modern, national standards. We use tools like DocuSign and simple video check-ins not to replace the personal touch, but to protect it. By handling the technical heavy lifting digitally, we keep the process simple and respectful of your time.</p>
-            
-            <p>Our goal is to be the easiest, most respectful &apos;exit&apos; you&apos;ll ever have. Whether your facility is down the road or across the country, we treat your legacy with integrity.</p>
+            <p>We&apos;ve heard the same concerns from owners across the country: Is the process going to be a headache? Will my tenants or employees be blindsided? Can I trust the person on the other side of the table?</p>
+
+            <p>We live and work in Northern California because we value the pace and the people here, but our partnership is designed to serve owners nationwide. Distance is never an issue. We utilize modern, secure systems to handle the heavy lifting and paperwork remotely, so you never have to worry about travel or office visits. These tools allow us to stay in close, personal contact through every step of the process, ensuring you are always informed and your time is respected.</p>
+
+            <p>Our goal is to be the easiest, most respectful &apos;exit&apos; you&apos;ll ever have. Whether your facility is down the road from us or halfway across the country, we treat your legacy with the same level of integrity you used to build it.</p>
+
+            <p>If you&apos;re ready to start thinking about your next chapter, we&apos;d welcome a confidential conversation—no pressure, no brokers, just a clear path forward.</p>
             
             <div className="pt-8 pb-4">
               <p>Sincerely,</p>
