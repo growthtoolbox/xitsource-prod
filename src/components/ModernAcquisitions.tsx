@@ -5,10 +5,10 @@ const ModernAcquisitions = () => {
     <div className="bg-white py-12 mb-16 border-y border-gray-200 w-full mt-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight text-[#111827] mb-4">
-          Modern Acquisitions. Real Connections.
+          Modern Tools for a Stress-Free Sale.
         </h2>
         <p className="text-lg text-slate-800 max-w-3xl mx-auto">
-          We leverage institutional-grade technology to streamline the acquisition process, allowing us to focus on what matters most: the partnership and your legacy.
+          We combine the personal touch of a regional partner with the professional tools of a national firm to ensure your transition is simple, secure, and respectful of your legacy.
         </p>
       </div>
 
@@ -24,9 +24,9 @@ const ModernAcquisitions = () => {
               <path d="M10 9H8"></path>
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-[#111827] mb-3">Instant Execution</h3>
+          <h3 className="text-xl font-bold text-[#111827] mb-3">Simple, Secure Paperwork</h3>
           <p className="text-slate-900 px-4 leading-relaxed">
-            Secure and immediate contract finalization. We move at the speed of the market, ensuring no geographic delays in the closing timeline.
+            Sign from the comfort of your home. Our digital system eliminates the need for overnight mail and long office visits, keeping the closing process moving while you stay where you are.
           </p>
         </div>
 
@@ -38,9 +38,9 @@ const ModernAcquisitions = () => {
               <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-[#111827] mb-3">Direct Collaboration</h3>
+          <h3 className="text-xl font-bold text-[#111827] mb-3">Proactive Communication</h3>
           <p className="text-slate-900 px-4 leading-relaxed">
-            Face-to-face transparency and real-time strategy. Modern tools ensure we remain deeply connected to our partners across the country.
+            We believe in frequent, clear check-ins. We use simple video tools to provide regular updates and answer questions face-to-face, ensuring you’re always informed and never left wondering about the status of your sale.
           </p>
         </div>
 
@@ -53,9 +53,9 @@ const ModernAcquisitions = () => {
               <path d="M12 16h.01"></path>
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-[#111827] mb-3">24/7 AI-Assisted Oversight</h3>
+          <h3 className="text-xl font-bold text-[#111827] mb-3">Faster, Fairer Valuations</h3>
           <p className="text-slate-900 px-4 leading-relaxed">
-            Advanced remote monitoring and AI-assisted performance analytics. We maintain proactive oversight of asset security and operational systems 24/7.
+            We use advanced data tools to understand your specific market instantly. This lets us skip the guesswork, offer a fair price, and move through due diligence without disrupting your daily operations.
           </p>
         </div>
       </div>
