@@ -6,10 +6,38 @@ import Link from 'next/link';
 export default function SellPage() {
   const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('submitting');
-    setTimeout(() => setFormStatus('success'), 1500);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      asset: formData.get('asset'),
+      city: formData.get('city'),
+      details: formData.get('details')
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setFormStatus('success');
+      } else {
+        setFormStatus('idle');
+        alert('There was an issue sending your request. Please try again.');
+      }
+    } catch (err) {
+      console.error(err);
+      setFormStatus('idle');
+      alert('Network error. Please try again.');
+    }
   };
 
   return (
@@ -84,22 +112,22 @@ export default function SellPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Full Name</label>
-                  <input type="text" id="name" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
+                  <input name="name" type="text" id="name" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="phone" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Phone Number</label>
-                  <input type="tel" id="phone" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="(555) 123-4567" />
+                  <input name="phone" type="tel" id="phone" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="(555) 123-4567" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="email" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Email Address</label>
-                  <input type="email" id="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
+                  <input name="email" type="email" id="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="asset" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Asset Category</label>
-                  <select id="asset" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors appearance-none" defaultValue="">
+                  <select name="asset" id="asset" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors appearance-none" defaultValue="">
                     <option value="" disabled>Select Asset Type...</option>
                     <option value="residential">Residential Portfolio</option>
                     <option value="raw_land">Raw Land / Development</option>
@@ -113,12 +141,12 @@ export default function SellPage() {
 
               <div className="space-y-2">
                 <label htmlFor="city" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Asset Location (City)</label>
-                <input type="text" id="city" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville, CA" />
+                <input name="city" type="text" id="city" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville, CA" />
               </div>
 
               <div className="space-y-2">
                 <label htmlFor="details" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Brief Transition Context</label>
-                <textarea id="details" required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Provide a brief overview of your timeline and goals..."></textarea>
+                <textarea name="details" id="details" required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Provide a brief overview of your timeline and goals..."></textarea>
               </div>
 
               <button 

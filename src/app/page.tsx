@@ -21,10 +21,38 @@ const businesses = [
 export default function Home() {
   const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('submitting');
-    setTimeout(() => setFormStatus('success'), 1500);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      asset: 'General Inquiry', // Home page doesn't ask for asset type
+      city: 'Not Specified', // Home page doesn't ask for city
+      details: formData.get('details')
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setFormStatus('success');
+      } else {
+        setFormStatus('idle');
+        alert('There was an issue sending your message. Please try again.');
+      }
+    } catch (err) {
+      console.error(err);
+      setFormStatus('idle');
+      alert('Network error. Please try again.');
+    }
   };
 
   return (
@@ -206,26 +234,26 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">First Name</label>
-                    <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
+                    <input name="firstName" type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Last Name</label>
-                    <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
+                    <input name="lastName" type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
                   </div>
                 </div>
                 
                   <div className="space-y-2">
                     <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Email Address</label>
-                    <input type="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
+                    <input name="email" type="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Phone Number</label>
-                    <input type="tel" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
+                    <input name="phone" type="tel" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
                   </div>
 
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Inquiry Details</label>
-                  <textarea required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors resize-none"></textarea>
+                  <textarea name="details" required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors resize-none"></textarea>
                 </div>
 
                 <div className="bg-white/50 p-4 border border-gray-200/80 rounded-sm">
