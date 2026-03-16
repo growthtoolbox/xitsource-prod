@@ -44,11 +44,11 @@ export default function Home() {
              Strategic Solutions
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            A Respectful Path to <br className="hidden md:block" />
-            <span className="text-[#52D017]">Your Next Chapter.</span>
+            Modern Tools for a <br className="hidden md:block" />
+            <span className="text-[#52D017]">Stress-Free Sale.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            You’ve spent years building your business and caring for your community. We provide a discreet, professional exit strategy that honors your legacy and ensures a simple, secure transition.
+            We combine the personal touch of a regional partner with the professional tools of a national firm to ensure your transition is simple, secure, and respectful of your legacy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
              <Link href="/sell" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">

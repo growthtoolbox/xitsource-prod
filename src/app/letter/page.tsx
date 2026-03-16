@@ -1,3 +1,9 @@
+import { Inter, Merriweather, Dancing_Script } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
+const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
+
 export default function LetterPage() {
   return (
     <div className="min-h-screen bg-white text-[#111827] py-24">
@@ -9,76 +15,28 @@ export default function LetterPage() {
       <div className="container mx-auto px-6 relative z-10 max-w-4xl">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-gray-200 bg-white/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-             Founding Ethos
+             A Letter to Owners
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#111827] mb-6">
-            A Personal Note to <br className="hidden md:block" />
-            <span className="text-[#52D017]">Northern California Owners</span>
+            A Personal Note on <br className="hidden md:block" />
+            <span className="text-[#52D017]">Your Next Chapter</span>
           </h1>
         </div>
 
-        <div className="bg-white border border-gray-200 p-10 md:p-16 rounded-sm relative">
-          {/* Subtle accent corner */}
-          <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[#52D017] rounded-tl-sm opacity-50"></div>
-          <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[#52D017] rounded-br-sm opacity-50"></div>
-
-          <div className="prose prose-lg max-w-none prose-p:font-serif prose-p:leading-relaxed">
-            <p className="text-lg text-[#111827] leading-relaxed mb-6">
-              Building a business, a residential portfolio, or a land legacy takes years of sacrifice, late nights, and relentless focus. We understand that for most owners in Roseville, the Bay Area, and South Lake Tahoe, CA, your assets represent more than just a balance sheet—they represent your life&apos;s work.
-            </p>
+        <div className="bg-[#F9FAFB] border border-gray-200 p-10 md:p-16 rounded-sm shadow-sm relative">
+          <div className={`space-y-6 text-[#111827] text-lg md:text-xl leading-relaxed ${serif.className}`}>
+            <p>Dear Owner,</p>
             
-            <p className="mt-6">
-              When the time comes to consider a transition, the traditional &quot;public listing&quot; route can be noisy, stressful, and often compromises the very confidentiality you&apos;ve worked to maintain.
-            </p>
-
-            <p className="mt-6">
-              XitSource was founded to provide a different path. Our approach is built on real connections and private, direct negotiations. We aren&apos;t here to list your property; we are here to understand your goals. Whether you are looking for a clean exit from a laundromat, a strategic hand-off for an RV park, or a fair valuation for raw land, we prioritize:
-            </p>
-
-            <div className="my-10 space-y-6 font-sans">
-              <div className="flex gap-4 items-start">
-                <div className="w-8 h-8 rounded-full bg-[#52D017]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-[#52D017] font-bold">1</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#111827] mb-1">Strict Confidentiality</h4>
-                  <p className="text-[#111827]">Your employees, tenants, and competitors don&apos;t need to know your business until the deal is done.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start">
-                <div className="w-8 h-8 rounded-full bg-[#52D017]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-[#52D017] font-bold">2</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#111827] mb-1">Legacy Protection</h4>
-                  <p className="text-[#111827]">We honor the work you&apos;ve put in and look to build upon it, not strip it down.</p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start">
-                <div className="w-8 h-8 rounded-full bg-[#52D017]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-[#52D017] font-bold">3</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#111827] mb-1">Certainty of Execution</h4>
-                  <p className="text-[#111827]">We move at the speed of a partnership, not a committee.</p>
-                </div>
-              </div>
-            </div>
-
-            <p className="mt-10">
-              If you&apos;ve ever wondered what your next chapter looks like, we invite you to an informal, low-pressure conversation. No brokers, no public signs, just a direct path forward.
-            </p>
-
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="italic text-[#111827] mb-2">Respectfully,</p>
-              <p className="text-xl font-bold text-[#111827]">The XitSource Partnership</p>
-              <div className="flex gap-2 mt-2">
-                <span className="text-xs uppercase tracking-widest text-[#52D017]">John Poindexter</span>
-                <span className="text-[#111827]/80">|</span>
-                <span className="text-xs uppercase tracking-widest text-[#52D017]">Ryan Peterson</span>
-              </div>
+            <p>Building a business isn&apos;t just a financial transaction; it&apos;s the culmination of decades of hard work. We&apos;ve heard your concerns: Is the process a headache? Will it be discreet? Can I trust the buyer?</p>
+            
+            <p>We live in Northern California because we value the community here, but our partnership is built on modern, national standards. We use tools like DocuSign and simple video check-ins not to replace the personal touch, but to protect it. By handling the technical heavy lifting digitally, we keep the process simple and respectful of your time.</p>
+            
+            <p>Our goal is to be the easiest, most respectful &apos;exit&apos; you&apos;ll ever have. Whether your facility is down the road or across the country, we treat your legacy with integrity.</p>
+            
+            <div className="pt-8 pb-4">
+              <p>Sincerely,</p>
+              <p className={`text-4xl md:text-5xl mt-4 text-[#111827] ${script.className}`}>Ryan Peterson & John Poindexter</p>
+              <p className={`text-sm mt-2 text-[#111827]/70 font-sans ${inter.className}`}>Partners, XitSource</p>
             </div>
           </div>
         </div>
