@@ -5,32 +5,47 @@ import Link from 'next/link';
 
 const faqData = [
   {
-    category: "General Process",
+    category: "Institutional Trust & Operational Transitions",
     questions: [
-      {
-        q: "Can I sell my business or property without using a broker?",
-        a: "Yes. XitSource works directly with owners to facilitate private, off-market transactions. This allows for a more confidential process and eliminates the standard 6-10% brokerage commission."
-      },
       {
         q: "Is this conversation actually confidential?",
-        a: "Absolutely. We prioritize discretion above all else. Initial conversations are strictly between the partners and the owner, ensuring your employees, tenants, and competitors remain unaware of the potential transition."
+        a: "Absolutely. We understand that your employees, tenants, and competitors don't need to know about a potential transition until the deal is done. Discretion is our first priority."
       },
       {
-        q: "How long does the acquisition process typically take?",
-        a: "Because we are a direct partnership rather than a large corporate committee, we move quickly. A typical timeline from initial conversation to closing ranges from 30 to 90 days, depending on the complexity of the asset."
-      }
-    ]
-  },
-  {
-    category: "Specific Assets",
-    questions: [
-      {
-        q: "What types of businesses does XitSource review?",
-        a: "Our focus is on cash-flowing, owner-operated businesses in Northern California, including laundromats, storage facilities, and mobile home communities. We also look for residential portfolios and raw land with development potential."
+        q: "Do I have to pay a brokerage commission?",
+        a: "No. We are direct principals, not brokers. Because you are selling directly to us, you eliminate the standard 6–10% commission, putting more of your hard-earned equity in your pocket."
       },
       {
-        q: "Do you buy properties that need significant work?",
-        a: "Yes. We specialize in identifying value-add opportunities. Whether the asset requires physical renovations or operational stabilization, we are equipped to handle the transition."
+        q: "How do you determine the value of my business or property?",
+        a: "We use modern data analytics and AI-assisted market oversight to provide a fair, transparent valuation based on current market performance and the unique foundation you’ve built."
+      },
+      {
+        q: "Do I need to be located in Northern California to work with you?",
+        a: "No. While our roots are in NorCal, we partner with owners across the U.S. Our digital systems allow us to handle the entire process remotely and respectfully, regardless of geography."
+      },
+      {
+        q: "How long does the typical closing process take?",
+        a: "Because we are a private partnership and not a corporate committee, we move quickly. A typical closing ranges from 30 to 90 days, depending on the complexity of the asset."
+      },
+      {
+        q: "What happens to my tenants or employees after the sale?",
+        a: "We view ourselves as stewards of your legacy. Our goal is operational stability. we work to ensure a seamless transition that protects the reputation you’ve built in your community."
+      },
+      {
+        q: "Is the paperwork going to be a headache for me?",
+        a: "Not at all. We use secure tools like DocuSign so you can review and sign everything from the comfort of your home. We handle the heavy lifting of the due diligence process."
+      },
+      {
+        q: "Why should I sell to XitSource instead of a large national corporation?",
+        a: "Large firms often treat owners like a number on a spreadsheet. We offer the same institutional closing power but with a personal, one-on-one partnership that respects your life's work."
+      },
+      {
+        q: "Will you require me to make expensive repairs before the sale?",
+        a: "We typically buy assets in 'as-is' condition. Our team is equipped to handle infrastructure stabilization and deferred maintenance, allowing you to walk away without the stress of a renovation."
+      },
+      {
+        q: "What information do I need to provide for an initial offer?",
+        a: "Initially, very little. A brief conversation and a few high-level financial points are usually enough for us to determine if there is a fit and provide a ballpark valuation."
       }
     ]
   }
