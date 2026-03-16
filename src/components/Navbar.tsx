@@ -16,7 +16,7 @@ export default function Navbar() {
             alt="XitSource Logo" 
             width={195} 
             height={65} 
-            className="h-[65px] w-auto invert brightness-0"
+            className="h-[65px] w-auto"
             priority
           />
         </Link>
