@@ -2,11 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Inter } from 'next/font/google';
+import { Inter, Merriweather, Dancing_Script } from 'next/font/google';
 import QuickFAQ from '@/components/QuickFAQ';
 import ModernAcquisitions from '@/components/ModernAcquisitions';
 
 const inter = Inter({ subsets: ['latin'] });
+const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
+const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
   { id: 1, name: "Residential Real Estate", desc: "Providing homeowners with a simple, direct path to a secure sale without the stress of public listings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
@@ -282,6 +284,40 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* A Letter to Owners */}
+          <div className="max-w-4xl mx-auto mt-24 bg-[#F9FAFB] border border-gray-200 p-8 md:p-16 rounded-sm shadow-sm relative">
+            <div className={`text-center mb-10`}>
+              <h2 className="text-3xl font-bold tracking-tight text-[#111827] mb-2">A Personal Note on Your Next Chapter</h2>
+              <div className="w-16 h-1 bg-[#52D017] mx-auto rounded-full"></div>
+            </div>
+            
+            <div className={`space-y-6 text-[#111827] text-lg md:text-xl leading-relaxed ${serif.className}`}>
+              <p>Dear Owner,</p>
+              
+              <p>When we founded XitSource, we did it with a simple realization: selling a business or a property isn&apos;t just a financial transaction. For most of the people we work with, it&apos;s the culmination of decades of hard work, late nights, and a deep commitment to their community.</p>
+              
+              <p>We&apos;ve heard the same concerns from owners across the country: Is the process going to be a headache? Will my tenants or employees be blindsided? Can I trust the person on the other side of the table?</p>
+              
+              <p>We live and work in Northern California because we value the pace and the people here, but our partnership is built on modern, national standards. We use tools like DocuSign and simple video check-ins not to replace the personal touch, but to protect it. By handling the paperwork and technical due diligence digitally, we stay out of your hair and keep the process discreet, allowing you to focus on what comes next.</p>
+              
+              <p>Our goal is to be the easiest, most respectful &quot;exit&quot; you&apos;ll ever have. Whether your facility is down the road from us or halfway across the country, we treat your legacy with the same level of integrity you used to build it.</p>
+              
+              <p>If you&apos;re ready to start thinking about your next chapter, we&apos;d welcome a confidential conversation—no pressure, no brokers, just a clear path forward.</p>
+              
+              <div className="pt-8 pb-4">
+                <p>Sincerely,</p>
+                <p className={`text-4xl md:text-5xl mt-4 text-[#111827] ${script.className}`}>Ryan Peterson & John Poindexter</p>
+                <p className={`text-sm mt-2 text-[#111827]/70 font-sans ${inter.className}`}>Partners, XitSource</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12 mb-8">
+             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-5 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors shadow-lg shadow-[#111827]/10">
+                Start a Confidential Conversation
+             </Link>
           </div>
         </section>
 
