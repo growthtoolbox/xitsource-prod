@@ -23,17 +23,17 @@ export default function LaundromatBusinessExitStrategiesPage() {
       </div>
 
       {/* Three-Point Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="/images/laundromat-hero.jpg" alt="High-yield Laundromat investment property in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" alt="Exterior drone view of a clean, modern, and established laundromat in a thriving Northern California strip mall." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&q=80&w=600" alt="High-yield Laundromat property detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/laundromat/laundromat-machine-interior.webp" alt="A high-high-yielding line of commercial-grade washing machines, signaling professional CaPEx." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="https://images.unsplash.com/photo-1626806787461-102bc1bba454?auto=format&fit=crop&q=80&w=600" alt="High-yield commercial machinery detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/laundromat/laundromat-lounge-interior.webp" alt="A high-end, comfortable customer lounge area with a coffee bar, signaling professional management and attended operations." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
         </div>
       </div>
