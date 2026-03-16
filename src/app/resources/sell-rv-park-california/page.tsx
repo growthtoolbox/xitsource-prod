@@ -23,17 +23,17 @@ export default function SellRVParkGuide() {
       </div>
 
       {/* Three-Point Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" alt="High-yield RV Park investment property in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/rv-park/rv-park-hero.webp" alt="A breathtaking drone view of a high-end luxury RV resort in the Northern California foothills at sunset." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/assets/resources/rv-detail-1.jpg" alt="High-yield RV Park property detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/rv-park/rv-pad-detail.webp" alt="Close-up detail of a premium, paved RV pad with Class A motorhome and mountain views." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/assets/resources/rv-detail-2.jpg" alt="High-yield investment interior detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/rv-park/maintenance-detail.webp" alt="An inside look at a clean, professional institutional maintenance facility, signaling high-value operations." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
         </div>
       </div>
