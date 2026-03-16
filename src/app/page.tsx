@@ -11,12 +11,12 @@ const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
 const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "Providing homeowners with a simple, direct path to a secure sale without the stress of public listings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
+  { id: 1, name: "Residential Real Estate", desc: "A simple, direct path to a secure sale without public listings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
   { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of residential communities.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
-  { id: 4, name: "Mobile Home Communities", desc: "Focused on infrastructure stability and community preservation for a seamless ownership transfer.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Respectful acquisitions of local businesses, ensuring the community continues to be served.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
-  { id: 6, name: "Self Storage Facilities", desc: "Continuing your commitment to security and service with a professional, tech-forward transition.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 3, name: "RV Parks & Campgrounds", desc: "Focusing on infrastructure stability and long-term community health.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
+  { id: 4, name: "Mobile Home Communities", desc: "Focusing on infrastructure stability and long-term community health.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
+  { id: 5, name: "Laundromat Businesses", desc: "Acquiring essential businesses with a focus on local reliability.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
+  { id: 6, name: "Self Storage Facilities", desc: "Continuing your commitment to security through a tech-forward transition.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
 export default function Home() {
@@ -65,7 +65,35 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Sector Grid (Subsidiaries) */}
+        <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
+          <div className="mb-16 border-l-4 border-[#52D017] pl-6">
+            <h2 className="text-3xl font-bold text-[#111827] mb-4">Industries <span className="text-[#52D017]">We Serve</span></h2>
+            <p className="text-[#111827] max-w-2xl">Expertise across physical assets and digital-first transitions.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {businesses.map((biz) => (
+              <Link href={biz.href} key={biz.id} className="bg-white border border-gray-200 rounded-sm group relative overflow-hidden h-full flex flex-col transition-all hover:shadow-lg hover:-translate-y-1">
+                <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 bg-[#52D017] z-20"></div>
+                <div className="h-48 w-full bg-white relative overflow-hidden">
+                   <img src={biz.img} alt={`High-yield investment property in Sacramento, Northern California`} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" />
+                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
+                </div>
+                <div className="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                  <h3 className="text-xl font-semibold text-[#111827] mb-3 transition-colors">{biz.name}</h3>
+                  <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
+                  
+                  <div className="inline-flex items-center justify-center px-4 py-3 mt-auto border border-[#52D017] text-[#52D017] text-xs font-bold uppercase tracking-widest rounded-sm group-hover:bg-[#52D017] group-hover:text-white transition-colors">
+                    Learn More
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* John Bio */}
             <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
               <div 
@@ -78,7 +106,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
               <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Focuses on operational transition and digital systems. John ensures that every business we acquire continues to serve its community with the same integrity the original owner established.
+                Focuses on operational stability and digital systems. John ensures that every business we transition continues to serve its community with the same integrity the original owner established.
               </p>
               <div className="w-full text-left bg-[#F9FAFB] border border-gray-200 p-4 rounded-sm mb-8">
                 <p className="text-xs text-[#111827] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
@@ -110,7 +138,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
               <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Specializes in income-producing assets and real estate valuation. Ryan utilizes advanced data tools to provide fair, transparent offers and a simple, secure closing process for owners ready for their next chapter.
+                Specializes in fair, transparent valuations and real estate transitions. Ryan utilizes modern tools to provide simple, secure closing processes for owners ready for their next chapter.
               </p>
               <div className="w-full text-left bg-[#F9FAFB] border border-gray-200 p-4 rounded-sm mb-8">
                 <p className="text-xs text-[#111827] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
@@ -163,33 +191,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sector Grid (Subsidiaries) */}
-        <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
-          <div className="mb-16 border-l-4 border-[#52D017] pl-6">
-            <h2 className="text-3xl font-bold text-[#111827] mb-4">Strategic <span className="text-[#52D017]">Focus Areas</span></h2>
-            <p className="text-[#111827] max-w-2xl">Expertise across high-yield physical assets and digital-first scaling.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {businesses.map((biz) => (
-              <Link href={biz.href} key={biz.id} className="bg-white border border-gray-200 rounded-sm group relative overflow-hidden h-full flex flex-col transition-all hover:shadow-lg hover:-translate-y-1">
-                <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 bg-[#52D017] z-20"></div>
-                <div className="h-48 w-full bg-white relative overflow-hidden">
-                   <img src={biz.img} alt={`High-yield investment property in Sacramento, Northern California`} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90" />
-                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
-                </div>
-                <div className="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                  <h3 className="text-xl font-semibold text-[#111827] mb-3 transition-colors">{biz.name}</h3>
-                  <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">{biz.desc}</p>
-                  
-                  <div className="inline-flex items-center justify-center px-4 py-3 mt-auto border border-[#52D017] text-[#52D017] text-xs font-bold uppercase tracking-widest rounded-sm group-hover:bg-[#52D017] group-hover:text-white transition-colors">
-                    Learn More
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+        
 
         {/* Lead Form Section with AI Consent */}
         <section id="briefing" className="container mx-auto px-6 py-24 border-t border-gray-200/50">

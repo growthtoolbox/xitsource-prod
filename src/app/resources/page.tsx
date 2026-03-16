@@ -12,13 +12,13 @@ export default function ResourcesPage() {
       <div className="container mx-auto px-6 relative z-10 max-w-5xl">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-gray-200 bg-white/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-             Information Hub
+             Seller Concierge
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#111827] mb-6">
-            Owner <span className="text-[#52D017]">Resources</span>
+            Resources for a <span className="text-[#52D017]">Smooth Transition</span>
           </h1>
           <p className="text-[#111827] text-lg max-w-2xl mx-auto">
-            XitSource provides educational resources for NorCal owners considering an exit. Explore our guides on maximizing asset value and navigating private acquisitions.
+            XitSource provides educational resources for owners considering an exit. Explore our guides on succession planning, stewardship, and navigating private acquisitions with simplicity.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export default function ResourcesPage() {
              <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-[#52D017] duration-500"></div>
              <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Guide</p>
              <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-[#52D017] transition-colors">How to Sell an RV Park in California</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">A comprehensive look at valuing, preparing, and transitioning a mobile home or RV community in the NorCal market.</p>
+             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">A comprehensive look at valuing, preparing, and transitioning a mobile home or RV community with a focus on succession and tenant stewardship.</p>
              <Link href="/resources/sell-rv-park-california" className="text-[#52D017] text-sm font-semibold flex items-center mt-auto">
                Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
              </Link>
@@ -37,7 +37,7 @@ export default function ResourcesPage() {
              <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-white duration-500"></div>
              <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Guide</p>
              <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-[#111827] transition-colors">Exiting a Laundromat Business: A Step-by-Step Guide</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Understanding equipment depreciation, long-term leases, and cash-flow multiples for owner-operated facilities.</p>
+             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Understanding equipment realities, leases, and simplified cash-flow conversations for owner-operated facilities.</p>
              <Link href="/resources/exit-laundromat-guide" className="text-[#111827] text-sm font-semibold flex items-center mt-auto">
                Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
              </Link>
@@ -47,7 +47,7 @@ export default function ResourcesPage() {
              <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-cyan-500 duration-500"></div>
              <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Perspective</p>
              <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-cyan-500 transition-colors">Preparing Raw Land for Development Sale</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Strategic steps to navigate entitlement risks and position your parcel for maximum acquisition value.</p>
+             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Strategic steps to navigate development risks and position your parcel for a simple, direct acquisition.</p>
              <Link href="/resources/raw-land-development-perspective" className="text-cyan-500 text-sm font-semibold flex items-center mt-auto">
                Read Perspective <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
              </Link>
