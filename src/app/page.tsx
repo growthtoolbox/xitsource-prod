@@ -60,7 +60,6 @@ export default function Home() {
           </div>
         </section>
 
-        <ModernAcquisitions />
 
         {/* Trust Bar */}
         <section className="bg-white border-y border-gray-200">
@@ -181,8 +180,8 @@ export default function Home() {
                "name": "XitSource",
                "url": "https://xitsource.com/",
                "foundingLocation": {
-                 "@type": "City",
-                 "name": "Roseville, CA"
+                 "@type": "Country",
+                 "name": "United States"
                },
                "founders": [
                  {
@@ -190,20 +189,20 @@ export default function Home() {
                    "name": "John Poindexter",
                    "jobTitle": "Strategic Acquisition Partner",
                    "homeLocation": {
-                     "@type": "City",
-                     "name": "Roseville, CA"
+                     "@type": "Country",
+                     "name": "United States"
                    },
-                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "NorCal Off-Market Real Estate"]
+                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "National Off-Market Real Estate"]
                  },
                  {
                    "@type": "Person",
                    "name": "Ryan Peterson",
                    "jobTitle": "Real Estate Investment Specialist",
                    "homeLocation": {
-                     "@type": "City",
-                     "name": "South Lake Tahoe, CA"
+                     "@type": "Country",
+                     "name": "United States"
                    },
-                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "NorCal Off-Market Real Estate"]
+                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "National Off-Market Real Estate"]
                  }
                ]
              })
@@ -285,6 +284,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="max-w-5xl mx-auto my-20">
+             <hr className="border-gray-200 mb-16" />
+             <ModernAcquisitions />
+          </div>
+
 
           {/* A Letter to Owners */}
           <div className="max-w-4xl mx-auto mt-24 bg-[#F9FAFB] border border-gray-200 p-8 md:p-16 rounded-sm shadow-sm relative">
