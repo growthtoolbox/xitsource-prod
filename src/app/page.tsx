@@ -11,12 +11,12 @@ const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
 const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "A simple, direct path to a secure sale without public listings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
-  { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 3, name: "RV Parks & Campgrounds", desc: "Focusing on infrastructure stability and long-term community health.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
-  { id: 4, name: "Mobile Home Communities", desc: "Focusing on infrastructure stability and long-term community health.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Acquiring essential businesses with a focus on local reliability.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
-  { id: 6, name: "Self Storage Facilities", desc: "Continuing your commitment to security through a tech-forward transition.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
+  { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
+  { id: 3, name: "RV Parks & Campgrounds", desc: "Preserving the lifestyle and community of your park through a professional, stable transition.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
+  { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
+  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
+  { id: 6, name: "Self Storage Facilities", desc: "Maintaining the high standards of security and convenience your customers expect.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
 export default function Home() {
@@ -68,8 +68,8 @@ export default function Home() {
           {/* Sector Grid (Subsidiaries) */}
         <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="mb-16 border-l-4 border-[#52D017] pl-6">
-            <h2 className="text-3xl font-bold text-[#111827] mb-4">Industries <span className="text-[#52D017]">We Serve</span></h2>
-            <p className="text-[#111827] max-w-2xl">Expertise across physical assets and digital-first transitions.</p>
+            <h2 className="text-3xl font-bold text-[#111827] mb-4">Our Areas of <span className="text-[#52D017]">Focus</span></h2>
+            <p className="text-[#111827] max-w-2xl">We specialize in acquiring properties with a long history of community service. Our goal is to provide a seamless transition of ownership for the following types of assets:</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
