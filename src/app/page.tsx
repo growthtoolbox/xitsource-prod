@@ -11,7 +11,7 @@ const businesses = [
   { id: 1, name: "Residential Real Estate", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
   { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
   { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of high-yield residential communities.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
-  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions", img: "/images/mobile-home-hero.webp" },
+  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
   { id: 5, name: "Laundromat Businesses", desc: "Identifying and optimizing cash-flowing community businesses.", href: "/resources/laundromat-business-exit-strategies", img: "/images/laundromat-hero.jpg" },
   { id: 6, name: "Self Storage Facilities", desc: "Securing and expanding physical asset portfolios across Northern CA.", href: "/resources/self-storage-facility-investments", img: "/images/storage-hero.webp" },
 ];
