@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import ModernAcquisitions from '@/components/ModernAcquisitions';
 
 export default function SelfStorageFacilityInvestmentsPage() {
   return (
@@ -38,8 +37,6 @@ export default function SelfStorageFacilityInvestmentsPage() {
            </div>
         </div>
       </div>
-
-      <ModernAcquisitions />
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>

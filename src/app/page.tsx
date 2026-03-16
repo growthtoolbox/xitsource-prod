@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Inter, Merriweather, Dancing_Script } from 'next/font/google';
 import QuickFAQ from '@/components/QuickFAQ';
-import ModernAcquisitions from '@/components/ModernAcquisitions';
 
 const inter = Inter({ subsets: ['latin'] });
 const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
@@ -176,10 +175,6 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="max-w-5xl mx-auto my-20">
-             <hr className="border-gray-200 mb-16" />
-             <ModernAcquisitions />
-          </div>
         </section>
 
 
