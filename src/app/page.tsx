@@ -182,35 +182,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Trust Bar */}
-        <section className="bg-white border-y border-gray-200">
-          <div className="container mx-auto px-6 py-6 text-center">
-            <p className="text-sm font-semibold tracking-widest text-[#111827] uppercase">
-              Acquisition Focus: <span className="text-[#52D017]">Residential | Raw Land | RV Parks | Mobile Home Communities | Laundromats | Storage</span>
-            </p>
-          </div>
-        </section>
+
 
         
 
         {/* Lead Form Section with AI Consent */}
-        <section id="briefing" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
+        <section id="briefing" className="container mx-auto px-6 py-32 border-t border-gray-200/50">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
             <div className="flex-1">
-              <h2 className="text-3xl font-bold text-[#111827] mb-4">Start a Conversation</h2>
-              <p className="text-[#111827] mb-8 leading-relaxed">
-                Reach out to discuss your business transition or real estate goals. John and Ryan personally review all inquiries.
+              <h2 className="text-3xl font-bold text-[#111827] mb-4">Start a Confidential Conversation.</h2>
+              <p className="text-[#111827] mb-8 leading-relaxed text-lg">
+                Whether you are ready to sell now or are simply exploring your options for the future, we are here to listen. John and Ryan personally review every inquiry to ensure your legacy is treated with the respect it deserves.
               </p>
               
-              <div className="mt-12 bg-white border border-gray-200 p-6 rounded-sm">
-                 <div className="text-sm font-semibold text-[#111827] mb-2 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-#52D017 animate-pulse"></span>
-                    AI Chatbot Active
+              <div className="mt-12 bg-[#F9FAFB] border border-gray-200 p-8 rounded-sm">
+                 <div className="text-sm font-semibold text-[#111827] mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#52D017] animate-pulse"></span>
+                    Intelligent Intake
                  </div>
-                 <p className="text-xs text-[#111827] leading-relaxed italic border-l border-gray-200 pl-3">
-                   &quot;I am an AI Assistant for XitSource. Our automated systems qualify leads and organize corporate briefings 24/7.&quot; 
-                   <br/><br/>
-                   (Notice pursuant to California SB 1001)
+                 <p className="text-sm text-[#111827] leading-relaxed border-l-2 border-[#52D017]/30 pl-4">
+                   To ensure we can respond to you as quickly as possible, we use an AI-assisted briefing system to organize your details for John and Ryan&apos;s immediate review. Your information remains strictly confidential.
                  </p>
               </div>
             </div>
