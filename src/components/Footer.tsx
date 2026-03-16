@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="col-span-1 md:col-span-1">
-          <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Acquisitions</h3>
+          <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">What We Acquire</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/industries/residential-homes" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Residential</Link></li>
             <li><Link href="/industries/raw-land" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Raw Land</Link></li>
