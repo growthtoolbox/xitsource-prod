@@ -4,16 +4,17 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import QuickFAQ from '@/components/QuickFAQ';
+import ModernAcquisitions from '@/components/ModernAcquisitions';
 
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
+  { id: 1, name: "Residential Real Estate", desc: "Providing homeowners with a simple, direct path to a secure sale without the stress of public listings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
   { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of high-yield residential communities.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
-  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Identifying and optimizing cash-flowing community businesses.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
-  { id: 6, name: "Self Storage Facilities", desc: "Securing and expanding physical asset portfolios across Northern CA.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of residential communities.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
+  { id: 4, name: "Mobile Home Communities", desc: "Focused on infrastructure stability and community preservation for a seamless ownership transfer.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
+  { id: 5, name: "Laundromat Businesses", desc: "Respectful acquisitions of local businesses, ensuring the community continues to be served.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
+  { id: 6, name: "Self Storage Facilities", desc: "Continuing your commitment to security and service with a professional, tech-forward transition.", href: "/resources/self-storage-facility-investments", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
 export default function Home() {
@@ -41,21 +42,23 @@ export default function Home() {
              Strategic Solutions
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            A Partnership Built on <br className="hidden md:block" />
-            <span className="text-[#52D017]">Real Connections.</span>
+            A Respectful Path to <br className="hidden md:block" />
+            <span className="text-[#52D017]">Your Next Chapter.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            We bridge the gap between complex asset transitions and sustainable growth. Focused on direct relationships and transparent acquisitions across Northern California.
+            You’ve spent years building your business and caring for your community. We provide a discreet, professional exit strategy that honors your legacy and ensures a simple, secure transition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
              <Link href="/sell" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
-                Sell a Business or Property
+                Explore a Transition
              </Link>
              <Link href="/scorecard" className="px-8 py-4 bg-transparent border border-gray-200 text-[#111827] font-semibold rounded-sm hover:border-gray-500 transition-colors">
-                Take the Seller Scorecard
+                Request Confidential Conversation
              </Link>
           </div>
         </section>
+
+        <ModernAcquisitions />
 
         {/* Trust Bar */}
         <section className="bg-white border-y border-gray-200">
@@ -228,7 +231,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Specializes in operational scaling, strategic acquisitions, and identifying off-market opportunities across Northern California. John bridges the gap between digital growth and physical asset structuring to maximize value in complex transitions.
+                Dedicated to operational excellence. John specializes in making sure the businesses we acquire continue to run smoothly, protecting the reputation of the original owner.
               </p>
               <div className="w-full text-left bg-white border border-gray-200 p-4 rounded-sm mb-8">
                 <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
@@ -260,7 +263,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
               <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Focuses on real estate acquisitions and income-producing assets including mobile home communities, RV parks, laundromats, and development opportunities. Ryan specializes in identifying undervalued assets and navigating development in the NorCal corridor.
+                Focuses on the long-term health of real estate assets. Ryan uses modern tools to ensure that the transition of ownership is accurate, fair, and respectful of the foundation you've built.
               </p>
               <div className="w-full text-left bg-white border border-gray-200 p-4 rounded-sm mb-8">
                 <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>

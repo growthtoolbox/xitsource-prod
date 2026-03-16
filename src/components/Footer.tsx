@@ -59,51 +59,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-200/50">
-        <h3 className="text-[10px] font-semibold text-[#111827] uppercase tracking-widest mb-6 text-center">Regions We Serve</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          {/* NorCal Hubs */}
-          <div>
-            <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-gray-200 pb-2">NorCal Hubs</h4>
-            <div className="flex flex-col gap-2 text-xs text-[#111827]/70">
-              <Link href="/locations/sacramento" className="hover:text-[#52D017] transition-colors">Sacramento</Link>
-              <Link href="/locations/roseville" className="hover:text-[#52D017] transition-colors">Roseville</Link>
-              <Link href="/locations/rocklin" className="hover:text-[#52D017] transition-colors">Rocklin</Link>
-              <Link href="/locations/folsom" className="hover:text-[#52D017] transition-colors">Folsom</Link>
-              <Link href="/locations/stockton" className="hover:text-[#52D017] transition-colors">Stockton</Link>
-              <Link href="/locations/modesto" className="hover:text-[#52D017] transition-colors">Modesto</Link>
-              <Link href="/locations/fresno" className="hover:text-[#52D017] transition-colors">Fresno</Link>
-              <Link href="/locations/chico" className="hover:text-[#52D017] transition-colors">Chico</Link>
-              <Link href="/locations/redding" className="hover:text-[#52D017] transition-colors">Redding</Link>
-            </div>
-          </div>
-          {/* Bay Area Metro */}
-          <div>
-            <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-gray-200 pb-2">Bay Area Metro</h4>
-            <div className="flex flex-col gap-2 text-xs text-[#111827]/70">
-              <Link href="/locations/san-francisco" className="hover:text-[#52D017] transition-colors">San Francisco</Link>
-              <Link href="/locations/san-jose" className="hover:text-[#52D017] transition-colors">San Jose</Link>
-              <Link href="/locations/oakland" className="hover:text-[#52D017] transition-colors">Oakland</Link>
-              <Link href="/locations/santa-rosa" className="hover:text-[#52D017] transition-colors">Santa Rosa</Link>
-              <Link href="/locations/walnut-creek" className="hover:text-[#52D017] transition-colors">Walnut Creek</Link>
-              <Link href="/locations/pleasanton" className="hover:text-[#52D017] transition-colors">Pleasanton</Link>
-              <Link href="/locations/palo-alto" className="hover:text-[#52D017] transition-colors">Palo Alto</Link>
-              <Link href="/locations/mountain-view" className="hover:text-[#52D017] transition-colors">Mountain View</Link>
-              <Link href="/locations/redwood-city" className="hover:text-[#52D017] transition-colors">Redwood City</Link>
-            </div>
-          </div>
-          {/* Tahoe / Reno */}
-          <div>
-            <h4 className="text-[#52D017] text-[10px] font-bold uppercase tracking-widest mb-3 border-b border-gray-200 pb-2">Tahoe / Reno</h4>
-            <div className="flex flex-col gap-2 text-xs text-[#111827]/70">
-              <Link href="/locations/south-lake-tahoe" className="hover:text-[#52D017] transition-colors">South Lake Tahoe, CA</Link>
-              <Link href="/locations/truckee" className="hover:text-[#52D017] transition-colors">Truckee</Link>
-              <Link href="/locations/carson-city" className="hover:text-[#52D017] transition-colors">Carson City</Link>
-              <Link href="/locations/reno" className="hover:text-[#52D017] transition-colors">Reno</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <div className="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-gray-200/50">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -112,7 +68,7 @@ export default function Footer() {
               &copy; 2026 XitSource. All rights reserved.
             </p>
             <p className="text-xs font-medium text-[#111827]/70">
-              Headquartered in Roseville, CA | Serving Northern California & South Lake Tahoe, CA
+              Focused on Confidentiality. Driven by Integrity.
             </p>
           </div>
           
