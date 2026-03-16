@@ -23,17 +23,17 @@ export default function SelfStorageFacilityInvestmentsPage() {
       </div>
 
       {/* Three-Point Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="/images/storage-hero.webp" alt="High-yield Self Storage investment property in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/storage/storage-facility-hero.webp" alt="Exterior of NorCal Self Storage featuring a secure gated entrance, modern keypad access, and professional single-story architecture." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="https://images.unsplash.com/photo-1558227691-41ea78d1f631?auto=format&fit=crop&q=80&w=600" alt="High-yield Self Storage property detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/storage/storage-management-detail.webp" alt="A high-tech facility management office with digital entry logs and a multi-camera surveillance wall monitoring the property." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
-           <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-             <img src="https://images.unsplash.com/photo-1518778278909-00f72ba1853e?auto=format&fit=crop&q=80&w=600" alt="High-yield industrial infrastructure detail in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
+             <img src="/assets/resources/storage/storage-corridor-detail.webp" alt="A pristine, well-lit interior storage corridor with uniform silver-grey roll-up doors and polished concrete floors." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
         </div>
       </div>
