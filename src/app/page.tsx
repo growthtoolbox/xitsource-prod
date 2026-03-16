@@ -39,23 +39,19 @@ export default function Home() {
       <main className="relative z-10">
         {/* Hero Section */}
         <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-gray-200 bg-white/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-             <span className="w-1.5 h-1.5 bg-[#52D017] rounded-full animate-pulse"></span>
-             Strategic Solutions
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            Modern Tools for a <br className="hidden md:block" />
-            <span className="text-[#52D017]">Stress-Free Sale.</span>
+            A Respectful Path to <br className="hidden md:block" />
+            <span className="text-[#52D017]">Your Next Chapter.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            We combine the personal touch of a regional partner with the professional tools of a national firm to ensure your transition is simple, secure, and respectful of your legacy.
+            You&apos;ve spent decades building your business and caring for your community. We provide a discreet, professional exit strategy that honors your work and ensures a simple, secure transition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-             <Link href="/sell" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5">
-                Explore a Transition
+             <Link href="/letter" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 border border-gray-200">
+                Read Our Letter to Owners
              </Link>
-             <Link href="/scorecard" className="px-8 py-4 bg-transparent border border-gray-200 text-[#111827] font-semibold rounded-sm hover:border-gray-500 transition-colors">
-                Request Confidential Conversation
+             <Link href="/contact" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors">
+                Request a Confidential Conversation
              </Link>
           </div>
         </section>
