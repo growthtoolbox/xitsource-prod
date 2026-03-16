@@ -8,12 +8,12 @@ import QuickFAQ from '@/components/QuickFAQ';
 const inter = Inter({ subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", href: "/industries/residential-homes", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" },
+  { id: 1, name: "Residential Real Estate", desc: "Direct-to-seller residential transactions focusing on speed and mutually beneficial terms.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
   { id: 2, name: "Raw Land Development", desc: "Transforming undeveloped parcels into strategic commercial real estate.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
   { id: 3, name: "RV Parks & Campgrounds", desc: "Strategic acquisition and management of high-yield residential communities.", href: "/resources/sell-rv-park-california", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
-  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions", img: "https://images.unsplash.com/photo-1593301072233-a3b09277026f?q=80&w=2000" },
-  { id: 5, name: "Laundromat Businesses", desc: "Identifying and optimizing cash-flowing community businesses.", href: "/resources/laundromat-business-exit-strategies", img: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071" },
-  { id: 6, name: "Self Storage Facilities", desc: "Securing and expanding physical asset portfolios across Northern CA.", href: "/resources/self-storage-facility-investments", img: "https://images.unsplash.com/photo-1590103512980-aa439b7b3967?q=80&w=2000" },
+  { id: 4, name: "Mobile Home Communities", desc: "Strategic exits and infrastructure stabilization for park owners.", href: "/resources/mobile-home-community-acquisitions", img: "/images/mobile-home-hero.jpg" },
+  { id: 5, name: "Laundromat Businesses", desc: "Identifying and optimizing cash-flowing community businesses.", href: "/resources/laundromat-business-exit-strategies", img: "/images/laundromat-hero.jpg" },
+  { id: 6, name: "Self Storage Facilities", desc: "Securing and expanding physical asset portfolios across Northern CA.", href: "/resources/self-storage-facility-investments", img: "/images/storage-hero.jpg" },
 ];
 
 export default function Home() {

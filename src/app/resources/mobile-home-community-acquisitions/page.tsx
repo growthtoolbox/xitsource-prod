@@ -25,7 +25,7 @@ export default function MobileHomeCommunityAcquisitionsPage() {
       {/* Three-Point Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="https://images.unsplash.com/photo-1593301072233-a3b09277026f?q=80&w=2000" alt="High-yield Mobile Home Park investment property in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/images/mobile-home-hero.jpg" alt="High-yield Mobile Home Park investment property in Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
