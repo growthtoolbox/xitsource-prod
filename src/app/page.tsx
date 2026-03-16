@@ -213,10 +213,10 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="max-w-4xl mx-auto mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Grounded in <br className="md:hidden"/> <span className="text-[#52D017]">Northern California</span></h2>
-            <p className="text-xl text-[#52D017] font-medium mb-6">Strategic Acquisitions and Growth Experts based in Roseville and South Lake Tahoe, CA.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Based in Northern California. <br className="md:hidden"/> <span className="text-[#52D017]">Partnering Nationwide.</span></h2>
+            <p className="text-xl text-[#52D017] font-medium mb-6">Providing a professional, stress-free path to retirement for business and property owners across the U.S.</p>
             <p className="text-[#111827] text-lg leading-relaxed max-w-3xl mx-auto">
-              The XitSource partnership, led by John Poindexter and Ryan Peterson, specializes in confidential asset acquisitions across Northern California. Based in Roseville and South Lake Tahoe, CA, we provide business owners with discreet exit strategies for residential portfolios, RV parks, laundromats, and raw land development, focusing on direct relationships rather than public listings.
+              The XitSource partnership, led by John Poindexter and Ryan Peterson, provides business owners with a discreet, professional alternative to public listings. While our roots are in Northern California, we leverage modern digital systems to partner with owners across the country, ensuring a seamless transition of ownership that respects your time and your legacy.
             </p>
           </div>
 
@@ -231,16 +231,16 @@ export default function Home() {
                 <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">JP</span>
               </div>
               <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
-              <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Dedicated to operational excellence. John specializes in making sure the businesses we acquire continue to run smoothly, protecting the reputation of the original owner.
+                Focuses on operational transition and digital systems. John ensures that every business we acquire continues to serve its community with the same integrity the original owner established.
               </p>
-              <div className="w-full text-left bg-white border border-gray-200 p-4 rounded-sm mb-8">
-                <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
+              <div className="w-full text-left bg-[#F9FAFB] border border-gray-200 p-4 rounded-sm mb-8">
+                <p className="text-xs text-[#111827] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
                 <ul className="text-sm text-[#111827] space-y-2 list-none m-0 p-0">
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Operational Scaling & Systems Optimization</li>
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Strategic Business Acquisitions</li>
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> NorCal Off-Market Opportunity Identification</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Operational Transitions & Systems Integration</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Confidential Business Structuring</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Community Integration Strategies</li>
                 </ul>
               </div>
               <div className="flex items-center gap-4 mt-auto">
@@ -263,16 +263,16 @@ export default function Home() {
                 <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">RP</span>
               </div>
               <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
-              <p className="text-[#52D017] text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
               <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Focuses on the long-term health of real estate assets. Ryan uses modern tools to ensure that the transition of ownership is accurate, fair, and respectful of the foundation you've built.
+                Specializes in income-producing assets and real estate valuation. Ryan utilizes advanced data tools to provide fair, transparent offers and a simple, secure closing process for owners ready for their next chapter.
               </p>
-              <div className="w-full text-left bg-white border border-gray-200 p-4 rounded-sm mb-8">
-                <p className="text-xs text-[#52D017] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
+              <div className="w-full text-left bg-[#F9FAFB] border border-gray-200 p-4 rounded-sm mb-8">
+                <p className="text-xs text-[#111827] uppercase tracking-widest font-semibold mb-3">Core Competencies</p>
                 <ul className="text-sm text-[#111827] space-y-2 list-none m-0 p-0">
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Real Estate Asset Valuation (MHC & RV Parks)</li>
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Raw Land Entitlement & Development</li>
-                  <li className="flex items-start gap-2"><span className="text-[#52D017] mt-1 text-[10px]">■</span> Income-Producing Asset Management</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Fair Real Estate & Asset Valuations</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Seamless Property Entitlement Processes</li>
+                  <li className="flex items-start gap-2"><span className="text-[#111827] mt-1 text-[10px]">■</span> Simple, Secure Real Estate Transactions</li>
                 </ul>
               </div>
               <div className="flex items-center gap-4 mt-auto">
