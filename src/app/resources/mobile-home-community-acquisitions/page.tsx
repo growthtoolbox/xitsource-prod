@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import ModernAcquisitions from '@/components/ModernAcquisitions';
 
 export default function MobileHomeCommunityAcquisitionsPage() {
   return (
@@ -37,6 +38,8 @@ export default function MobileHomeCommunityAcquisitionsPage() {
            </div>
         </div>
       </div>
+
+      <ModernAcquisitions />
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>
