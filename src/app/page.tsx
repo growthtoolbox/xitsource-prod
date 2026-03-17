@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </section>
           {/* Sector Grid (Subsidiaries) */}
-        <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
+        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="mb-16 border-l-4 border-[#52D017] pl-6">
             <h2 className="text-3xl font-bold text-[#111827] mb-4">Direct, as-is acquisitions <span className="text-[#52D017]">for business owners.</span></h2>
             <p className="text-[#111827] max-w-2xl">We specialize in acquiring properties with a long history of community service. Our goal is to provide a seamless transition of ownership for the following types of assets:</p>
@@ -129,7 +129,7 @@ export default function Home() {
         
 
         {/* Lead Form Section with AI Consent */}
-        <section id="briefing" className="container mx-auto px-6 py-32 border-t border-gray-200/50">
+        <section className="container mx-auto px-6 py-32 border-t border-gray-200/50">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-[#111827] mb-4">Start a Confidential Conversation.</h2>
@@ -238,8 +238,16 @@ export default function Home() {
 
 
 
-        {/* Global Quick FAQ */}
-        <QuickFAQ />
+        {/* FAQ Teaser */}
+        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50 text-center">
+          <h2 className="text-3xl font-bold text-[#111827] mb-6">Have Questions?</h2>
+          <p className="text-lg text-[#111827] mb-8 max-w-2xl mx-auto">
+            We believe in transparency. Review our frequently asked questions to understand our process, confidentiality standards, and acquisition criteria.
+          </p>
+          <Link href="/faq" className="inline-block px-8 py-4 bg-white border border-gray-200 text-[#111827] font-semibold rounded-sm hover:border-[#52D017] hover:text-[#52D017] transition-colors shadow-sm">
+            View Our Frequently Asked Questions
+          </Link>
+        </section>
 
       </main>
     </div>

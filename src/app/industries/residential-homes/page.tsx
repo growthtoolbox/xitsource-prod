@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ResidentialHomesPage() {
   return (
     <div className="container mx-auto px-6 py-24 md:py-32 max-w-5xl bg-white text-[#333333]">
-      <Link href="/#subsidiaries" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+      <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
         <span>←</span> Back to Industries
       </Link>
       
