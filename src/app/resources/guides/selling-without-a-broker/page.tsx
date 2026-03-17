@@ -8,31 +8,38 @@ export const metadata = {
 export default function SellingWithoutABrokerGuide() {
   return (
     <article className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <header className="bg-[#111827] text-white pt-24 pb-16 md:pt-32 md:pb-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
-        <div className="max-w-4xl mx-auto relative z-10">
-          <Link href="/resources/guides" className="inline-flex items-center text-[#52D017] hover:text-white transition-colors mb-8 text-sm font-semibold tracking-wide uppercase">
-            &larr; Back to Transition Guides
+      {/* 1. HERO SECTION */}
+      <div className="bg-[#f9fafb] border-b border-gray-200 pt-24 pb-16 md:pt-32 md:pb-24">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <Link href="/resources/guides" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+            <span>←</span> Back to Guides
           </Link>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+            Strategy
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#333333] mb-6">
             Selling a Business Without a Broker
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl">
+          <p className="text-xl md:text-2xl font-medium text-[#333333]/90 leading-relaxed mb-10 border-l-4 border-l-[#52D017] pl-6">
             Keep your equity and your privacy. How to execute a direct private acquisition and bypass traditional 6-10% brokerage fees.
           </p>
+          <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm">
+            Request Confidential Conversation
+          </Link>
         </div>
-      </header>
+      </div>
 
-      <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+      <div className="container mx-auto px-6 max-w-4xl py-16 space-y-24">
+
         
-        {/* AEO Block */}
-        <div className="bg-[#f9fafb] border-l-4 border-l-[#52D017] p-8 mb-16 shadow-sm">
-          <h2 className="text-xl font-bold text-[#111827] mb-4">Executive Summary</h2>
-          <p className="text-lg text-[#333333] leading-relaxed">
-            Can you sell a business without a broker? Yes. A direct private acquisition eliminates the need for public listings, avoids the standard 6-10% broker commission, and significantly reduces the timeline from listing to closing. This approach is ideal for owners prioritizing confidentiality, speed, and maximizing their net proceeds.
+        {/* 2. DIRECT ANSWER (AEO BLOCK) */}
+        <section className="bg-white p-8 md:p-10 border border-gray-200 shadow-xl shadow-black/5 rounded-sm relative">
+          <div className="absolute top-0 left-0 w-full h-1 bg-[#52D017] rounded-t-sm"></div>
+          <h2 className="text-2xl font-bold text-[#333333] mb-6">Can you sell a business without a broker?</h2>
+          <p className="text-lg text-[#333333]/90 leading-relaxed">
+            Yes. A direct private acquisition eliminates the need for public listings, avoids the standard 6-10% broker commission, and significantly reduces the timeline from listing to closing. This approach is ideal for owners prioritizing confidentiality, speed, and maximizing their net proceeds.
           </p>
-        </div>
+        </section>
 
         {/* 5 Steps Section */}
         <section className="prose prose-lg max-w-none text-[#333333] prose-headings:text-[#111827] prose-a:text-[#52D017] prose-strong:text-[#111827] mb-20 space-y-12">
@@ -88,20 +95,18 @@ export default function SellingWithoutABrokerGuide() {
           </div>
         </section>
 
-        {/* Bottom CTA */}
-        <section className="bg-[#111827] p-10 md:p-16 rounded-sm text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready for a Direct Conversation?</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+        {/* 9. FINAL CTA SECTION */}
+        <section className="bg-[#111827] text-white p-12 rounded-sm text-center shadow-xl mb-16">
+          <h2 className="text-3xl font-bold mb-6">Start With a Confidential Conversation</h2>
+          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
             If you are exploring a direct, private acquisition to preserve your equity and confidentiality, we are ready to listen.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-white font-semibold rounded-sm hover:bg-[#45b013] transition-colors">
-              Request Confidential Conversation
-            </Link>
-          </div>
+          <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
+            Request Confidential Conversation
+          </Link>
         </section>
 
-      </main>
+      </div>
     </article>
   );
 }

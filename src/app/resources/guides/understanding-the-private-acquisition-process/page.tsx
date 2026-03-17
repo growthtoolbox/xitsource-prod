@@ -296,30 +296,11 @@ export default function PrivateAcquisitionProcessGuidePage() {
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
             If you are considering a sale and want a straightforward, confidential process without unnecessary complexity, we are ready to have that conversation.
           </p>
-          <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
+          <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
             Request Confidential Conversation
           </Link>
         </section>
 
-        {/* 10. RELATED GUIDES (INTERNAL LINKS) */}
-        <section className="pt-8">
-          <h2 className="text-xl font-bold text-[#333333] mb-8 border-b border-gray-200 pb-4">Read Related Guides</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <Link href="/resources/guides/preparing-staff-for-ownership-change" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Leadership</p>
-              <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors">Preparing Staff for Ownership Change</h3>
-            </Link>
-            <Link href="/resources/guides/selling-without-a-broker" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Strategy</p>
-              <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors">Selling a Business Without a Broker</h3>
-            </Link>
-          </div>
-          <div className="text-center">
-            <Link href="/resources/guides" className="text-sm font-bold text-[#333333] hover:text-[#52D017] uppercase tracking-widest border-b-2 border-[#52D017] pb-1">
-              View All Guides in the Hub
-            </Link>
-          </div>
-        </section>
 
       </div>
     </div>
