@@ -20,7 +20,7 @@ export default function RVParksPage() {
 
       {/* Main Intro Image */}
       <div className="w-full h-64 md:h-[400px] overflow-hidden rounded-sm relative group mb-16">
-        <img src="/assets/industries/rv-parks/new-rv-park.png" alt="National RV Park and Campground Acquisitions." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <img src="/assets/industries/rv-parks/scenic-rv-park.jpg" alt="National RV Park and Campground Acquisitions." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
       </div>
 
       {/* The "Why" Section */}

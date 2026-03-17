@@ -13,7 +13,7 @@ const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 const businesses = [
   { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/assets/industries/residential/modern-home.jpg" },
   { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 3, name: "RV Parks & Campgrounds", desc: "We acquire RV parks and campgrounds nationwide, offering a direct exit for owners ready for a simpler path.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/new-rv-park.png" },
+  { id: 3, name: "RV Parks & Campgrounds", desc: "We acquire RV parks and campgrounds nationwide, offering a direct exit for owners ready for a simpler path.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/scenic-rv-park.jpg" },
   { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
   { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/industries/laundromat", img: "/assets/industries/laundromat/new-laundromat.jpg" },
   { id: 6, name: "Self Storage Facilities", desc: "Maintaining the high standards of security and convenience your customers expect.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
@@ -116,20 +116,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-          {/* A Letter to Owners Teaser */}
-          <div className="max-w-4xl mx-auto mt-24 bg-[#F9FAFB] border border-gray-200 p-8 md:p-12 rounded-sm shadow-sm relative text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-[#111827] mb-6">A Personal Note on Your Next Chapter</h2>
-            <div className="w-16 h-1 bg-[#52D017] mx-auto rounded-full mb-8"></div>
-            
-            <p className={`text-[#111827] text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto ${serif.className}`}>
-              Selling a business you&apos;ve spent decades building is a significant transition. We&apos;ve written a personal letter to owners explaining our commitment to a respectful, stress-free exit.
-            </p>
-            
-            <Link href="/the-letter" className="inline-flex items-center justify-center px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors shadow-lg shadow-[#111827]/10">
-              Read Our Letter to Owners
-            </Link>
-          </div>
 
         
 
