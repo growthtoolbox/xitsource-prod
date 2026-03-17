@@ -79,7 +79,7 @@ export default function WebDevelopmentPage() {
                   </div>
                 </div>
                 <blockquote className="text-base italic text-[#111827] leading-relaxed">
-                  &quot;Leading our operational philosophy, ensuring a seamless handover that protects the foundation you've built. We focus on clear execution, preserving relationships, and continuing your legacy without disruption.&quot;
+                  &quot;Leading our operational philosophy, ensuring a seamless handover that protects the foundation you&apos;ve built. We focus on clear execution, preserving relationships, and continuing your legacy without disruption.&quot;
                 </blockquote>
               </div>
             </div>
