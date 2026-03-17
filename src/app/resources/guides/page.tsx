@@ -33,17 +33,16 @@ export default function TransitionGuidesPage() {
           </Link>
 
           {/* Guide 2 */}
-          <article className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017]/50 p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-not-allowed">
-            <div className="absolute top-0 right-0 px-3 py-1 bg-yellow-100 text-yellow-800 text-[10px] font-bold uppercase tracking-wider rounded-bl-sm">Coming Soon</div>
-            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Strategy</p>
+          <Link href="/resources/guides/understanding-the-private-acquisition-process" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-pointer block">
+            <p className="text-xs font-bold text-[#52D017] uppercase tracking-widest mb-4">Strategy</p>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Understanding the Private Acquisition Process</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
               A breakdown of the due diligence, valuation, and capital staging required without the friction of a public broker.
             </p>
-            <span className="text-gray-400 text-sm font-semibold flex items-center mt-auto">
-               Available Q3
+            <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">
+               Read Guide →
             </span>
-          </article>
+          </Link>
 
           {/* Guide 3 */}
           <article className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017]/50 p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-not-allowed">
