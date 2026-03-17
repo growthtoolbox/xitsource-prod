@@ -66,11 +66,10 @@ export default function Navbar() {
             <span className="cursor-default text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors inline-flex items-center">
               Resources <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
             </span>
-            <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <Link href="/the-letter" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Letter</Link>
-              <Link href="/resources/guides/selling-without-a-broker" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Selling Without a Broker</Link>
-              <Link href="/resources/guides/timeline-to-sell-business-or-property" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Timeline</Link>
-              <Link href="/faq" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">FAQ</Link>
+            <div className="absolute left-0 mt-2 w-72 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <Link href="/resources/guides/preparing-staff-for-ownership-change" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Preparing Staff for Ownership Change</Link>
+              <Link href="/resources/guides/understanding-the-private-acquisition-process" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Private Acquisition Process</Link>
+              <Link href="/resources/guides/timeline-to-sell-business-or-property" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Timeline to Sell Your Business</Link>
             </div>
           </div>
         </div>
@@ -167,10 +166,9 @@ export default function Navbar() {
                 </button>
                 {openAccordion === 'resources' && (
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
-                    <Link href="/the-letter" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">The Letter</Link>
-                    <Link href="/resources/guides/selling-without-a-broker" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Selling Without a Broker</Link>
-                    <Link href="/resources/guides/timeline-to-sell-business-or-property" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Timeline</Link>
-                    <Link href="/faq" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">FAQ</Link>
+                    <Link href="/resources/guides/preparing-staff-for-ownership-change" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block leading-tight">Preparing Staff for Ownership Change</Link>
+                    <Link href="/resources/guides/understanding-the-private-acquisition-process" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block leading-tight">The Private Acquisition Process</Link>
+                    <Link href="/resources/guides/timeline-to-sell-business-or-property" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block leading-tight">Timeline to Sell Your Business</Link>
                   </div>
                 )}
               </div>
