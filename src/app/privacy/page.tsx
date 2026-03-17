@@ -1,82 +1,67 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
+
 export const metadata: Metadata = {
-  title: 'Privacy Policy | California CPRA Choices - XitSource',
-  description: 'California Privacy Notice, CCPA/CPRA disclosures, and AI interaction notices for XitSource.',
+  title: 'Privacy Policy | XitSource',
+  description: 'Privacy Policy and data practices for XitSource acquisitions.',
 };
 
 export default function PrivacyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-16 bg-white min-h-screen">
-      
+    <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-12 bg-white min-h-screen text-[#333333]">
       <header className="space-y-4 border-b border-gray-200 pb-8">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">Privacy Policy</h1>
-        <p className="text-[#111827] text-lg">Last Updated: March 14, 2026</p>
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-#52D017/30 rounded-sm bg-#52D017/10 text-#52D017 text-sm font-medium">
-           CCPA / CPRA Compliant Notice
-        </div>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#333333]">Privacy Policy</h1>
+        <p className="text-[#333333] text-lg font-medium">Last Updated: March 17, 2026</p>
       </header>
-
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-[#111827]">Notice at Collection</h2>
-        <p className="text-[#111827] leading-relaxed">
-          XitSource and its subsidiaries collect Personal Information to provide services, enhance your experience, and comply with legal obligations. By using our services, you consent to the data collection practices described herein.
-        </p>
-      </section>
-
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-[#111827]">Categories of Data Collected</h2>
-        <ul className="list-disc pl-6 space-y-3 text-[#111827]">
-          <li><strong>Identifiers:</strong> Name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver&apos;s license number, passport number, or other similar identifiers.</li>
-          <li><strong>Commercial information:</strong> Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</li>
-          <li><strong>Biometric information:</strong> Genetic, physiological, biological, or behavioral characteristics (applicable primarily to CyberDyne and Chroma Genetics).</li>
-          <li><strong>Internet or other electronic network activity:</strong> Browsing history, search history, and information regarding a consumer&apos;s interaction with an internet website, application, or advertisement.</li>
-          <li><strong>Geolocation data:</strong> Physical location or movements (applicable to Neon Drift Logistics and Voidwalker Aerospace).</li>
-        </ul>
-      </section>
-
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-[#111827]">AI Interaction Disclosure (SB 1001)</h2>
-        <div className="border border-gray-200 bg-white p-6 rounded-sm">
-          <p className="text-[#111827] leading-relaxed mb-4">
-            In compliance with California SB 1001, users are hereby notified that they are communicating with Artificial Intelligence. AI and automated systems are utilized across this platform for customer service, predictive modeling, and lead qualification.
-          </p>
-          <p className="text-#52D017 text-sm font-mono border-l-2 border-#52D017 pl-4">
-            Notice: I am an AI Assistant acting on behalf of XitSource. Our communications may be synthesized or facilitated by machine learning algorithms.
-          </p>
-        </div>
-      </section>
-
-      <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-[#111827]" id="california-choices">California Residents Privacy Rights</h2>
-        <p className="text-[#111827] leading-relaxed mb-4">
-          Under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA), California residents have specific rights regarding their personal information:
-        </p>
-        <ul className="list-disc pl-6 space-y-3 text-[#111827] mb-6">
-          <li><strong>Right to Know:</strong> You may request disclosure of the specific pieces and categories of personal information we have collected about you, the categories of sources for that information, the business or commercial purposes for collecting the information, and the categories of third parties with which the information was shared.</li>
-          <li><strong>Right to Delete:</strong> You have the right to request that we delete your personal information (with certain exceptions).</li>
-          <li><strong>Right to Correct:</strong> You have the right to request the correction of inaccurate personal information.</li>
-          <li><strong>Right to Opt-Out:</strong> You have the right to direct us not to sell or share your personal information.</li>
-          <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights.</li>
-        </ul>
-      </section>
-
-      <section className="space-y-6 relative" id="do-not-sell">
-        <div className="absolute -left-4 top-0 w-1 h-full bg-#52D017/50 rounded-full hidden md:block"></div>
-        <h2 className="text-2xl font-semibold text-[#111827]">Do Not Sell or Share My Personal Information</h2>
-        <p className="text-[#111827] leading-relaxed">
-          XitSource does not sell personal information for monetary value. However, we may &quot;share&quot; data with analytics or advertising partners as defined by the CPRA. 
-        </p>
-        <div className="mt-8">
-          <button className="px-6 py-3 bg-white border border-gray-200 hover:border-#52D017 text-[#111827] rounded-sm transition-colors text-sm font-medium">
-            Opt-Out of Data Sharing
-          </button>
-        </div>
-      </section>
       
-      <div className="pt-12 text-sm text-[#111827] border-t border-gray-200">
-        If you have questions about this privacy policy or wish to exercise your rights, contact us at privacy@xitsource.com or send a written request to 123 Silicon Way, San Francisco, CA 94105.
-      </div>
+      <div className="space-y-8 text-lg leading-relaxed">
+        <p>
+          At XitSource, your privacy is a cornerstone of our partnership. We do not sell your data, and we do not use your information for anything other than facilitating a confidential business transition.
+        </p>
 
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-[#333333]">1. Information We Collect</h2>
+          <p>We only collect information necessary to evaluate a potential acquisition, including:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Contact Details:</strong> Name, email, and phone number.</li>
+            <li><strong>Business Information:</strong> Details submitted via the Seller Scorecard or Inquiry forms regarding your property or business.</li>
+          </ul>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-[#333333]">2. How We Use Your Data</h2>
+          <p>Your information is used exclusively to:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Communicate directly with you (John and Ryan).</li>
+            <li>Assess the fit of your business for our partnership.</li>
+            <li>Provide you with the resources you requested (Guides/Scorecards).</li>
+          </ul>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-[#333333]">3. AI Disclosure (SB 1001)</h2>
+          <p>
+            To provide 24/7 support and lead organization, we utilize AI systems. By using our site, you acknowledge that initial communications may be facilitated by these automated tools to ensure your inquiry is routed to John or Ryan as quickly as possible.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-[#333333]">4. California Privacy Rights (CCPA/CPRA)</h2>
+          <p>Although we operate nationwide, we comply with California standards:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Right to Know:</strong> You can ask what data we have.</li>
+            <li><strong>Right to Delete:</strong> You can ask us to delete your inquiry at any time.</li>
+            <li><strong>No Sale of Data:</strong> XitSource does not and will never sell your personal or business information to third parties.</li>
+          </ul>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-[#333333]">5. Contact Us</h2>
+          <p>
+            For any privacy concerns, please reach out directly through <Link href="/partnership" className="text-[#52D017] hover:underline">The Partnership</Link> section of this site.
+          </p>
+        </section>
+      </div>
     </div>
   );
 }
