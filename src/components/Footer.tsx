@@ -44,7 +44,6 @@ export default function Footer() {
             <li><Link href="/scorecard" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Seller Scorecard</Link></li>
             <li><Link href="/resources" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Transition Guides</Link></li>
             <li><Link href="/resources" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Owner Resources</Link></li>
-            <li><Link href="/sell" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Contact</Link></li>
             <li>
               <div className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 border border-gray-200 rounded-sm bg-white/50">
                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
@@ -64,7 +63,7 @@ export default function Footer() {
               &copy; 2026 XitSource. All rights reserved.
             </p>
             <p className="text-xs font-medium text-[#111827]/70">
-              Focused on Confidentiality. Driven by Integrity.
+              Modern Tools. Real Connections. Built on a Handshake.
             </p>
           </div>
           
