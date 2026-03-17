@@ -2,13 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Inter, Merriweather, Dancing_Script } from 'next/font/google';
-import QuickFAQ from '@/components/QuickFAQ';
 import { useRouter } from 'next/navigation';
-
-const inter = Inter({ subsets: ['latin'] });
-const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
-const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
   { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/assets/industries/residential/modern-home.jpg" },
@@ -52,8 +46,9 @@ export default function Home() {
           router.push('/thank-you');
         }, 3000);
       } else {
+        const errorData = await res.json().catch(() => ({}));
         setFormStatus('idle');
-        alert('There was an issue sending your request. Please try again.');
+        alert(`Issue sending request: ${errorData.error || 'Server error'}. (Auth config issue? user: ${errorData.hasUser}, pass: ${errorData.hasPass})`);
       }
     } catch (err) {
       console.error(err);
@@ -63,7 +58,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen bg-white text-[#111827] overflow-hidden relative ${inter.className}`}>
+    <div className={`min-h-screen bg-white text-[#111827] overflow-hidden relative`}>
       
       {/* Background Gradients - Subtle Dark Executive */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-40">

@@ -44,10 +44,17 @@ export async function POST(req: Request) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (err) {
+    const error = err as Error;
     console.error('Error sending email:', error);
+    
+    // Check possible Vercel env variable names
+    const smtpUser = process.env.SMTP_USER || process.env.SMTP_EMAIL || process.env.EMAIL_USER;
+    const hasUser = !!smtpUser;
+    const hasPass = !!(process.env.SMTP_PASSWORD || process.env.APP_PASSWORD || process.env.EMAIL_PASSWORD);
+
     return NextResponse.json(
-      { error: 'Failed to send email. Please try again.' },
+      { error: error?.message || 'Failed to send email. Please try again.', hasUser, hasPass },
       { status: 500 }
     );
   }

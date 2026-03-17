@@ -37,8 +37,9 @@ export default function SellPage() {
           router.push('/thank-you');
         }, 3000);
       } else {
+        const errorData = await res.json().catch(() => ({}));
         setFormStatus('idle');
-        alert('There was an issue sending your request. Please try again.');
+        alert(`Issue sending request: ${errorData.error || 'Server error'}. (Auth config issue? user: ${errorData.hasUser}, pass: ${errorData.hasPass})`);
       }
     } catch (err) {
       console.error(err);
