@@ -1,127 +1,178 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export default function AboutPage() {
+export const metadata: Metadata = {
+  title: "Who You're Working With | Direct Buyers | XitSource",
+  description: "XitSource partners are direct buyers, not brokers. We work with property and business owners nationwide who want a simple, private sale.",
+};
+
+export default function PartnershipPage() {
   return (
-    <div className="min-h-screen bg-white text-[#111827] pt-24 pb-32">
-      <div className="container mx-auto px-6 max-w-5xl">
-        
-        {/* Section 1: The Personal Note (New Header) */}
-        <div className="text-center mb-24 mt-12">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#111827] mb-6">
-            Built on a Handshake.
+    <div className="bg-white text-[#333333] min-h-screen">
+      
+      {/* 1. HERO SECTION */}
+      <div className="bg-[#f9fafb] border-b border-gray-200 pt-24 pb-16 md:pt-32 md:pb-24">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+            The Partnership
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#333333] mb-6">
+            Direct Buyers. Real Operators. Not Brokers.
           </h1>
-          <p className="max-w-3xl mx-auto text-xl text-[#111827] leading-relaxed">
-            We founded XitSource to provide a direct, honest, and respectful path for owners ready to move on to their next chapter.
+          <p className="text-xl text-[#333333]/80 leading-relaxed max-w-3xl mx-auto mb-10">
+            We work directly with property and business owners nationwide who want a simple, private sale. No listings. No drawn-out process. Just a direct conversation.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+            <Link href="https://www.xitsource.com/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm text-center">
+              Request Confidential Conversation
+            </Link>
+          </div>
+          <p className="text-sm font-bold text-[#333333]/60 uppercase tracking-widest">
+            No pressure. No obligation.
           </p>
         </div>
+      </div>
 
-        {/* Section 2: Partner Bios */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
-          {/* John Bio */}
-          <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors rounded-sm shadow-sm">
-            <div 
-              className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
-              role="img"
-              aria-label="John Poindexter, Partner at XitSource"
-            >
-              <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">JP</span>
-            </div>
-            <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
-            <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-            <p className="text-[#111827] text-base leading-relaxed mb-8 flex-grow">
-              John focuses on the operational health and long-term stability of every business we acquire. With a background in scaling systems and managing complex transitions, he ensures that the legacy you&apos;ve built is protected and that the hand-off is seamless for everyone involved.
-            </p>
-            <div className="flex items-center gap-4 mt-auto">
-              <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-              <a href="mailto:john@xitsource.com" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              </a>
-            </div>
-          </div>
-
-          {/* Ryan Bio */}
-          <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors rounded-sm shadow-sm">
-            <div 
-              className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
-              role="img"
-              aria-label="Ryan Peterson, Partner at XitSource"
-            >
-              <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">RP</span>
-            </div>
-            <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
-            <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-            <p className="text-[#111827] text-base leading-relaxed mb-8 flex-grow">
-              Ryan specializes in the acquisition of physical assets, from residential portfolios to specialized commercial properties. His approach is rooted in fair valuations and a &apos;no-headache&apos; closing process. He is dedicated to solving the complicated title, repair, or management issues that often stall traditional sales.
-            </p>
-            <div className="flex items-center gap-4 mt-auto">
-              <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-              <a href="mailto:ryan@xitsource.com" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              </a>
-            </div>
+      {/* 2. CREDIBILITY STRIP */}
+      <div className="border-b border-gray-200 bg-white">
+        <div className="container mx-auto px-6 max-w-5xl py-8">
+          <div className="flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-4 text-sm font-semibold text-[#333333]/70 uppercase tracking-wider text-center">
+            <span>Nationwide Acquisitions</span>
+            <span className="hidden md:inline text-[#52D017]">•</span>
+            <span>Residential & Income Assets</span>
+            <span className="hidden md:inline text-[#52D017]">•</span>
+            <span>Complex Situations</span>
+            <span className="hidden md:inline text-[#52D017]">•</span>
+            <span>Direct, Off-Market Sales</span>
+            <span className="hidden md:inline text-[#52D017]">•</span>
+            <span>Simple, Practical Outcomes</span>
           </div>
         </div>
+      </div>
 
-        {/* Section 3: The Values */}
-        <div className="max-w-6xl mx-auto border-t border-gray-200/50 pt-20 mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20 mb-16">
-            {/* Value 1 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-8 text-[#111827]">
-                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#111827] mb-5">Direct Communication</h3>
-              <p className="text-[#111827] leading-relaxed text-base">
-                You talk to the principals, not a middleman or a corporate committee.
+      <div className="container mx-auto px-6 max-w-4xl py-16 space-y-24">
+
+        {/* 3. INTRO SECTION */}
+        <section className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#333333] mb-8">Who You&apos;re Working With</h2>
+          <p className="text-lg text-[#333333]/90 leading-relaxed mb-6">
+            XitSource operates as a direct buyer, not an intermediary. When you <Link href="/resources/guides/selling-without-a-broker" className="text-[#52D017] hover:underline font-semibold">sell without a broker</Link>, you are dealing directly with the principles who will fund and operate the asset.
+          </p>
+          <p className="text-lg text-[#333333]/90 leading-relaxed">
+            We understand that real estate and business transitions are often driven by real-life situations—burnout, inherited complexities, or shifting priorities. Our focus is absolute simplicity, clarity, and execution. We are highly selective and entirely practical, prioritizing logical deal structures over promotional sales tactics.
+          </p>
+        </section>
+
+        <hr className="border-gray-200" />
+
+        {/* 4. PARTNER BIOS */}
+        <section>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {/* John Poindexter */}
+            <div className="bg-[#f9fafb] p-8 border border-gray-200 rounded-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-[#111827] text-white flex items-center justify-center font-bold text-2xl rounded-sm mb-6">JP</div>
+              <h3 className="text-2xl font-bold text-[#333333] mb-1">John Poindexter</h3>
+              <p className="text-[#52D017] font-semibold text-sm uppercase tracking-widest mb-6">Partner</p>
+              <p className="text-lg text-[#333333]/80 leading-relaxed mb-4">
+                John leads operational execution once an agreement is reached. His focus is on the seamless transfer of the physical asset and managing the <Link href="/resources/guides/timeline-to-sell-business-or-property" className="text-[#52D017] hover:underline">timeline to sell</Link> with zero disruption to existing tenants or operations.
+              </p>
+              <p className="text-lg text-[#333333]/80 leading-relaxed">
+                By prioritizing solid systems and structural stability, he ensures that the post-closing reality matches the commitments made on day one. When complex title or transition issues arise, John focuses on keeping the deal on track calmly and systematically.
               </p>
             </div>
 
-            {/* Value 2 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-8 text-[#111827]">
-                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#111827] mb-5">As-Is Acquisitions</h3>
-              <p className="text-[#111827] leading-relaxed text-base">
-                We take on the repairs, the cleaning, and the tenant issues so you don&apos;t have to.
+            {/* Ryan Peterson */}
+            <div className="bg-[#f9fafb] p-8 border border-gray-200 rounded-sm hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-[#111827] text-white flex items-center justify-center font-bold text-2xl rounded-sm mb-6">RP</div>
+              <h3 className="text-2xl font-bold text-[#333333] mb-1">Ryan Peterson</h3>
+              <p className="text-[#52D017] font-semibold text-sm uppercase tracking-widest mb-6">Partner</p>
+              <p className="text-lg text-[#333333]/80 leading-relaxed mb-4">
+                Ryan directs acquisitions and structuring, working directly with sellers to build purchase frameworks that resolve specific pain points.
               </p>
-            </div>
-
-            {/* Value 3 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-8 text-[#111827]">
-                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-[#111827] mb-5">Total Discretion</h3>
-              <p className="text-[#111827] leading-relaxed text-base">
-                No public listings. No &apos;For Sale&apos; signs. No noise.
+              <p className="text-lg text-[#333333]/80 leading-relaxed">
+                His approach is direct and problem-solving oriented. Whether an owner is dealing with pre-foreclosure, a massive deferred maintenance burden on a <Link href="/industries/rv-parks" className="text-[#52D017] hover:underline">commercial park</Link>, or a difficult partnership split, Ryan strips away the fluff to find the fastest, most practical path forward.
               </p>
             </div>
           </div>
-          
-          <div className="text-center pt-8 border-t border-gray-200/50 mt-16 max-w-2xl mx-auto">
-            <p className="text-2xl md:text-3xl italic font-bold text-[#111827]">
-              &quot;We do what we say we&apos;re going to do. Our word is our bond.&quot;
-            </p>
-          </div>
-        </div>
+        </section>
 
-        <div className="text-center mt-20">
-          <Link href="/sell" className="inline-flex px-10 py-5 bg-[#111827] text-white font-semibold rounded-sm hover:bg-gray-800 transition-colors shadow-lg">
-            Start a Private Conversation
+        <hr className="border-gray-200" />
+
+        {/* 5. WHAT IT'S LIKE TO WORK WITH US */}
+        <section className="bg-white p-8 md:p-12 border border-[#52D017]/30 rounded-sm shadow-sm relative">
+          <div className="absolute top-0 left-0 w-full h-1 bg-[#52D017] rounded-t-sm"></div>
+          <h2 className="text-3xl font-bold text-[#333333] mb-8">What It&apos;s Like to Work With Us</h2>
+          <ul className="space-y-4 max-w-2xl">
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">Direct conversations. No pressure.</span>
+             </li>
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">Straight answers. No runaround.</span>
+             </li>
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">Experience handling highly complex situations.</span>
+             </li>
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">Intense focus on solutions, not obstacles.</span>
+             </li>
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">A clear, completely transparent <Link href="/resources/guides/understanding-the-private-acquisition-process" className="text-[#52D017] hover:underline">step-by-step process</Link>.</span>
+             </li>
+             <li className="flex gap-4 items-start">
+               <span className="text-[#52D017] font-bold mt-1 shrink-0 text-xl">✓</span>
+               <span className="text-lg text-[#333333]/90 font-medium">Transactions built squarely around your specific timeline.</span>
+             </li>
+          </ul>
+        </section>
+
+        {/* 6. PROCESS REINFORCEMENT */}
+        <section className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#333333] mb-10 text-center">A Straightforward Process</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-center">
+            <div className="p-4">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#111827] text-white flex items-center justify-center font-bold text-xl mb-4">1</div>
+              <h3 className="font-bold text-[#333333]">Connect</h3>
+            </div>
+            <div className="p-4">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#111827] text-white flex items-center justify-center font-bold text-xl mb-4">2</div>
+              <h3 className="font-bold text-[#333333]">Review</h3>
+            </div>
+            <div className="p-4">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#111827] text-white flex items-center justify-center font-bold text-xl mb-4">3</div>
+              <h3 className="font-bold text-[#333333]">Offer</h3>
+            </div>
+            <div className="p-4">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#111827] text-white flex items-center justify-center font-bold text-xl mb-4">4</div>
+              <h3 className="font-bold text-[#333333]">Close</h3>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. FINAL CTA SECTION */}
+        <section className="bg-[#111827] text-white p-12 rounded-sm text-center shadow-xl mb-16">
+          <h2 className="text-3xl font-bold mb-6">Start With a Simple Conversation</h2>
+          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            If you are considering conducting a <Link href="/resources/guides/understanding-the-private-acquisition-process" className="text-[#52D017] hover:underline">private sale</Link> and want to understand your options, the first step is directly speaking with us. No obligation. No pressure.
+          </p>
+          <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
+            Request Confidential Conversation
           </Link>
-        </div>
+        </section>
+
+        {/* COMPLIANCE / FOOTER NOTE */}
+        <section className="pt-8 text-center text-sm text-[#333333]/80 border-t border-gray-200">
+          <p className="mb-4 text-xs font-bold tracking-widest uppercase">Direct Acquisition Guidelines</p>
+          <p className="max-w-3xl mx-auto leading-relaxed text-xs opacity-75">
+            XitSource operates strictly as a direct principal buyer in off-market transactions. We are not real estate agents and do not list properties. All acquisitions and timelines are subject to standard operational due diligence. We make no guaranteed claims regarding specific closing speeds across all asset classes. CCPA/CPRA Compliant.
+          </p>
+        </section>
 
       </div>
     </div>
