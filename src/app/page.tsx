@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 const businesses = [
   { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/assets/industries/residential/modern-home.jpg" },
@@ -14,49 +12,6 @@ const businesses = [
 ];
 
 export default function Home() {
-  const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
-  const router = useRouter();
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    
-    // Placeholder: Upon submission, trigger automated 'Handshake Letter' email to lead.
-    
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: `${formData.get('firstName')} ${formData.get('lastName')}`,
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      asset: 'General Inquiry', // Home page doesn't ask for asset type
-      city: 'Not Specified', // Home page doesn't ask for city
-      details: formData.get('details')
-    };
-
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      if (res.ok) {
-        setFormStatus('success');
-        setTimeout(() => {
-          router.push('/thank-you');
-        }, 3000);
-      } else {
-        const errorData = await res.json().catch(() => ({}));
-        setFormStatus('idle');
-        alert(`Issue sending request: ${errorData.error || 'Server error'}. (Auth config issue? user: ${errorData.hasUser}, pass: ${errorData.hasPass})`);
-      }
-    } catch (err) {
-      console.error(err);
-      setFormStatus('idle');
-      alert('Network error. Please try again.');
-    }
-  };
-
   return (
     <div className={`min-h-screen bg-white text-[#111827] overflow-hidden relative`}>
       
@@ -114,82 +69,16 @@ export default function Home() {
 
         
 
-        {/* Lead Form Section with AI Consent */}
-        <section className="container mx-auto px-6 py-32 border-t border-gray-200/50">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold text-[#111827] mb-4">Start a Confidential Conversation.</h2>
-              <p className="text-[#111827] mb-8 leading-relaxed text-lg">
-                Whether you are ready to sell now or are simply exploring your options for the future, we are here to listen. John and Ryan personally review every inquiry to ensure your legacy is treated with the respect it deserves.
-              </p>
-              
-              <div className="mt-12 bg-[#F9FAFB] border border-gray-200 p-8 rounded-sm">
-                 <div className="text-sm font-semibold text-[#111827] mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#52D017] animate-pulse"></span>
-                    Intelligent Intake
-                 </div>
-                 <p className="text-sm text-[#111827] leading-relaxed border-l-2 border-[#52D017]/30 pl-4">
-                   To ensure we can respond to you as quickly as possible, we use an AI-assisted briefing system to organize your details for John and Ryan&apos;s immediate review. Your information remains strictly confidential.
-                 </p>
-              </div>
-            </div>
-
-            <div className="flex-1">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">First Name</label>
-                    <input name="firstName" type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Last Name</label>
-                    <input name="lastName" type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
-                  </div>
-                </div>
-                
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Email Address</label>
-                    <input name="email" type="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Phone Number</label>
-                    <input name="phone" type="tel" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors" />
-                  </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-semibold text-[#111827] uppercase tracking-wider">Inquiry Details</label>
-                  <textarea name="details" required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors resize-none"></textarea>
-                </div>
-
-                <div className="bg-white/50 p-4 border border-gray-200/80 rounded-sm flex items-start gap-3">
-                  <input id="ai-consent" type="checkbox" required className="mt-1 bg-white border-gray-200 rounded-sm accent-#52D017 cursor-pointer" />
-                  <div className="text-xs text-[#111827] leading-relaxed">
-                    <label htmlFor="ai-consent" className="cursor-pointer">
-                      <strong>Notice at Collection:</strong> By submitting this form, you consent to AI-assisted communications (Voice/Chat) for fulfilling this request per our{' '}
-                    </label>
-                    <Link href="/privacy" className="text-#52D017 hover:underline">Privacy Policy</Link>
-                    <label htmlFor="ai-consent" className="cursor-pointer">
-                      . You acknowledge that XitSource uses AI to parse and respond to inquiries.
-                    </label>
-                  </div>
-                </div>
-
-                <button 
-                  type="submit" 
-                  disabled={formStatus !== 'idle'}
-                  className="w-full bg-white text-[#111827] font-semibold rounded-sm py-4 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {formStatus === 'idle' ? 'Send Message' : formStatus === 'submitting' ? 'Transmitting...' : 'Message Sent ✔'}
-                </button>
-                {formStatus === 'success' && (
-                  <div className="mt-4 p-4 bg-[#52D017]/10 border border-[#52D017] rounded-sm text-center">
-                    <p className="text-[#111827] font-medium text-sm">
-                      Success! Your inquiry is in our inbox. If you need immediate assistance, feel free to call us at <strong>916-892-0680</strong>. Redirecting you now...
-                    </p>
-                  </div>
-                )}
-              </form>
-            </div>
+        {/* High-Impact CTA Section */}
+        <section className="container mx-auto px-6 py-32 border-t border-gray-200/50 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Start a Confidential Conversation.</h2>
+            <p className="text-lg md:text-xl text-[#111827] mb-10 leading-relaxed">
+              Whether you are ready to sell now or are simply exploring your options for the future, we are here to listen. John and Ryan personally review every inquiry to ensure your legacy is treated with the respect it deserves.
+            </p>
+            <Link href="/sell" className="inline-block px-8 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-colors shadow-lg">
+              Request Confidential Conversation
+            </Link>
           </div>
         </section>
 
