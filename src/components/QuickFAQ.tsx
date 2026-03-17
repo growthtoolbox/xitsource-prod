@@ -17,8 +17,8 @@ const quickFaqData = [
     a: "We look at the core health of what you've built. Instead of just running algorithms, we evaluate the community impact, your operational history, and the true sustainable revenue. We are committed to offering a thoughtful, competitive price that respects your life's work."
   },
   {
-    q: "Do you only work with owners in Northern California?",
-    a: "No—distance is never an issue. While our roots and initial focus were in Northern California, we partner with owners nationwide to provide a seamless transition of stewardship."
+    q: "Do you only work with owners in specific states?",
+    a: "No—distance is never an issue. We partner with owners nationwide to provide a seamless transition of stewardship."
   },
   {
     q: "How long does it take?",

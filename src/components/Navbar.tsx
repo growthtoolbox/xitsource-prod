@@ -53,11 +53,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="relative group">
-            <span className="cursor-default text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors inline-flex items-center">
-              Company <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </span>
             <div className="absolute left-0 mt-2 w-56 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <Link href="/letter" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Letter</Link>
               <Link href="/partnership" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Partnership</Link>
               <Link href="/faq" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">FAQ</Link>
             </div>
@@ -150,7 +146,6 @@ export default function Navbar() {
                 </button>
                 {openAccordion === 'company' && (
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
-                    <Link href="/letter" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">The Letter</Link>
                     <Link href="/partnership" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">The Partnership</Link>
                     <Link href="/faq" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">FAQ</Link>
                   </div>

@@ -13,8 +13,8 @@ export default function Footer() {
             XITSOURCE
           </div>
           <address className="not-italic text-sm text-[#111827] leading-relaxed">
-            Based in Northern California.<br />
-            Partnering with Owners Across the U.S.
+            Partnering with Owners<br />
+            Across the United States
           </address>
         </div>
 

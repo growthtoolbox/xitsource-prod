@@ -67,8 +67,8 @@ export default function Home() {
         {/* Hero Section */}
         <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            A Respectful Path to <br className="hidden md:block" />
-            <span className="text-[#52D017]">Your Next Chapter.</span>
+            A National Partnership <br className="hidden md:block" />
+            <span className="text-[#52D017]">Built on a Handshake.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
             You&apos;ve spent decades building your business and caring for your community. We provide a discreet, professional exit strategy that honors your work and ensures a simple, secure transition.
@@ -85,7 +85,7 @@ export default function Home() {
           {/* Sector Grid (Subsidiaries) */}
         <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="mb-16 border-l-4 border-[#52D017] pl-6">
-            <h2 className="text-3xl font-bold text-[#111827] mb-4">Our Areas of <span className="text-[#52D017]">Focus</span></h2>
+            <h2 className="text-3xl font-bold text-[#111827] mb-4">Direct, as-is acquisitions <span className="text-[#52D017]">for business owners.</span></h2>
             <p className="text-[#111827] max-w-2xl">We specialize in acquiring properties with a long history of community service. Our goal is to provide a seamless transition of ownership for the following types of assets:</p>
           </div>
           
