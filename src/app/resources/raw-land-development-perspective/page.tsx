@@ -24,7 +24,7 @@ export default function RawLandPerspectivePage() {
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>
-          Undeveloped land in Northern California holds immense potential, but unlocking its value requires navigating one of the most complex regulatory and zoning environments in the country. At XitSource, we evaluate raw parcels based on their highest and best use, focusing heavily on what it takes to bring a project to life.
+          Undeveloped land across the country holds immense potential, but unlocking its value requires navigating complex regulatory and zoning environments. At XitSource, we evaluate raw parcels based on their highest and best use, focusing heavily on what it takes to bring a project to life.
         </p>
         
         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">1. The Entitlement Risk Spectrum</h3>

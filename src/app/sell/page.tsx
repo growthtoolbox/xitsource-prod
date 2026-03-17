@@ -58,7 +58,7 @@ export default function SellPage() {
             <span className="text-[#52D017]">Property Acquisitions</span>
           </h1>
           <p className="text-xl text-[#111827] max-w-3xl mx-auto leading-relaxed">
-            We acquire cash-flowing businesses, residential portfolios, and development land across Northern California. Zero broker fees. Complete confidentiality. Direct access to the partners.
+            We acquire cash-flowing businesses, residential portfolios, and development land nationwide. Zero broker fees. Complete confidentiality. Direct access to the partners.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ export default function SellPage() {
 
               <div className="space-y-2">
                 <label htmlFor="city" className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Asset Location (City)</label>
-                <input name="city" type="text" id="city" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville, CA" />
+                <input name="city" type="text" id="city" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Austin, TX" />
               </div>
 
               <div className="space-y-2">

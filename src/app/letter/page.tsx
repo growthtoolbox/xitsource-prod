@@ -31,7 +31,7 @@ export default function LetterPage() {
             
             <p>We&apos;ve heard the same concerns from owners across the country: Is the process going to be a headache? Will my tenants or employees be blindsided? Can I trust the person on the other side of the table?</p>
 
-            <p>We live and work in Northern California because we value the pace and the people here, but our partnership is designed to serve owners nationwide. Distance is never an issue. We utilize modern, secure systems to handle the heavy lifting and paperwork remotely, so you never have to worry about travel or office visits. These tools allow us to stay in close, personal contact through every step of the process, ensuring you are always informed and your time is respected.</p>
+            <p>We live and work where we value the pace and the people, but our partnership is designed to serve owners nationwide. Distance is never an issue. We utilize modern, secure systems to handle the heavy lifting and paperwork remotely, so you never have to worry about travel or office visits. These tools allow us to stay in close, personal contact through every step of the process, ensuring you are always informed and your time is respected.</p>
 
             <p>Our goal is to be the easiest, most respectful &apos;exit&apos; you&apos;ll ever have. Whether your facility is down the road from us or halfway across the country, we treat your legacy with the same level of integrity you used to build it.</p>
 

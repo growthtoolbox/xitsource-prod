@@ -219,7 +219,7 @@ export default function ScorecardPage() {
             {/* Lead Capture Integration */}
             <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm">
                <h3 className="text-xl font-bold text-[#111827] mb-2">Discuss Your Results Confidentially</h3>
-               <p className="text-[#111827] mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on NorCal asset transitions.</p>
+               <p className="text-[#111827] mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on national asset transitions.</p>
 
                {formStatus === 'success' ? (
                  <div className="text-center py-8 animate-in fade-in duration-500">
@@ -250,7 +250,7 @@ export default function ScorecardPage() {
                       </div>
                       <div className="space-y-2">
                         <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">City</label>
-                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Roseville" />
+                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Austin" />
                       </div>
                    </div>
                    <div className="space-y-2">

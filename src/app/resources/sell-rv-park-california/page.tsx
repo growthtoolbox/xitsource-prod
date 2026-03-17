@@ -11,29 +11,26 @@ export default function SellRVParkGuide() {
       </Link>
       
       <div className="mb-16 border-b border-gray-200 pb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-          Transition Guide
-        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#111827] mb-6">
-          How to Sell an RV Park in California
+          A National Partner for RV Park & Campground Transitions.
         </h1>
         <p className="text-xl text-[#111827] leading-relaxed">
-          A comprehensive look at valuing, preparing, and transitioning a mobile home or RV community in the NorCal market.
+          Providing owners across the U.S. with a discreet, principal-to-principal exit strategy.
         </p>
       </div>
 
       {/* Three-Point Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="/assets/resources/rv-park/rv-park-hero.webp" alt="A breathtaking drone view of a high-end luxury RV resort in the Northern California foothills at sunset." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/rv-park/rv-park-hero.webp" alt="Community stability" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
            <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/assets/resources/rv-park/rv-pad-detail.webp" alt="Close-up detail of a premium, paved RV pad with Class A motorhome and mountain views." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="/assets/resources/rv-park/rv-pad-detail.webp" alt="Operational integrity" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
            <div className="h-32 md:h-[188px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/assets/resources/rv-park/maintenance-detail.webp" alt="An inside look at a clean, professional institutional maintenance facility, signaling high-value operations." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="/assets/resources/rv-park/maintenance-detail.webp" alt="Community stability and trust" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            </div>
         </div>
       </div>
@@ -61,7 +58,7 @@ export default function SellRVParkGuide() {
 
       <div className="mt-16 pt-12 border-t border-gray-200">
         <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-sm/10">
-          Request a Confidential Valuation
+          Request Confidential Conversation
         </Link>
       </div>
     </div>

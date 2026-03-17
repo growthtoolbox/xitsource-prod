@@ -24,7 +24,7 @@ export default function LaundromatGuidePage() {
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>
-          Laundromats are prized for their resistance to economic downturns and steady cash flow. However, selling a laundromat requires preparing specific operational documentation that is unique to the coin-laundry and card-operated space. If you are an owner in Northern California considering a transition, here is what strategic buyers evaluate first.
+          Laundromats are prized for their resistance to economic downturns and steady cash flow. However, selling a laundromat requires preparing specific operational documentation that is unique to the coin-laundry and card-operated space. If you are an owner considering a transition, here is what strategic buyers evaluate first.
         </p>
         
         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">1. The Lease is the Asset</h3>
