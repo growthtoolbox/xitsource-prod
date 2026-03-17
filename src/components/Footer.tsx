@@ -21,11 +21,12 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">What We Acquire</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
-            <li><Link href="/industries/residential-homes" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Residential</Link></li>
+            <li><Link href="/industries/residential-homes" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Residential Portfolios</Link></li>
             <li><Link href="/industries/raw-land" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Raw Land</Link></li>
-            <li><Link href="/resources/sell-rv-park-california" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">RV Parks</Link></li>
-            <li><Link href="/resources/laundromat-business-exit-strategies" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Laundromats</Link></li>
-            <li><Link href="/resources/self-storage-facility-investments" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Storage</Link></li>
+            <li><Link href="/resources/sell-rv-park-california" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">RV Parks & Campgrounds</Link></li>
+            <li><Link href="/resources/mobile-home-community-acquisitions" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Mobile Home Communities</Link></li>
+            <li><Link href="/resources/laundromat-business-exit-strategies" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Laundromat Businesses</Link></li>
+            <li><Link href="/resources/self-storage-facility-investments" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Self Storage Facilities</Link></li>
           </ul>
         </div>
         
