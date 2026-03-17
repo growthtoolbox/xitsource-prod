@@ -1,6 +1,6 @@
 # XitSource Master Architecture
 
-XitSource provides strategic partnerships for Northern California owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing. John Poindexter and Ryan Peterson are the founding partners.
+XitSource provides strategic partnerships for owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing. John Poindexter is the founding partner.
 
 XitSource operates as a private Deal Origination Platform for off-market sales. We help owners transition and investors acquire assets through transparent, privately negotiated transactions. Confidentiality, legacy protection, and zero broker fees are our core advantages.
 
@@ -8,21 +8,13 @@ XitSource operates as a private Deal Origination Platform for off-market sales. 
 
 - **Sell a Business / Property**: High-intent portal for confidential direct acquisitions. (https://xitsource.com/sell)
 - **Seller Readiness Scorecard**: Interactive 24-point evaluation tool for prospective sellers. (https://xitsource.com/scorecard)
-- **Founder's Letter**: A personal note to NorCal owners on our acquisition ethos. (https://xitsource.com/letter)
+- **Founder's Letter**: A personal note to owners nationwide on our acquisition ethos. (https://xitsource.com/the-letter)
 - **Acquisition FAQ**: Comprehensive answers regarding confidentiality, timelines, and asset requirements. (https://xitsource.com/faq)
 
 ## Industries & Expertise
 
-- **Residential Homes**: NorCal residential focus on off-market value. (https://xitsource.com/industries/residential-homes)
+- **Residential Homes**: We execute confidential residential transactions nationwide, offering a direct path to liquidity without the disruptions of a public listing. (https://xitsource.com/industries/residential-homes)
 - **Raw Land Development**: Vision for entitlement and development. (https://xitsource.com/industries/raw-land)
-- **Web Development**: High-performance digital infrastructure. (https://xitsource.com/industries/web-development)
-- **Social Media Marketing**: Localized scaling infrastructure. (https://xitsource.com/industries/social-media-marketing)
-- **GrowthToolBox**: Digital acceleration arm. (https://xitsource.com/industries/growth-toolbox)
-
-Our coming soon sectors include RV Parks, Laundromats, Storage Units, 1-on-1 Business Consulting, and Operational Optimization.
-
-## Location Focus (Dynamic Generation)
-We actively acquire assets in the following regions via established local pathways: `/locations/[city]`
-- **NorCal**: Sacramento, Roseville, Rocklin, Folsom, Stockton, Modesto, Fresno, Chico, Redding.
-- **Bay Area**: San Francisco, San Jose, Oakland, Santa Rosa, Walnut Creek, Pleasanton, Palo Alto, Mountain View, Redwood City.
-- **Lake Tahoe**: South Lake Tahoe, Truckee, Carson City, Reno.
+- **RV Parks**: Preserving the lifestyle and community of your park through a professional, stable transition. (https://xitsource.com/industries/rv-parks)
+- **Self Storage**: Direct acquisitions for self storage owners. (https://xitsource.com/industries/self-storage)
+- **Laundromats**: Direct acquisitions for laundromat owners. (https://xitsource.com/resources/laundromat-business-exit-strategies)

@@ -46,7 +46,7 @@ export default function RootLayout({
                     "@type": "PostalAddress",
                     "addressCountry": "US"
                   },
-                  "founder": [{"@type": "Person", "name": "John Poindexter"}, {"@type": "Person", "name": "Ryan Peterson"}],
+                  "founder": [{"@type": "Person", "name": "John Poindexter"}],
                   "areaServed": ["United States"]
                 },
                 {

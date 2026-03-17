@@ -39,8 +39,8 @@ export default function LetterPage() {
             
             <div className="pt-8 pb-4">
               <p>Sincerely,</p>
-              <p className={`text-4xl md:text-5xl mt-4 text-[#111827] ${script.className}`}>Ryan Peterson & John Poindexter</p>
-              <p className={`text-sm mt-2 text-[#111827]/70 font-sans ${inter.className}`}>Partners, XitSource</p>
+              <p className={`text-4xl md:text-5xl mt-4 text-[#111827] ${script.className}`}>John Poindexter</p>
+              <p className={`text-sm mt-2 text-[#111827]/70 font-sans ${inter.className}`}>Partner, XitSource</p>
             </div>
           </div>
         </div>

@@ -18,8 +18,13 @@ const nextConfig: NextConfig = {
         destination: '/industries/self-storage',
         permanent: true,
       },
+      {
+        source: '/about',
+        destination: '/partnership',
+        permanent: true,
+      },
     ]
-  },
+  }
 };
 
 export default nextConfig;

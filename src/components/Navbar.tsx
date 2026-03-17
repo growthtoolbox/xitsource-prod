@@ -67,7 +67,7 @@ export default function Navbar() {
               Resources <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
             </Link>
             <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <Link href="/letter" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Letter</Link>
+              <Link href="/the-letter" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Letter</Link>
               <Link href="/scorecard" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Seller Scorecard</Link>
               <Link href="/resources/guides" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Transition Guides</Link>
               <Link href="/resources" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Owner Resources</Link>
@@ -167,7 +167,7 @@ export default function Navbar() {
                 </button>
                 {openAccordion === 'resources' && (
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
-                    <Link href="/letter" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">The Letter</Link>
+                    <Link href="/the-letter" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">The Letter</Link>
                     <Link href="/scorecard" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Seller Scorecard</Link>
                     <Link href="/resources/guides" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Transition Guides</Link>
                     <Link href="/resources" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Owner Resources</Link>

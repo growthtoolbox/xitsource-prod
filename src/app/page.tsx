@@ -223,16 +223,6 @@ export default function Home() {
                      "name": "United States"
                    },
                    "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "National Off-Market Real Estate"]
-                 },
-                 {
-                   "@type": "Person",
-                   "name": "Ryan Peterson",
-                   "jobTitle": "Real Estate Investment Specialist",
-                   "homeLocation": {
-                     "@type": "Country",
-                     "name": "United States"
-                   },
-                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "National Off-Market Real Estate"]
                  }
                ]
              })
