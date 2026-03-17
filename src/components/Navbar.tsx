@@ -75,9 +75,9 @@ export default function Navbar() {
           <Link href="/sell" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 mt-4 text-center text-sm font-bold bg-white text-[#111827] rounded-sm min-h-[44px]">
             Request Confidential Conversation
           </Link>
-          <button className="w-full mt-4 min-h-[44px] px-5 py-3 text-sm font-medium bg-white text-[#111827] hover:bg-gray-200 transition-colors rounded-sm">
+          <Link href="/sell" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-center mt-4 min-h-[44px] px-5 py-3 text-sm font-medium bg-white text-[#111827] hover:bg-gray-200 transition-colors rounded-sm">
             Contact Us
-          </button>
+          </Link>
         </div>
       )}
     </nav>

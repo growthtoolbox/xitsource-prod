@@ -12,9 +12,6 @@ export default function Footer() {
             </div>
             XITSOURCE
           </div>
-          <p className="text-sm text-[#111827] mb-6">
-            Modern Tools. Real Connections.
-          </p>
           <address className="not-italic text-sm text-[#111827] leading-relaxed">
             Based in Northern California.<br />
             Partnering with Owners Across the U.S.

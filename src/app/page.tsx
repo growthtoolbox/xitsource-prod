@@ -77,7 +77,7 @@ export default function Home() {
              <Link href="/letter" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 border border-gray-200">
                 Read Our Letter to Owners
              </Link>
-             <Link href="/contact" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors">
+             <Link href="/sell" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors">
                 Request a Confidential Conversation
              </Link>
           </div>
