@@ -20,7 +20,7 @@ export default function ResidentialHomesPage() {
 
       {/* Main Intro Image */}
       <div className="w-full h-64 md:h-[400px] overflow-hidden rounded-sm relative group mb-16">
-        <img src="/assets/industries/residential/residential-hero.webp" alt="Preserving the integrity of residential portfolios" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <img src="/images/residential-hero.jpg" alt="Preserving the integrity of residential portfolios" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
       </div>
 
       {/* What We Buy - Grid Layout */}
