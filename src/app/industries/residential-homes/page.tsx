@@ -21,22 +21,22 @@ export default function ResidentialHomesPage() {
             Residential Homes
           </h1>
           <p className="text-xl text-slate-900 leading-relaxed">
-            NorCal residential focus on off-market value in Roseville/Sacramento.
+            Specialized residential acquisitions designed for owners seeking a quiet, direct, and professional transition.
           </p>
         </div>
 
         {/* Three-Point Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
           <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/images/residential-hero.jpg" alt="Residential investment property" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="/images/residential-hero.jpg" alt="Preserving the integrity of residential portfolios" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
              <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="Residential investment property detail" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="A seamless path to your next chapter" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              </div>
              <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600" alt="Residential investment interior detail" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600" alt="Confidential residential transactions" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function ResidentialHomesPage() {
           {/* Main Content Area */}
           <div className="md:col-span-2 space-y-8 text-slate-900 leading-relaxed text-lg">
             <p>
-              We execute strategic residential acquisitions throughout Northern California, leveraging localized knowledge and an expansive network to uncover high-value, off-market properties.
+              We execute confidential residential transactions nationwide, offering a direct path to liquidity without the disruptions of a public listing.
             </p>
 
             {/* Callout Box */}
@@ -72,7 +72,7 @@ export default function ResidentialHomesPage() {
           <div className="md:col-span-1 border-t md:border-t-0 md:border-l border-gray-200 pt-12 md:pt-0 md:pl-12">
             <div className="mt-6 pt-6 border-t border-gray-200">
               <Link href="/sell" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-slate-900 transition-colors">
-                Start a Confidential Conversation
+                Request Confidential Conversation
               </Link>
             </div>
           </div>
