@@ -118,7 +118,7 @@ export default function AboutPage() {
         </div>
 
         <div className="text-center mt-20">
-          <Link href="/sell" className="inline-flex px-10 py-5 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg">
+          <Link href="/sell" className="inline-flex px-10 py-5 bg-[#111827] text-white font-semibold rounded-sm hover:bg-gray-800 transition-colors shadow-lg">
             Start a Private Conversation
           </Link>
         </div>

@@ -46,7 +46,7 @@ export default function LetterPage() {
         </div>
 
         <div className="mt-16 text-center">
-          <a href="/sell" className="inline-block px-10 py-5 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 text-lg">
+          <a href="/sell" className="inline-block px-10 py-5 bg-[#111827] text-white font-semibold rounded-sm hover:bg-gray-800 transition-colors shadow-lg shadow-[#111827]/10 text-lg">
             Begin a Confidential Conversation
           </a>
         </div>

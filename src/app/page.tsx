@@ -4,22 +4,24 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Inter, Merriweather, Dancing_Script } from 'next/font/google';
 import QuickFAQ from '@/components/QuickFAQ';
+import { useRouter } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
 const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "https://images.unsplash.com/photo-1628611225892-db41e06fe9af?q=80&w=2000" },
+  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/assets/industries/residential/modern-home.jpg" },
   { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
   { id: 3, name: "RV Parks & Campgrounds", desc: "We acquire RV parks and campgrounds nationwide, offering a direct exit for owners ready for a simpler path.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/new-rv-park.png" },
   { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/resources/laundromat-business-exit-strategies", img: "/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" },
+  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/industries/laundromat", img: "/assets/industries/laundromat/new-laundromat.jpg" },
   { id: 6, name: "Self Storage Facilities", desc: "Maintaining the high standards of security and convenience your customers expect.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
 export default function Home() {
   const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -46,9 +48,12 @@ export default function Home() {
 
       if (res.ok) {
         setFormStatus('success');
+        setTimeout(() => {
+          router.push('/thank-you');
+        }, 3000);
       } else {
         setFormStatus('idle');
-        alert('There was an issue sending your message. Please try again.');
+        alert('There was an issue sending your request. Please try again.');
       }
     } catch (err) {
       console.error(err);
@@ -195,6 +200,13 @@ export default function Home() {
                 >
                   {formStatus === 'idle' ? 'Send Message' : formStatus === 'submitting' ? 'Transmitting...' : 'Message Sent ✔'}
                 </button>
+                {formStatus === 'success' && (
+                  <div className="mt-4 p-4 bg-[#52D017]/10 border border-[#52D017] rounded-sm text-center">
+                    <p className="text-[#111827] font-medium text-sm">
+                      Success! Your inquiry is in our inbox. If you need immediate assistance, feel free to call us at <strong>916-892-0680</strong>. Redirecting you now...
+                    </p>
+                  </div>
+                )}
               </form>
             </div>
           </div>
