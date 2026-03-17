@@ -11,21 +11,18 @@ export default function LaundromatBusinessExitStrategiesPage() {
       </Link>
       
       <div className="mb-16 border-b border-gray-200 pb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-          Acquisition Pillar
-        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
           The Clean Exit: Maximizing Your Laundromat&apos;s Sales Multiple
         </h1>
         <p className="text-xl text-slate-900 leading-relaxed">
-          &quot;Laundromats are prized for their cash-flow, but buyers look for &apos;Zombie-Mat&apos; potential—the ability to modernize and scale.&quot;
+          &quot;Laundromats are prized for their cash-flow, but buyers look for &apos;Zombie-Mat&apos; potential—the ability to modernize and scale. Partnering with owners nationwide to ensure a seamless transition of stewardship.&quot;
         </p>
       </div>
 
       {/* Three-Point Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" alt="Exterior drone view of a clean, modern, and established laundromat in a thriving Northern California strip mall." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/laundromat/laundromat-strip-mall-exterior.webp" alt="Exterior drone view of a clean, modern, and established laundromat in a thriving strip mall." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
@@ -40,7 +37,7 @@ export default function LaundromatBusinessExitStrategiesPage() {
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>
-          Laundromats are cornerstone community assets. Their resistance to economic downturns makes them highly desirable acquisition targets in Northern California. But transitioning ownership of a heavy-utility business requires more than just proving your gross revenue. 
+          Laundromats are cornerstone community assets. Their resistance to economic downturns makes them highly desirable acquisition targets nationwide. But transitioning ownership of a heavy-utility business requires more than just proving your gross revenue. 
         </p>
         
         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Lease Control is Everything</h3>
@@ -61,7 +58,7 @@ export default function LaundromatBusinessExitStrategiesPage() {
 
       <div className="mt-16 pt-12 border-t border-gray-200">
         <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-slate-900 font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-sm/10">
-          Request a Private Valuation
+          Request Confidential Conversation
         </Link>
       </div>
     </div>

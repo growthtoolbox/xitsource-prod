@@ -11,21 +11,18 @@ export default function MobileHomeCommunityAcquisitionsPage() {
       </Link>
       
       <div className="mb-16 border-b border-gray-200 pb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-          Acquisition Pillar
-        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-          Community-First: Strategic Exits for Mobile Home Park Owners
+          Community-First: Respectful Transitions for Mobile Home Park Owners
         </h1>
         <p className="text-xl text-slate-900 leading-relaxed">
-          &quot;Consistency in tenant-base and infrastructure stability are the primary drivers of MHC valuation in Northern California.&quot;
+          &quot;Consistency in tenant-base and infrastructure stability are a commitment to community stability. Partnering with owners nationwide to ensure a seamless transition of stewardship.&quot;
         </p>
       </div>
 
       {/* Three-Point Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-           <img src="/assets/resources/mhc/mhc-community-hero.webp" alt="Aerial drone view of a sprawling, high-end manufactured home community in Northern California." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+           <img src="/assets/resources/mhc/mhc-community-hero.webp" alt="Aerial drone view of a sprawling, high-end manufactured home community." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-6 md:h-[400px]">
@@ -40,7 +37,7 @@ export default function MobileHomeCommunityAcquisitionsPage() {
 
       <div className="prose prose-lg max-w-none prose-p:leading-relaxed prose-p:text-slate-900">
         <p>
-          Mobile Home Communities (MHC) and RV Parks represent some of the most consistent yield-generating assets in the California commercial real estate sector. However, the exact valuation multiplier placed on your community by institutional and private buyers like XitSource depends heavily on the operational foundation you&apos;ve built.
+          Mobile Home Communities (MHC) and RV Parks represent some of the most consistent yield-generating assets in the nationwide commercial real estate sector. However, the exact valuation multiplier placed on your community by institutional and private buyers like XitSource depends heavily on the operational foundation you&apos;ve built.
         </p>
         
         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The Importance of Documentation</h3>
@@ -61,7 +58,7 @@ export default function MobileHomeCommunityAcquisitionsPage() {
 
       <div className="mt-16 pt-12 border-t border-gray-200">
         <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-slate-900 font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-sm/10">
-          Discuss Your Community
+          Request Confidential Conversation
         </Link>
       </div>
     </div>
