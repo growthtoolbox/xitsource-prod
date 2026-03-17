@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function SellPage() {
   const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -31,6 +33,9 @@ export default function SellPage() {
 
       if (res.ok) {
         setFormStatus('success');
+        setTimeout(() => {
+          router.push('/thank-you');
+        }, 3000);
       } else {
         setFormStatus('idle');
         alert('There was an issue sending your request. Please try again.');
@@ -158,6 +163,14 @@ export default function SellPage() {
               >
                 {formStatus === 'idle' ? 'Request Conversation' : formStatus === 'submitting' ? 'Transmitting Securely...' : 'Request Sent ✔'}
               </button>
+
+              {formStatus === 'success' && (
+                <div className="mt-4 p-4 bg-[#52D017]/10 border border-[#52D017] rounded-sm text-center">
+                  <p className="text-[#111827] font-medium text-sm">
+                    Success! Your inquiry is in our inbox. If you need immediate assistance, feel free to call us at <strong>916-892-0680</strong>. Redirecting you now...
+                  </p>
+                </div>
+              )}
             </form>
           </div>
         </div>

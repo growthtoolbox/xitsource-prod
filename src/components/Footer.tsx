@@ -63,7 +63,7 @@ export default function Footer() {
               &copy; 2026 XitSource. All rights reserved.
             </p>
             <p className="text-xs font-medium text-[#111827]/70">
-              Modern Tools. Real Connections. Built on a Handshake.
+              National Direct Acquisitions | Call: <a href="tel:9168920680" className="hover:text-[#52D017] transition-colors">916-892-0680</a>
             </p>
           </div>
           
