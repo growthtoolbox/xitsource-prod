@@ -10,7 +10,7 @@ const serif = Merriweather({ weight: ['400', '700'], subsets: ['latin'] });
 const script = Dancing_Script({ weight: ['400', '700'], subsets: ['latin'] });
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/images/residential-hero.jpg" },
+  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "https://images.unsplash.com/photo-1628611225892-db41e06fe9af?q=80&w=2000" },
   { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
   { id: 3, name: "RV Parks & Campgrounds", desc: "Preserving the lifestyle and community of your park through a professional, stable transition.", href: "/industries/rv-parks", img: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070" },
   { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
@@ -24,6 +24,8 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus('submitting');
+    
+    // Placeholder: Upon submission, trigger automated 'Handshake Letter' email to lead.
     
     const formData = new FormData(e.currentTarget);
     const data = {
@@ -67,18 +69,18 @@ export default function Home() {
         {/* Hero Section */}
         <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            A National Partnership <br className="hidden md:block" />
-            <span className="text-[#52D017]">Built on a Handshake.</span>
+            When You&apos;re Ready, <br className="hidden md:block" />
+            <span className="text-[#52D017]">We&apos;re Ready.</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            You&apos;ve spent decades building your business and caring for your community. We provide a discreet, professional exit strategy that honors your work and ensures a simple, secure transition.
+            No listings. No drawn-out process. Just a direct conversation and a clear path forward. We handle the details so you can move on with confidence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-             <Link href="/letter" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 border border-gray-200">
-                Read Our Letter to Owners
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <Link href="/scorecard" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 border border-gray-200">
+                Take the Seller Scorecard
              </Link>
              <Link href="/sell" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors">
-                Request a Confidential Conversation
+                Request Confidential Conversation
              </Link>
           </div>
         </section>

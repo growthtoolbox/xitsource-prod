@@ -10,6 +10,8 @@ export default function SellPage() {
     e.preventDefault();
     setFormStatus('submitting');
     
+    // Placeholder: Upon submission, trigger automated 'Handshake Letter' email to lead.
+    
     const formData = new FormData(e.currentTarget);
     const data = {
       name: formData.get('name'),
