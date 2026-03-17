@@ -45,17 +45,16 @@ export default function TransitionGuidesPage() {
           </Link>
 
           {/* Guide 3 */}
-          <article className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017]/50 p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-not-allowed">
-            <div className="absolute top-0 right-0 px-3 py-1 bg-yellow-100 text-yellow-800 text-[10px] font-bold uppercase tracking-wider rounded-bl-sm">Coming Soon</div>
-            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Execution</p>
+          <Link href="/resources/guides/timeline-to-sell-business-or-property" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-pointer block">
+            <p className="text-xs font-bold text-[#52D017] uppercase tracking-widest mb-4">Execution</p>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Timeline to a Successful Handshake</h2>
             <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
               Mapping out the 90-120 day calendar from initial letter of intent to the final wire transfer.
             </p>
-            <span className="text-gray-400 text-sm font-semibold flex items-center mt-auto">
-               Available Q3
+            <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">
+               Read Guide →
             </span>
-          </article>
+          </Link>
         </div>
 
       </div>
