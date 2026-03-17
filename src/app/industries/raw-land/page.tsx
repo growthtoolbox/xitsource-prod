@@ -21,25 +21,28 @@ export default function RawLandPage() {
             Raw Land Development
           </h1>
           <p className="text-xl text-slate-900 leading-relaxed">
-            Vision for entitlement and development from South Lake Tahoe, CA to the Valley.
+            A thoughtful approach to land acquisition, focused on responsible stewardship and the future potential of your acreage.
           </p>
         </div>
 
         {/* Three-Point Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-             <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" alt="High-yield investment property in Sacramento, Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" alt="Scenic view of undeveloped land." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
              <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&fit=crop&q=80&w=600" alt="High-yield investment property detail in Sacramento, Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&fit=crop&q=80&w=600" alt="Preserving the natural potential of the land." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Preserving the natural potential of the land.</div>
              </div>
              <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1533575975618-f2b7a956beeb?auto=format&fit=crop&q=80&w=600" alt="High-yield investment interior detail in Sacramento, Northern California" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600" alt="Respectful development for the next chapter." className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-xs font-semibold">Respectful development for the next chapter.</div>
              </div>
           </div>
         </div>
+        <div className="mb-16"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Main Content Area */}
@@ -48,24 +51,7 @@ export default function RawLandPage() {
               Transforming undeveloped parcels into strategic commercial and residential real estate through deep local expertise and methodical entitlement strategies.
             </p>
 
-            {/* Callout Box */}
-            <div className="mt-16 bg-white border-l-4 border-[#52D017] p-8 rounded-r-sm">
-              <h4 className="text-sm font-bold tracking-widest text-[#52D017] uppercase mb-4">
-                The XitSource Perspective
-              </h4>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-white rounded-full border border-gray-200 flex items-center justify-center overflow-hidden">
-                  <span className="text-sm text-slate-900/80 font-bold">RP</span>
-                </div>
-                <div>
-                  <div className="font-bold text-slate-900">Ryan Peterson</div>
-                  <div className="text-xs text-slate-900/70 uppercase tracking-widest">Lead Consultant - South Lake Tahoe, CA</div>
-                </div>
-              </div>
-              <blockquote className="text-base italic text-slate-900 leading-relaxed">
-                &quot;Based in South Lake Tahoe. Specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.&quot;
-              </blockquote>
-            </div>
+
           </div>
 
           {/* Sidebar Data */}
@@ -77,7 +63,41 @@ export default function RawLandPage() {
             </div>
           </div>
         </div>
+        </div>
+
+        {/* Partner Bios */}
+        <div className="mt-24 pt-16 border-t border-gray-200/50">
+          <h2 className="text-3xl font-bold text-[#111827] mb-10 text-center">Your Partners in Transition</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* John Bio */}
+            <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors rounded-sm">
+              <div 
+                className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
+              >
+                <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors">JP</span>
+              </div>
+              <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
+              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
+                Focuses on operational stability and digital systems. John ensures that every business we transition continues to serve its community with the same integrity the original owner established.
+              </p>
+            </div>
+
+            {/* Ryan Bio */}
+            <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors rounded-sm">
+              <div 
+                className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
+              >
+                <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors">RP</span>
+              </div>
+              <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
+              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
+              <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
+                Specializes in fair, transparent valuations and real estate transitions. Ryan utilizes modern tools to provide simple, secure closing processes for owners ready for their next chapter.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   );
 }
