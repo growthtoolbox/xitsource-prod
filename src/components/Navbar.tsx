@@ -46,13 +46,16 @@ export default function Navbar() {
             </Link>
             <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Residential</Link>
-              <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
-              <Link href="/industries/self-storage" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Storage</Link>
               <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land</Link>
-              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Laundromats</Link>
+              <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
+              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
+              <Link href="/industries/self-storage" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Storage</Link>
             </div>
           </div>
           <div className="relative group">
+            <span className="cursor-default text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors inline-flex items-center">
+              Company <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </span>
             <div className="absolute left-0 mt-2 w-56 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <Link href="/partnership" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Partnership</Link>
               <Link href="/faq" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">FAQ</Link>
@@ -128,10 +131,10 @@ export default function Navbar() {
                 {openAccordion === 'acquire' && (
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
                     <Link href="/industries/residential-homes" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Residential</Link>
-                    <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
-                    <Link href="/industries/self-storage" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Storage</Link>
                     <Link href="/industries/raw-land" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Raw Land</Link>
+                    <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
                     <Link href="/resources/laundromat-business-exit-strategies" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
+                    <Link href="/industries/self-storage" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Storage</Link>
                   </div>
                 )}
               </div>
