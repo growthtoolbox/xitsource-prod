@@ -8,8 +8,9 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-12 bg-white min-h-screen text-[#111827]">
-      <header className="space-y-4 border-b border-gray-200 pb-8">
+    <div className="w-full bg-white min-h-screen text-[#111827]">
+      <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-12">
+        <header className="space-y-4 border-b border-gray-200 pb-8">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">Terms of Service</h1>
         <p className="text-[#111827] text-lg">Last Updated: March 17, 2026</p>
       </header>
@@ -74,6 +75,7 @@ export default function TermsPage() {
             If you have any questions regarding these terms, please contact us directly via the <Link href="/partnership" className="text-[#52D017] hover:underline">The Partnership</Link> section of this website.
           </p>
         </section>
+      </div>
       </div>
     </div>
   );

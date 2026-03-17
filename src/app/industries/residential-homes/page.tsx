@@ -29,7 +29,7 @@ export default function ResidentialHomesPage() {
 
       {/* Main Intro Image */}
       <div className="w-full h-64 md:h-[400px] overflow-hidden rounded-sm relative group mb-16">
-        <img src="https://images.unsplash.com/photo-1628611225892-db41e06fe9af?q=80&w=2000" alt="Sell your house fast for cash" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070" alt="National Residential Property Acquisitions" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
       </div>
 
       {/* What We Buy - Grid Layout */}

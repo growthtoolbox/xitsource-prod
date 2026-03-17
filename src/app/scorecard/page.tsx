@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 export default function ScorecardPage() {
   return (
-    <div className="container mx-auto px-6 py-24 md:py-32 max-w-4xl bg-white text-[#333333]">
-      <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+    <div className="w-full bg-white min-h-screen text-[#333333]">
+      <div className="container mx-auto px-6 py-24 md:py-32 max-w-4xl">
+        <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
         <span>←</span> Back to Resources
       </Link>
       
@@ -135,6 +136,7 @@ export default function ScorecardPage() {
         </Link>
       </div>
 
+      </div>
     </div>
   );
 }

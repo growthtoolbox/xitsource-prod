@@ -121,7 +121,7 @@ export default function Home() {
               Selling a business you&apos;ve spent decades building is a significant transition. We&apos;ve written a personal letter to owners explaining our commitment to a respectful, stress-free exit.
             </p>
             
-            <Link href="/letter" className="inline-flex items-center justify-center px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors shadow-lg shadow-[#111827]/10">
+            <Link href="/the-letter" className="inline-flex items-center justify-center px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors shadow-lg shadow-[#111827]/10">
               Read Our Letter to Owners
             </Link>
           </div>
