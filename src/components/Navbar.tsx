@@ -48,7 +48,7 @@ export default function Navbar() {
               <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Residential</Link>
               <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land</Link>
               <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
-              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
+              <Link href="/industries/laundromat" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
               <Link href="/industries/self-storage" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Storage</Link>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                     <Link href="/industries/residential-homes" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Residential</Link>
                     <Link href="/industries/raw-land" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Raw Land</Link>
                     <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
-                    <Link href="/resources/laundromat-business-exit-strategies" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
+                    <Link href="/industries/laundromat" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
                     <Link href="/industries/self-storage" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Storage</Link>
                   </div>
                 )}

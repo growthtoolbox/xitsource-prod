@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         destination: '/partnership',
         permanent: true,
       },
+      {
+        source: '/resources/laundromat-business-exit-strategies',
+        destination: '/industries/laundromat',
+        permanent: true,
+      },
     ]
   }
 };
