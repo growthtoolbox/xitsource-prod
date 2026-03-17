@@ -28,12 +28,11 @@ export default function Navbar() {
               What We Acquire <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
             </Link>
             <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Residential Portfolios</Link>
+              <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Residential</Link>
               <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land</Link>
-              <Link href="/resources/sell-rv-park-california" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks & Campgrounds</Link>
-              <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Mobile Home Communities</Link>
-              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromat Businesses</Link>
-              <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Self Storage Facilities</Link>
+              <Link href="/resources/sell-rv-park-california" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
+              <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
+              <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Storage</Link>
             </div>
           </div>
           <div className="relative group">
@@ -89,12 +88,11 @@ export default function Navbar() {
           <div className="py-2">
             <Link href="/#subsidiaries" onClick={() => setIsMobileMenuOpen(false)} className="block text-base font-semibold text-[#111827] min-h-[44px]">What We Acquire</Link>
             <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-100">
-               <Link href="/industries/residential-homes" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Residential Portfolios</Link>
+               <Link href="/industries/residential-homes" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Residential</Link>
                <Link href="/industries/raw-land" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Raw Land</Link>
-               <Link href="/resources/sell-rv-park-california" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">RV Parks & Campgrounds</Link>
-               <Link href="/resources/mobile-home-community-acquisitions" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Mobile Home Communities</Link>
-               <Link href="/resources/laundromat-business-exit-strategies" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Laundromat Businesses</Link>
-               <Link href="/resources/self-storage-facility-investments" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Self Storage Facilities</Link>
+               <Link href="/resources/sell-rv-park-california" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">RV Parks</Link>
+               <Link href="/resources/laundromat-business-exit-strategies" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Laundromats</Link>
+               <Link href="/resources/self-storage-facility-investments" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Storage</Link>
             </div>
           </div>
 
