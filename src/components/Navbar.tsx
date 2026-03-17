@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Self Storage Facilities</Link>
             </div>
           </div>
-
+          <Link href="/about" className="text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors">The Partnership</Link>
           <Link href="/resources" className="text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors">Owner Resources</Link>
         </div>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-b border-#52D017/20 px-6 py-4 flex flex-col space-y-4">
           <Link href="/sell" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-[#52D017] min-h-[44px]">Sell a Business</Link>
           <Link href="/#subsidiaries" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">What We Acquire</Link>
-
+          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">The Partnership</Link>
           <Link href="/resources" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-base font-medium text-gray-300 min-h-[44px]">Owner Resources</Link>
           <Link href="/sell" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 mt-4 text-center text-sm font-bold bg-white text-[#111827] rounded-sm min-h-[44px]">
             Request Confidential Conversation
