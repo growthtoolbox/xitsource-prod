@@ -5,12 +5,20 @@ import Link from 'next/link';
 
 const quickFaqData = [
   {
-    q: "Can I sell without a broker?",
+    q: "Are there any broker fees or commissions?",
     a: "Yes. We work directly with you. By skipping the public listing process and the brokers, you avoid the 6-10% fees and keep the equity you've spent years building. It's a cleaner, more private way to sell."
   },
   {
     q: "Is this really confidential?",
     a: "Strictly. We know how sensitive a transition like this is for your staff and your community. Our conversations stay between us—no 'For Sale' signs, no public noise, and no disruptions to your daily operations."
+  },
+  {
+    q: "How do you determine a fair price for my business?",
+    a: "We look at the core health of what you've built. Instead of just running algorithms, we evaluate the community impact, your operational history, and the true sustainable revenue. We are committed to offering a thoughtful, competitive price that respects your life's work."
+  },
+  {
+    q: "Do you only work with owners in Northern California?",
+    a: "No—distance is never an issue. While our roots and initial focus were in Northern California, we partner with owners nationwide to provide a seamless transition of stewardship."
   },
   {
     q: "How long does it take?",

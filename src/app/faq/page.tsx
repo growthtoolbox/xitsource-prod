@@ -8,12 +8,20 @@ const faqData = [
     category: "The Partnership Approach",
     questions: [
       {
-        q: "Can I sell without a broker?",
+        q: "Are there any broker fees or commissions?",
         a: "Yes. We work directly with you. By skipping the public listing process and the brokers, you avoid the 6-10% fees and keep the equity you've spent years building. It's a cleaner, more private way to sell."
       },
       {
         q: "Is this really confidential?",
         a: "Strictly. We know how sensitive a transition like this is for your staff and your community. Our conversations stay between us—no 'For Sale' signs, no public noise, and no disruptions to your daily operations."
+      },
+      {
+        q: "How do you determine a fair price for my business?",
+        a: "We look at the core health of what you've built. Instead of just running algorithms, we evaluate the community impact, your operational history, and the true sustainable revenue. We are committed to offering a thoughtful, competitive price that respects your life's work."
+      },
+      {
+        q: "Do you only work with owners in Northern California?",
+        a: "No—distance is never an issue. While our roots and initial focus were in Northern California, we partner with owners nationwide to provide a seamless transition of stewardship."
       },
       {
         q: "How long does it take?",
@@ -74,14 +82,11 @@ export default function FAQPage() {
 
       <div className="container mx-auto px-6 relative z-10 max-w-4xl">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-gray-200 bg-white/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-             Direct Answers
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#111827] mb-6">
-            The Partnership <span className="text-[#52D017]">FAQ</span>
+            The Details of Our <span className="text-[#52D017]">Partnership</span>
           </h1>
           <p className="text-[#111827] text-lg max-w-2xl mx-auto">
-            Clear, transparent answers directly from John and Ryan regarding our process and confidentiality standards.
+            Direct answers to the most common questions about how we work, how we protect your privacy, and how we ensure a smooth transition for your legacy.
           </p>
         </div>
 
