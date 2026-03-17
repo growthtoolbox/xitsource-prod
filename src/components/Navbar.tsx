@@ -26,14 +26,14 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#52D017]/20">
-      <div className="max-w-7xl mx-auto px-5 md:px-6 h-[140px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 relative z-50" onClick={closeMenu}>
+      <div className="max-w-7xl mx-auto pl-[20px] pr-5 md:pr-6 h-[140px] flex items-center justify-between">
+        <Link href="/" className="flex items-center relative z-50" onClick={closeMenu}>
           <Image 
             src="/logo.png" 
             alt="XitSource Logo" 
-            width={339} 
-            height={113} 
-            className="h-auto w-auto max-h-[113px] max-w-[calc(100vw-110px)] object-contain"
+            width={475} 
+            height={158} 
+            className="w-auto h-[65px] md:h-[90px] object-contain"
             priority
           />
         </Link>
