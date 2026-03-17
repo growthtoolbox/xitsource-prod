@@ -44,7 +44,7 @@ export default function LaundromatPage() {
         
         {/* Main Intro Image */}
         <div className="w-full h-64 md:h-[400px] overflow-hidden rounded-sm relative group">
-          <img src="https://images.unsplash.com/photo-1542385151-efd9000785a0?q=80&w=2072" alt="Sell Your Laundromat As-Is" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <img src="/laundromat-business-exit-strategies-1.jpg" alt="Sell Your Laundromat As-Is" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
         </div>
 
         {/* 2. DIRECT ANSWER BLOCK (AEO) */}

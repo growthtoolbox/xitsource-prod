@@ -9,7 +9,7 @@ const businesses = [
   { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
   { id: 3, name: "RV Parks & Campgrounds", desc: "We acquire RV parks and campgrounds nationwide, offering a direct exit for owners ready for a simpler path.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/mobile-home-park-1.jpg" },
   { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/industries/laundromat", img: "https://images.unsplash.com/photo-1517677129525-2e6f24d78571?q=80&w=2000" },
+  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/industries/laundromat", img: "/laundromat-business-exit-strategies-1.jpg" },
   { id: 6, name: "Self Storage Facilities", desc: "Maintaining the high standards of security and convenience your customers expect.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
