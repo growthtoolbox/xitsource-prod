@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto pl-[20px] pr-5 md:pr-6 h-[140px] flex items-center justify-between">
         <Link href="/" className="flex items-center relative z-50" onClick={closeMenu}>
           <Image 
-            src="/logo.png" 
+            src="/logo.jpg" 
             alt="XitSource Logo" 
             width={475} 
             height={158} 

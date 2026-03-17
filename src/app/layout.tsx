@@ -40,7 +40,7 @@ export default function RootLayout({
                   "@id": "https://xitsource.com/#service",
                   "name": "XitSource Acquisitions",
                   "url": "https://xitsource.com",
-                  "logo": "https://xitsource.com/logo.png",
+                  "logo": "https://xitsource.com/logo.jpg",
                   "description": "National Real Estate and Business Acquisition Specialists.",
                   "address": {
                     "@type": "PostalAddress",
