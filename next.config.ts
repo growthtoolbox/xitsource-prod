@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: '/industries/rv-parks',
         permanent: true,
       },
+      {
+        source: '/resources/self-storage-facility-investments',
+        destination: '/industries/self-storage',
+        permanent: true,
+      },
     ]
   },
 };

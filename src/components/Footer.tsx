@@ -25,7 +25,7 @@ export default function Footer() {
             <li><Link href="/industries/raw-land" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Raw Land</Link></li>
             <li><Link href="/industries/rv-parks" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">RV Parks</Link></li>
             <li><Link href="/resources/laundromat-business-exit-strategies" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Laundromats</Link></li>
-            <li><Link href="/resources/self-storage-facility-investments" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Storage</Link></li>
+            <li><Link href="/industries/self-storage" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Storage</Link></li>
           </ul>
         </div>
         
