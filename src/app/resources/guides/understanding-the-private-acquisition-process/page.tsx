@@ -309,7 +309,7 @@ export default function PrivateAcquisitionProcessGuidePage() {
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Leadership</p>
               <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors">Preparing Staff for Ownership Change</h3>
             </Link>
-            <Link href="/resources/guides" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
+            <Link href="/resources/guides/selling-without-a-broker" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Strategy</p>
               <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors">Selling a Business Without a Broker</h3>
             </Link>

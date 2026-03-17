@@ -43,7 +43,7 @@ export default function Footer() {
             <li><Link href="/the-letter" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">The Letter</Link></li>
             <li><Link href="/scorecard" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Seller Scorecard</Link></li>
             <li><Link href="/resources/guides" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Transition Guides</Link></li>
-            <li><Link href="/resources" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Owner Resources</Link></li>
+            <li><Link href="/faq" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">FAQ</Link></li>
             <li>
               <div className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 border border-gray-200 rounded-sm bg-white/50">
                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>

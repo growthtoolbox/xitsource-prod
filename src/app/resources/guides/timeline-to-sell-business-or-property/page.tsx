@@ -282,7 +282,7 @@ export default function TimelineToSellGuidePage() {
         <section className="pt-8">
           <h2 className="text-xl font-bold text-[#333333] mb-8 border-b border-gray-200 pb-4">Read Related Guides</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <Link href="/resources/guides" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
+            <Link href="/resources/guides/selling-without-a-broker" className="block p-6 bg-[#f9fafb] border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Strategy</p>
               <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors">Selling a Business Without a Broker</h3>
             </Link>

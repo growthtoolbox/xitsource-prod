@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: '/industries/laundromat',
         permanent: true,
       },
+      {
+        source: '/resources',
+        destination: '/resources/guides',
+        permanent: true,
+      },
     ]
   }
 };
