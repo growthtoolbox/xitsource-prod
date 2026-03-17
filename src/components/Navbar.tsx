@@ -26,14 +26,14 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-[#52D017]/20">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-[100px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 relative z-50" onClick={closeMenu}>
           <Image 
             src="/logo.png" 
             alt="XitSource Logo" 
-            width={195} 
-            height={65} 
-            className="h-[65px] w-auto"
+            width={242} 
+            height={81} 
+            className="h-[81px] w-auto"
             priority
           />
         </Link>
@@ -101,7 +101,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto w-full h-[calc(100vh-80px)] overscroll-contain">
+        <div className="lg:hidden fixed inset-0 top-[100px] bg-white z-40 overflow-y-auto w-full h-[calc(100vh-100px)] overscroll-contain">
           <div className="px-6 py-8 flex flex-col space-y-6 max-w-sm mx-auto h-full">
             
             {/* 1. Prioritized Button */}
