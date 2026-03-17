@@ -32,9 +32,9 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Company</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
-            <li><Link href="/#about" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">About</Link></li>
+            <li><Link href="/about" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">About</Link></li>
             <li><Link href="/letter" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Our Letter</Link></li>
-            <li><Link href="/#about" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Partnership</Link></li>
+            <li><Link href="/about" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Partnership</Link></li>
             <li><Link href="/faq" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">FAQ</Link></li>
           </ul>
         </div>

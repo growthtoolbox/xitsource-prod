@@ -82,16 +82,6 @@ export default function Home() {
              </Link>
           </div>
         </section>
-        {/* About Section */}
-        <section id="about" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
-          <div className="max-w-4xl mx-auto mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Based in Northern California. <br className="md:hidden"/> <span className="text-[#52D017]">Partnering Nationwide.</span></h2>
-            <p className="text-xl text-[#52D017] font-medium mb-6">Providing a professional, stress-free path to retirement for business and property owners across the U.S.</p>
-            <p className="text-[#111827] text-lg leading-relaxed max-w-3xl mx-auto">
-              The XitSource partnership, led by John Poindexter and Ryan Peterson, provides business owners with a discreet, professional alternative to public listings. While our roots are in Northern California, we leverage modern digital systems to partner with owners across the country, ensuring a seamless transition of ownership that respects your time and your legacy.
-            </p>
-          </div>
-
           {/* Sector Grid (Subsidiaries) */}
         <section id="subsidiaries" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="mb-16 border-l-4 border-[#52D017] pl-6">
@@ -120,104 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* John Bio */}
-            <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
-              <div 
-                className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
-                role="img"
-                aria-label="John Poindexter, Strategic Acquisition Partner at XitSource Roseville"
-              >
-                <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">JP</span>
-              </div>
-              <h3 className="text-2xl font-bold text-[#111827] mb-2">John Poindexter</h3>
-              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-              <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Focuses on operational stability and digital systems. John ensures that every business we transition continues to serve its community with the same integrity the original owner established.
-              </p>
-
-              <div className="flex items-center gap-4 mt-auto">
-                <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors" title="LinkedIn">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-                <a href="mailto:john@xitsource.com" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors" title="Direct Email">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                </a>
-              </div>
-            </div>
-
-            {/* Ryan Bio */}
-            <div className="bg-white border border-gray-200 p-8 flex flex-col items-center text-center group hover:border-[#52D017]/50 transition-colors">
-              <div 
-                className="w-24 h-24 bg-white rounded-full border border-gray-200 flex items-center justify-center mb-6 overflow-hidden"
-                role="img"
-                aria-label="Ryan Peterson, Real Estate Investment Partner in South Lake Tahoe, CA"
-              >
-                <span className="text-3xl text-[#111827]/80 font-bold group-hover:text-[#52D017] transition-colors" aria-hidden="true">RP</span>
-              </div>
-              <h3 className="text-2xl font-bold text-[#111827] mb-2">Ryan Peterson</h3>
-              <p className="text-[#111827]/70 text-sm uppercase tracking-widest font-semibold mb-6">Partner</p>
-              <p className="text-[#111827] text-sm leading-relaxed mb-6 flex-grow">
-                Specializes in fair, transparent valuations and real estate transitions. Ryan utilizes modern tools to provide simple, secure closing processes for owners ready for their next chapter.
-              </p>
-
-              <div className="flex items-center gap-4 mt-auto">
-                <a href="https://www.linkedin.com/company/xitsource/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors" title="LinkedIn">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-                <a href="mailto:ryan@xitsource.com" className="p-2 border border-gray-200 rounded hover:border-[#52D017] hover:text-[#52D017] text-[#111827] transition-colors" title="Direct Email">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Our Values Section */}
-          <div className="max-w-6xl mx-auto mt-32 border-t border-gray-200/50 pt-24">
-            <h2 className="text-3xl font-bold tracking-tight text-[#111827] mb-16 text-center">The Values That Guide Our Partnership</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
-              
-              {/* Value 1 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-6 text-[#111827]">
-                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#111827] mb-4">A Handshake Still Matters.</h3>
-                <p className="text-[#111827] leading-relaxed text-sm">
-                  In an era of 50-page contracts and fine print, we still believe in the power of a person&apos;s word. We do what we say we&apos;re going to do, when we say we&apos;re going to do it. Our reputation is our most important asset.
-                </p>
-              </div>
-
-              {/* Value 2 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-6 text-[#111827]">
-                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#111827] mb-4">Quiet Transitions.</h3>
-                <p className="text-[#111827] leading-relaxed text-sm">
-                  We understand that your business is your private life. We keep our conversations confidential to protect your relationships with employees, tenants, and the community. No public listings, no noise.
-                </p>
-              </div>
-
-              {/* Value 3 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-[#F9FAFB] border border-gray-200 rounded-full flex items-center justify-center mb-6 text-[#111827]">
-                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-[#111827] mb-4">Removing the Friction.</h3>
-                <p className="text-[#111827] leading-relaxed text-sm">
-                  Selling a legacy shouldn&apos;t be a second full-time job. We use modern systems to handle the heavy lifting and paperwork so you can stay focused on your family and your future.
-                </p>
-              </div>
-            </div>
-          </div>          {/* A Letter to Owners Teaser */}
+          {/* A Letter to Owners Teaser */}
           <div className="max-w-4xl mx-auto mt-24 bg-[#F9FAFB] border border-gray-200 p-8 md:p-12 rounded-sm shadow-sm relative text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#111827] mb-6">A Personal Note on Your Next Chapter</h2>
             <div className="w-16 h-1 bg-[#52D017] mx-auto rounded-full mb-8"></div>
@@ -230,10 +123,6 @@ export default function Home() {
               Read Our Letter to Owners
             </Link>
           </div>
-
-        </section>
-
-
 
         
 
