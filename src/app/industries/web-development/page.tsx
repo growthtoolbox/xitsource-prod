@@ -79,7 +79,7 @@ export default function WebDevelopmentPage() {
                   </div>
                 </div>
                 <blockquote className="text-base italic text-[#111827] leading-relaxed">
-                  &quot;Based in Roseville, CA. Specializes in operations and strategic scaling, finance, business strategy, and marketing. He effectively bridges the gap between digital growth and physical asset structuring, collaborating closely with owners to optimize organizational transitions and identify lucrative off-market growth opportunities.&quot;
+                  &quot;Leading our operational philosophy, ensuring a seamless handover that protects the foundation you've built. We focus on clear execution, preserving relationships, and continuing your legacy without disruption.&quot;
                 </blockquote>
               </div>
             </div>

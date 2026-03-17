@@ -5,28 +5,20 @@ import Link from 'next/link';
 
 const quickFaqData = [
   {
-    q: "Is this conversation actually confidential?",
-    a: "Absolutely. We understand that your employees, tenants, and competitors don't need to know about a potential transition until the deal is done. Discretion is our first priority."
+    q: "Can I sell without a broker?",
+    a: "Yes. We work directly with you. By skipping the public listing process and the brokers, you avoid the 6-10% fees and keep the equity you've spent years building. It's a cleaner, more private way to sell."
   },
   {
-    q: "Do I have to pay a brokerage commission?",
-    a: "No. We are direct principals, not brokers. Because you are selling directly to us, you eliminate the standard 6–10% commission, putting more of your hard-earned equity in your pocket."
+    q: "Is this really confidential?",
+    a: "Strictly. We know how sensitive a transition like this is for your staff and your community. Our conversations stay between us—no 'For Sale' signs, no public noise, and no disruptions to your daily operations."
   },
   {
-    q: "How do you determine the value of my business or property?",
-    a: "We use modern data analytics and AI-assisted market oversight to provide a fair, transparent valuation based on current market performance and the unique foundation you’ve built."
+    q: "How long does it take?",
+    a: "We move at your pace. Because you are dealing directly with John and Ryan—not a corporate committee—we can often close in 30 to 90 days. We focus on a simple, no-headache process that respects your timeline."
   },
   {
-    q: "Do I need to be located in Northern California to work with you?",
-    a: "No. While our roots are in NorCal, we partner with owners across the U.S. Our digital systems allow us to handle the entire process remotely and respectfully, regardless of geography."
-  },
-  {
-    q: "How long does the typical closing process take?",
-    a: "Because we are a private partnership and not a corporate committee, we move quickly. A typical closing ranges from 30 to 90 days, depending on the complexity of the asset."
-  },
-  {
-    q: "What happens to my tenants or employees after the sale?",
-    a: "We view ourselves as stewards of your legacy. Our goal is operational stability. we work to ensure a seamless transition that protects the reputation you’ve built in your community."
+    q: "What happens to my legacy/residents?",
+    a: "This is the core of our partnership. We aren't here to flip a property; we are here to be the next stewards of what you've built. Whether it's a mobile home park or a local business, we prioritize stability for the people involved."
   }
 ];
 
@@ -93,8 +85,8 @@ export default function QuickFAQ() {
         </div>
         
         <div className="text-center">
-           <Link href="/faq" className="text-sm font-semibold text-[#52D017] hover:text-[#111827] transition-colors tracking-widest uppercase">
-              View All FAQs →
+           <Link href="/about" className="text-sm font-semibold text-[#52D017] hover:text-[#111827] transition-colors tracking-widest uppercase">
+              The Partnership →
            </Link>
         </div>
       </div>
