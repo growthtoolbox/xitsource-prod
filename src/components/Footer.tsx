@@ -33,7 +33,7 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Company</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/letter" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">The Letter</Link></li>
-            <li><Link href="/about" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">The Partnership</Link></li>
+            <li><Link href="/partnership" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">The Partnership</Link></li>
             <li><Link href="/faq" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">FAQ</Link></li>
           </ul>
         </div>

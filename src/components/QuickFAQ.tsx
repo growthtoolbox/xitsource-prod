@@ -57,12 +57,10 @@ export default function QuickFAQ() {
 
   return (
     <section className="container mx-auto px-6 py-24 border-t border-gray-200/50">
-      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-      </head>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#111827] mb-4">Frequently Asked Questions</h2>
@@ -93,7 +91,7 @@ export default function QuickFAQ() {
         </div>
         
         <div className="text-center">
-           <Link href="/about" className="text-sm font-semibold text-[#52D017] hover:text-[#111827] transition-colors tracking-widest uppercase">
+           <Link href="/partnership" className="text-sm font-semibold text-[#52D017] hover:text-[#111827] transition-colors tracking-widest uppercase">
               The Partnership →
            </Link>
         </div>

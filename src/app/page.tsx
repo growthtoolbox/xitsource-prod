@@ -173,13 +173,17 @@ export default function Home() {
                   <textarea name="details" required rows={4} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-#52D017 transition-colors resize-none"></textarea>
                 </div>
 
-                <div className="bg-white/50 p-4 border border-gray-200/80 rounded-sm">
-                  <label className="flex items-start gap-3 cursor-pointer">
-                    <input type="checkbox" required className="mt-1 bg-white border-gray-200 rounded-sm accent-#52D017" />
-                    <span className="text-xs text-[#111827] leading-relaxed">
-                      <strong>Notice at Collection:</strong> By submitting this form, you consent to AI-assisted communications (Voice/Chat) for fulfilling this request per our <Link href="/privacy" className="text-#52D017 hover:underline">Privacy Policy</Link>. You acknowledge that XitSource uses AI to parse and respond to inquiries.
-                    </span>
-                  </label>
+                <div className="bg-white/50 p-4 border border-gray-200/80 rounded-sm flex items-start gap-3">
+                  <input id="ai-consent" type="checkbox" required className="mt-1 bg-white border-gray-200 rounded-sm accent-#52D017 cursor-pointer" />
+                  <div className="text-xs text-[#111827] leading-relaxed">
+                    <label htmlFor="ai-consent" className="cursor-pointer">
+                      <strong>Notice at Collection:</strong> By submitting this form, you consent to AI-assisted communications (Voice/Chat) for fulfilling this request per our{' '}
+                    </label>
+                    <Link href="/privacy" className="text-#52D017 hover:underline">Privacy Policy</Link>
+                    <label htmlFor="ai-consent" className="cursor-pointer">
+                      . You acknowledge that XitSource uses AI to parse and respond to inquiries.
+                    </label>
+                  </div>
                 </div>
 
                 <button 

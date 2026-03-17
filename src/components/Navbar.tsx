@@ -41,7 +41,7 @@ export default function Navbar() {
             </span>
             <div className="absolute left-0 mt-2 w-56 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <Link href="/letter" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Letter</Link>
-              <Link href="/about" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Partnership</Link>
+              <Link href="/partnership" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">The Partnership</Link>
               <Link href="/faq" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">FAQ</Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <span className="block text-base font-semibold text-[#111827] min-h-[44px]">Company</span>
             <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-100">
                <Link href="/letter" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">The Letter</Link>
-               <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">The Partnership</Link>
+               <Link href="/partnership" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">The Partnership</Link>
                <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">FAQ</Link>
             </div>
           </div>

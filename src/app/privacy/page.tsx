@@ -6,10 +6,10 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-16">
+    <div className="max-w-4xl mx-auto px-6 py-20 pb-32 space-y-16 bg-white min-h-screen">
       
       <header className="space-y-4 border-b border-gray-200 pb-8">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">Privacy Policy & California Disclosures</h1>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#111827]">Privacy Policy</h1>
         <p className="text-[#111827] text-lg">Last Updated: March 14, 2026</p>
         <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-#52D017/30 rounded-sm bg-#52D017/10 text-#52D017 text-sm font-medium">
            CCPA / CPRA Compliant Notice
@@ -18,14 +18,14 @@ export default function PrivacyPage() {
 
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold text-[#111827]">Notice at Collection</h2>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-[#111827] leading-relaxed">
           XitSource and its subsidiaries collect Personal Information to provide services, enhance your experience, and comply with legal obligations. By using our services, you consent to the data collection practices described herein.
         </p>
       </section>
 
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold text-[#111827]">Categories of Data Collected</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-300">
+        <ul className="list-disc pl-6 space-y-3 text-[#111827]">
           <li><strong>Identifiers:</strong> Name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social security number, driver&apos;s license number, passport number, or other similar identifiers.</li>
           <li><strong>Commercial information:</strong> Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</li>
           <li><strong>Biometric information:</strong> Genetic, physiological, biological, or behavioral characteristics (applicable primarily to CyberDyne and Chroma Genetics).</li>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold text-[#111827]">AI Interaction Disclosure (SB 1001)</h2>
         <div className="border border-gray-200 bg-white p-6 rounded-sm">
-          <p className="text-gray-300 leading-relaxed mb-4">
+          <p className="text-[#111827] leading-relaxed mb-4">
             In compliance with California SB 1001, users are hereby notified that they are communicating with Artificial Intelligence. AI and automated systems are utilized across this platform for customer service, predictive modeling, and lead qualification.
           </p>
           <p className="text-#52D017 text-sm font-mono border-l-2 border-#52D017 pl-4">
@@ -47,11 +47,11 @@ export default function PrivacyPage() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-[#111827]" id="california-choices">Your California Privacy Rights</h2>
-        <p className="text-gray-300 leading-relaxed mb-4">
+        <h2 className="text-2xl font-semibold text-[#111827]" id="california-choices">California Residents Privacy Rights</h2>
+        <p className="text-[#111827] leading-relaxed mb-4">
           Under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA), California residents have specific rights regarding their personal information:
         </p>
-        <ul className="list-disc pl-6 space-y-3 text-gray-300 mb-6">
+        <ul className="list-disc pl-6 space-y-3 text-[#111827] mb-6">
           <li><strong>Right to Know:</strong> You may request disclosure of the specific pieces and categories of personal information we have collected about you, the categories of sources for that information, the business or commercial purposes for collecting the information, and the categories of third parties with which the information was shared.</li>
           <li><strong>Right to Delete:</strong> You have the right to request that we delete your personal information (with certain exceptions).</li>
           <li><strong>Right to Correct:</strong> You have the right to request the correction of inaccurate personal information.</li>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
       <section className="space-y-6 relative" id="do-not-sell">
         <div className="absolute -left-4 top-0 w-1 h-full bg-#52D017/50 rounded-full hidden md:block"></div>
         <h2 className="text-2xl font-semibold text-[#111827]">Do Not Sell or Share My Personal Information</h2>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-[#111827] leading-relaxed">
           XitSource does not sell personal information for monetary value. However, we may &quot;share&quot; data with analytics or advertising partners as defined by the CPRA. 
         </p>
         <div className="mt-8">
