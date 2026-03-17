@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: '/sell',
         permanent: true,
       },
+      {
+        source: '/resources/sell-rv-park-california',
+        destination: '/industries/rv-parks',
+        permanent: true,
+      },
     ]
   },
 };

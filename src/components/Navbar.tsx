@@ -47,7 +47,7 @@ export default function Navbar() {
             <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <Link href="/industries/residential-homes" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Residential</Link>
               <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land</Link>
-              <Link href="/resources/sell-rv-park-california" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
+              <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks</Link>
               <Link href="/resources/laundromat-business-exit-strategies" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
               <Link href="/resources/self-storage-facility-investments" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Storage</Link>
             </div>
@@ -132,7 +132,7 @@ export default function Navbar() {
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
                     <Link href="/industries/residential-homes" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Residential</Link>
                     <Link href="/industries/raw-land" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Raw Land</Link>
-                    <Link href="/resources/sell-rv-park-california" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
+                    <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
                     <Link href="/resources/laundromat-business-exit-strategies" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
                     <Link href="/resources/self-storage-facility-investments" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Storage</Link>
                   </div>
@@ -169,6 +169,7 @@ export default function Navbar() {
                 {openAccordion === 'resources' && (
                   <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
                     <Link href="/scorecard" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Seller Scorecard</Link>
+                    <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks</Link>
                     <Link href="/resources/guides" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Transition Guides</Link>
                     <Link href="/resources" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Owner Resources</Link>
                   </div>
