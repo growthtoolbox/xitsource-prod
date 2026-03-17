@@ -1,62 +1,48 @@
-import QuickFAQ from '@/components/QuickFAQ';
 import Link from 'next/link';
 
 export default function ResourcesPage() {
   return (
-    <div className="min-h-screen bg-white text-[#111827] py-24">
-      {/* Background Gradients */}
-      <div className="fixed top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-40">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[500px] bg-cyan-900/10 rounded-full blur-[120px]"></div>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10 max-w-5xl">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-gray-200 bg-white/50 backdrop-blur-md mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-             Seller Concierge
+    <div className="min-h-screen bg-white text-[#111827] py-24 pb-32">
+      <div className="container mx-auto px-6 max-w-5xl">
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+             Owner Portal
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#111827] mb-6">
-            Resources for a <span className="text-[#52D017]">Smooth Transition</span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#111827] mb-6">
+            Tools for <span className="text-[#52D017]">Business Owners</span>
           </h1>
-          <p className="text-[#111827] text-lg max-w-2xl mx-auto">
-            XitSource provides educational resources for owners considering an exit. Explore our guides on succession planning, stewardship, and navigating private acquisitions with simplicity.
+          <p className="text-xl text-[#111827] leading-relaxed max-w-2xl mx-auto">
+            Practical instruments to help you evaluate your position and consider your next steps with confidence.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-          <article className="bg-white border border-gray-200 p-8 rounded-sm group hover:border-[#52D017]/50 transition-colors flex flex-col h-full relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-[#52D017] duration-500"></div>
-             <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Guide</p>
-             <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-[#52D017] transition-colors">How to Sell an RV Park in California</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">A comprehensive look at valuing, preparing, and transitioning a mobile home or RV community with a focus on succession and tenant stewardship.</p>
-             <Link href="/resources/sell-rv-park-california" className="text-[#52D017] text-sm font-semibold flex items-center mt-auto">
-               Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <article className="bg-[#111827] text-white p-10 md:p-12 rounded-sm group relative overflow-hidden flex flex-col h-full border border-gray-800">
+             <div className="absolute top-0 right-0 w-64 h-64 bg-[#52D017]/5 rounded-full blur-[80px] group-hover:bg-[#52D017]/10 transition-colors"></div>
+             
+             <p className="text-xs font-bold text-[#52D017] uppercase tracking-widest mb-6 border-b border-[#52D017]/20 pb-4 inline-block">Primary Feature</p>
+             <h2 className="text-3xl font-bold text-white mb-6">The Seller Scorecard</h2>
+             <p className="text-gray-300 text-lg leading-relaxed mb-10 flex-grow">
+               A confidential, automated diagnostic tool that scores the structural health, operational readiness, and transition viability of your business or property. Real answers in 5 minutes.
+             </p>
+             <Link href="/scorecard" className="inline-flex w-fit items-center justify-center px-8 py-4 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg">
+               Take the Scorecard <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
              </Link>
           </article>
 
-          <article className="bg-white border border-gray-200 p-8 rounded-sm group hover:border-white/50 transition-colors flex flex-col h-full relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-white duration-500"></div>
-             <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Guide</p>
-             <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-[#111827] transition-colors">Exiting a Laundromat Business: A Step-by-Step Guide</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Understanding equipment realities, leases, and simplified cash-flow conversations for owner-operated facilities.</p>
-             <Link href="/resources/exit-laundromat-guide" className="text-[#111827] text-sm font-semibold flex items-center mt-auto">
-               Read Guide <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-             </Link>
-          </article>
-
-          <article className="bg-white border border-gray-200 p-8 rounded-sm group hover:border-cyan-500/50 transition-colors flex flex-col h-full relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform origin-left bg-cyan-500 duration-500"></div>
-             <p className="text-xs font-bold text-[#111827]/70 uppercase tracking-widest mb-4">Perspective</p>
-             <h2 className="text-xl font-bold text-[#111827] mb-4 group-hover:text-cyan-500 transition-colors">Preparing Raw Land for Development Sale</h2>
-             <p className="text-[#111827] text-sm leading-relaxed mb-8 flex-grow">Strategic steps to navigate development risks and position your parcel for a simple, direct acquisition.</p>
-             <Link href="/resources/raw-land-development-perspective" className="text-cyan-500 text-sm font-semibold flex items-center mt-auto">
-               Read Perspective <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+          <article className="bg-white border border-gray-200 p-10 md:p-12 rounded-sm group hover:border-gray-300 transition-colors flex flex-col h-full">
+             <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-6 border-b border-gray-100 pb-4 inline-block">Foundational Context</p>
+             <h2 className="text-3xl font-bold text-[#111827] mb-6">The Letter to Owners</h2>
+             <p className="text-[#111827] text-lg leading-relaxed mb-10 flex-grow">
+               Read a direct message from John and Ryan detailing why XitSource was founded, how we view modern stewardship, and why the private acquisition network is replacing traditional brokerage listings.
+             </p>
+             <Link href="/letter" className="inline-flex items-center text-[#52D017] text-lg font-semibold mt-auto group-hover:text-[#45b312] transition-colors">
+               Read The Letter <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
              </Link>
           </article>
         </div>
 
       </div>
-      
-      <QuickFAQ />
     </div>
   );
 }

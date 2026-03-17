@@ -42,7 +42,7 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Resources</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/scorecard" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Seller Scorecard</Link></li>
-            <li><Link href="/resources" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Transition Guides</Link></li>
+            <li><Link href="/resources/guides" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Transition Guides</Link></li>
             <li><Link href="/resources" className="hover:text-[#52D017] min-h-[44px] inline-flex items-center">Owner Resources</Link></li>
             <li>
               <div className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 border border-gray-200 rounded-sm bg-white/50">

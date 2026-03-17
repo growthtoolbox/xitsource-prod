@@ -52,7 +52,7 @@ export default function Navbar() {
             </Link>
             <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <Link href="/scorecard" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Seller Scorecard</Link>
-              <Link href="/resources" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Transition Guides</Link>
+              <Link href="/resources/guides" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Transition Guides</Link>
               <Link href="/resources" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Owner Resources</Link>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Navbar() {
             <Link href="/resources" onClick={() => setIsMobileMenuOpen(false)} className="block text-base font-semibold text-[#111827] min-h-[44px]">Resources</Link>
             <div className="pl-4 mt-2 space-y-2 border-l-2 border-gray-100">
                <Link href="/scorecard" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Seller Scorecard</Link>
-               <Link href="/resources" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Transition Guides</Link>
+               <Link href="/resources/guides" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Transition Guides</Link>
                <Link href="/resources" onClick={() => setIsMobileMenuOpen(false)} className="block py-2 text-sm text-gray-600">Owner Resources</Link>
             </div>
           </div>
