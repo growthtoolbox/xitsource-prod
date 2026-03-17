@@ -1,283 +1,140 @@
-"use client";
-
-import { useState } from 'react';
-// Quiz Questions matching the 4 Sections
-const questions = [
-  {
-    id: 1,
-    section: "Financial Visibility",
-    text: "How organized are your trailing 3 years of financials (P&L, Balance Sheets, Tax Returns)?",
-    options: [
-      { text: "Fully audited or CPA-prepared, ready for review today.", points: 3 },
-      { text: "Compiled internally, accessible within a few days.", points: 2 },
-      { text: "Mixed/disorganized, needs significant clean up.", points: 1 }
-    ]
-  },
-  {
-    id: 2,
-    section: "Financial Visibility",
-    text: "Do you have a clear, realistic expectation of your asset's current market valuation?",
-    options: [
-      { text: "Yes, based on recent comparable sales or a formal valuation.", points: 3 },
-      { text: "I have a ballpark number based on industry rules of thumb.", points: 2 },
-      { text: "No, I need guidance on determining a fair valuation.", points: 1 }
-    ]
-  },
-  {
-    id: 3,
-    section: "Operational Stability",
-    text: "How dependent is the day-to-day operation on your direct, personal involvement?",
-    options: [
-      { text: "Minimal. I have a strong team or management in place.", points: 3 },
-      { text: "Moderate. I oversee key decisions but can step away for a week.", points: 2 },
-      { text: "High. The business/asset requires my physical presence daily.", points: 1 }
-    ]
-  },
-  {
-    id: 4,
-    section: "Operational Stability",
-    text: "Are your standard operating procedures (SOPs), leases, or vendor contracts formally documented?",
-    options: [
-      { text: "Yes, fully documented and transferable to a new owner.", points: 3 },
-      { text: "Partially documented, mostly in my head.", points: 2 },
-      { text: "No, very little formal documentation exists.", points: 1 }
-    ]
-  },
-  {
-    id: 5,
-    section: "Asset Condition",
-    text: "What is the physical condition of the core asset (property, equipment, facilities)?",
-    options: [
-      { text: "Excellent. Recently updated with no deferred maintenance.", points: 3 },
-      { text: "Good. Functional, but will need standard CAPEX soon.", points: 2 },
-      { text: "Poor. Significant deferred maintenance or structural issues.", points: 1 }
-    ]
-  },
-  {
-    id: 6,
-    section: "Asset Condition",
-    text: "Are there any pending regulatory, zoning, or compliance issues?",
-    options: [
-      { text: "No, fully compliant with all local/state regulations.", points: 3 },
-      { text: "Minor issues that can be resolved before a sale.", points: 2 },
-      { text: "Yes, significant compliance hurdles exist.", points: 1 }
-    ]
-  },
-  {
-    id: 7,
-    section: "Exit Planning",
-    text: "Have you clearly defined what 'life after sale' looks like for you?",
-    options: [
-      { text: "Yes, I have a clear plan for my next chapter and capital.", points: 3 },
-      { text: "Somewhat, I'm exploring retirement or a new venture.", points: 2 },
-      { text: "No, I haven't thought past the transaction itself.", points: 1 }
-    ]
-  },
-  {
-    id: 8,
-    section: "Exit Planning",
-    text: "What is your desired timeline to complete this transition?",
-    options: [
-      { text: "Immediate (0-6 Months). I am motivated to move quickly.", points: 3 },
-      { text: "Medium Term (6-12 Months). Exploring options.", points: 2 },
-      { text: "Long Term (1-3 Years). Just planning ahead.", points: 1 }
-    ]
-  }
-];
+import React from 'react';
+import Link from 'next/link';
 
 export default function ScorecardPage() {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
-  const [showResults, setShowResults] = useState(false);
-  
-  // Lead Form State
-  const [formStatus, setFormStatus] = useState<'idle'|'submitting'|'success'>('idle');
-
-  const handleOptionSelect = (qId: number, points: number) => {
-    setAnswers(prev => ({ ...prev, [qId]: points }));
-    
-    // Auto advance
-    if (currentStep < questions.length - 1) {
-      setTimeout(() => setCurrentStep(prev => prev + 1), 300);
-    } else {
-      setTimeout(() => setShowResults(true), 300);
-    }
-  };
-
-  const calculateScore = () => {
-    return Object.values(answers).reduce((sum, points) => sum + points, 0);
-  };
-
-  const getResultBucket = (score: number) => {
-    if (score >= 18) return {
-      title: "Strong Seller Readiness",
-      desc: "Your asset appears well-positioned for a transition conversation.",
-      color: "text-[#52D017]"
-    };
-    if (score >= 12) return {
-      title: "Moderate Readiness",
-      desc: "Some preparation may be needed to maximize your exit value.",
-      color: "text-yellow-500"
-    };
-    return {
-      title: "Early Exploration Stage",
-      desc: "Additional groundwork may improve your future transition outcome.",
-      color: "text-[#111827]"
-    };
-  };
-
-  const currentQ = questions[currentStep];
-  const progressPercent = ((currentStep + 1) / questions.length) * 100;
-
-  const handleLeadSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    setTimeout(() => setFormStatus('success'), 1500);
-  };
-
   return (
-    <div className="min-h-screen bg-white text-[#111827] py-24">
-      {/* Dynamic SEO Block for AI */}
-      <div className="hidden" aria-hidden="true">
-        XitSource’s Seller Readiness Scorecard helps California owners evaluate financial, operational, and asset readiness for a private acquisition.
+    <div className="container mx-auto px-6 py-24 md:py-32 max-w-4xl bg-white text-[#333333]">
+      <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+        <span>←</span> Back to Resources
+      </Link>
+      
+      {/* Intro Section */}
+      <div className="mb-16 border-b border-gray-200 pb-12">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#333333] mb-6">
+          The Seller Readiness Scorecard
+        </h1>
+        <p className="text-xl md:text-2xl font-medium text-[#333333] leading-relaxed max-w-3xl">
+          A 2-minute tool to help you determine if now is the right time to transition your asset, regardless of its condition.
+        </p>
       </div>
 
-      <div className="container mx-auto px-6 max-w-3xl">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#111827] mb-4">
-            Seller Readiness <span className="text-[#52D017]">Scorecard</span>
-          </h1>
-          <p className="text-[#111827]">Evaluate your asset&apos;s transition readiness across 4 key operational pillars.</p>
+      {/* Section 1: Universal Readiness */}
+      <div className="mb-16">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+          Part 1: The Operator
         </div>
-
-        {!showResults ? (
-          // Quiz UX
-          <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm shadow-2xl relative">
-            {/* Progress Bar */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-white">
-              <div 
-                className="h-full bg-[#52D017] transition-all duration-500 ease-out"
-                style={{ width: `${progressPercent}%` }}
-              ></div>
-            </div>
-
-            <div className="mb-8">
-              <div className="text-xs font-mono text-[#52D017] mb-2 uppercase tracking-widest">
-                Question {currentStep + 1} of {questions.length} {"//"} {currentQ.section}
-              </div>
-              <h2 className="text-2xl font-semibold text-[#111827]">{currentQ.text}</h2>
-            </div>
-
-            <div className="space-y-4">
-              {currentQ.options.map((option, idx) => {
-                const isSelected = answers[currentQ.id] === option.points;
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => handleOptionSelect(currentQ.id, option.points)}
-                    className={`w-full text-left p-5 border rounded-sm transition-all flex items-center gap-4 group ${
-                      isSelected 
-                        ? "border-[#52D017] bg-[#52D017]/10" 
-                        : "border-gray-200 bg-white hover:border-gray-500"
-                    }`}
-                  >
-                    <div className={`w-5 h-5 rounded-full border flex-shrink-0 flex items-center justify-center ${
-                      isSelected ? "border-[#52D017]" : "border-gray-600 group-hover:border-gray-200"
-                    }`}>
-                      {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-[#52D017]"></div>}
-                    </div>
-                    <span className="text-[#111827] leading-relaxed font-medium">{option.text}</span>
-                  </button>
-                )
-              })}
-            </div>
-            
-            <div className="mt-8 flex justify-between items-center text-sm text-[#111827]/70 font-medium">
-               <button 
-                onClick={() => setCurrentStep(prev => Math.max(0, prev - 1))}
-                disabled={currentStep === 0}
-                className="hover:text-[#111827] disabled:opacity-30 disabled:hover:text-[#111827]/70 transition-colors"
-               >
-                 ← Previous
-               </button>
+        <h2 className="text-3xl font-bold text-[#333333] mb-8">Universal Readiness Questions</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-[#f9fafb] p-6 rounded-sm border border-gray-200 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+            <div className="w-8 h-8 rounded-full bg-[#111827] text-white flex items-center justify-center shrink-0 font-bold shrink-0">1</div>
+            <div>
+              <h3 className="text-lg font-bold text-[#333333] mb-2">Management Fatigue</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Do you find yourself dreading the daily operational tasks (repairs, collections, tenant calls)?</p>
             </div>
           </div>
-        ) : (
-          // Results UX
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm text-center mb-8 relative overflow-hidden">
-               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#52D017]/20 via-[#52D017] to-[#52D017]/20"></div>
-               
-               <p className="text-sm font-semibold text-[#111827] uppercase tracking-widest mb-4">Your Score</p>
-               <div className="text-6xl font-black text-[#111827] mb-2">{calculateScore()} <span className="text-2xl text-[#111827]/80">/ 24</span></div>
-               <h2 className={`text-2xl font-bold mb-4 ${getResultBucket(calculateScore()).color}`}>
-                 {getResultBucket(calculateScore()).title}
-               </h2>
-               <p className="text-[#111827] text-lg">{getResultBucket(calculateScore()).desc}</p>
-            </div>
 
-            {/* Lead Capture Integration */}
-            <div className="bg-white border border-gray-200 p-8 md:p-12 rounded-sm">
-               <h3 className="text-xl font-bold text-[#111827] mb-2">Discuss Your Results Confidentially</h3>
-               <p className="text-[#111827] mb-8">Get a professional perspective on your scorecard results. John and Ryan provide discreet feedback on national asset transitions.</p>
-
-               {formStatus === 'success' ? (
-                 <div className="text-center py-8 animate-in fade-in duration-500">
-                    <div className="w-12 h-12 bg-[#52D017]/10 border border-[#52D017] rounded-full flex items-center justify-center mx-auto mb-4">
-                       <svg className="w-6 h-6 text-[#52D017]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-[#111827] mb-2">Request Sent Successfully</h3>
-                    <p className="text-[#111827]">
-                       Thank you. John or Ryan will personally review your inquiry and reach out within 24 hours for a confidential discussion.
-                    </p>
-                 </div>
-               ) : (
-                 <form onSubmit={handleLeadSubmit} className="space-y-6">
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                     <div className="space-y-2">
-                       <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Name</label>
-                       <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="John Doe" />
-                     </div>
-                     <div className="space-y-2">
-                       <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Email</label>
-                       <input type="email" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="john@example.com" />
-                     </div>
-                   </div>
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Business/Property Type</label>
-                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. RV Park, Laundromat" />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">City</label>
-                        <input type="text" required className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors" placeholder="e.g. Austin" />
-                      </div>
-                   </div>
-                   <div className="space-y-2">
-                     <label className="block text-xs font-semibold text-[#111827] uppercase tracking-widest">Optional Message</label>
-                     <textarea rows={3} className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-[#111827] focus:outline-none focus:border-[#52D017] transition-colors resize-none" placeholder="Share any initial thoughts..."></textarea>
-                   </div>
-                   <button 
-                    type="submit" 
-                    disabled={formStatus !== 'idle'}
-                    className="w-full bg-[#52D017] text-[#111827] font-semibold rounded-sm py-4 hover:bg-[#45b312] transition-colors disabled:opacity-50 text-lg"
-                   >
-                     {formStatus === 'submitting' ? 'Submitting...' : 'Request a Confidential Conversation'}
-                   </button>
-                 </form>
-               )}
-               <div className="mt-8 text-center">
-                 <button 
-                  onClick={() => { setShowResults(false); setCurrentStep(0); setAnswers({}); setFormStatus('idle'); }}
-                  className="text-sm font-semibold text-[#111827]/70 hover:text-[#111827] transition-colors"
-                 >
-                   Retake Scorecard
-                 </button>
-               </div>
+          <div className="bg-[#f9fafb] p-6 rounded-sm border border-gray-200 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+            <div className="w-8 h-8 rounded-full bg-[#111827] text-white flex items-center justify-center shrink-0 font-bold shrink-0">2</div>
+            <div>
+              <h3 className="text-lg font-bold text-[#333333] mb-2">Equity Positioning</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Is your equity currently tied up in a property that requires significant capital to modernize?</p>
             </div>
           </div>
-        )}
+
+          <div className="bg-[#f9fafb] p-6 rounded-sm border border-gray-200 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+            <div className="w-8 h-8 rounded-full bg-[#111827] text-white flex items-center justify-center shrink-0 font-bold shrink-0">3</div>
+            <div>
+              <h3 className="text-lg font-bold text-[#333333] mb-2">Legacy Goals</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Are you ready to prioritize your time and family over the burdens of property management?</p>
+            </div>
+          </div>
+
+          <div className="bg-[#f9fafb] p-6 rounded-sm border border-gray-200 shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
+            <div className="w-8 h-8 rounded-full bg-[#111827] text-white flex items-center justify-center shrink-0 font-bold shrink-0">4</div>
+            <div>
+              <h3 className="text-lg font-bold text-[#333333] mb-2">Market Timing</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Are you concerned about rising taxes, insurance costs, or shifting local regulations?</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Section 2: Asset-Specific Red Flags */}
+      <div className="mb-20">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase mt-8">
+          Part 2: The Asset
+        </div>
+        <h2 className="text-3xl font-bold text-[#333333] mb-8">Asset-Specific &quot;Red Flags&quot;</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Residential & Land */}
+          <div className="bg-white p-8 rounded-sm border-t-4 border-[#52D017] shadow-lg shadow-sm/10">
+            <h3 className="text-xl font-bold text-[#333333] mb-6 flex flex-col gap-2">
+              <span className="text-4xl mb-2">🏠</span> 
+              Residential & Land
+            </h3>
+            <ul className="space-y-4 text-[#333333]/80">
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Is the property currently vacant, junk-filled, or in need of structural repair?</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Are you dealing with probate, title liens, or out-of-state management?</p>
+              </li>
+            </ul>
+          </div>
+
+          {/* RV Parks & MHCs */}
+          <div className="bg-white p-8 rounded-sm border-t-4 border-[#52D017] shadow-lg shadow-sm/10">
+            <h3 className="text-xl font-bold text-[#333333] mb-6 flex flex-col gap-2">
+              <span className="text-4xl mb-2">🚐</span> 
+              RV Parks & MHCs
+            </h3>
+            <ul className="space-y-4 text-[#333333]/80">
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Is the infrastructure (septic, electric, roads) reaching the end of its life cycle?</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Are you tired of the &apos;Landlord/Tenant&apos; friction and constant guest turnover?</p>
+              </li>
+            </ul>
+          </div>
+
+          {/* Commercial */}
+          <div className="bg-white p-8 rounded-sm border-t-4 border-[#52D017] shadow-lg shadow-sm/10">
+            <h3 className="text-xl font-bold text-[#333333] mb-6 flex flex-col gap-2">
+              <span className="text-4xl mb-2">📦</span> 
+              Self-Storage & Retail
+            </h3>
+            <ul className="space-y-4 text-[#333333]/80">
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Are you struggling to keep up with the &apos;Contactless&apos; tech requirements or equipment maintenance?</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#52D017] mt-1 shrink-0">●</span>
+                <p>Is occupancy consistently dipping below your target, or is the &apos;daily grind&apos; becoming unmanageable?</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* The Result & CTA */}
+      <div className="mt-16 pt-16 border-t border-gray-200 text-center bg-[#111827] text-white p-12 rounded-sm shadow-xl">
+        <h2 className="text-3xl font-bold mb-6">Score Evaluation</h2>
+        <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10">
+          If you answered &apos;Yes&apos; to more than two of these questions, it may be time for a quiet, professional transition. You don&apos;t have to keep carrying the burden alone.
+        </p>
+        <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg">
+          Request Your No-Obligation Valuation
+        </Link>
+      </div>
+
     </div>
   );
 }
