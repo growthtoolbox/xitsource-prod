@@ -1,82 +1,120 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
 
 export default function ResidentialHomesPage() {
   return (
-    <div className="container mx-auto px-6 py-24 md:py-32 bg-white text-slate-900">
-      <div className="max-w-4xl mx-auto">
-        {/* Backlink */}
-        <Link href="/#subsidiaries" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
-          <span>←</span> Return to Partnership Hub
+    <div className="container mx-auto px-6 py-24 md:py-32 max-w-5xl bg-white text-[#333333]">
+      <Link href="/#subsidiaries" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+        <span>←</span> Back to Industries
+      </Link>
+      
+      {/* Hero Section */}
+      <div className="mb-16 border-b border-gray-200 pb-12">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#333333] mb-6">
+          We Buy Residential Property As-Is.
+        </h1>
+        <p className="text-xl md:text-2xl font-medium text-[#333333] leading-relaxed max-w-3xl">
+          No cleaning. No repairs. No showings. Just a straightforward path to a quiet closing.
+        </p>
+      </div>
+
+      {/* Main Intro Image */}
+      <div className="w-full h-64 md:h-[400px] overflow-hidden rounded-sm relative group mb-16">
+        <img src="/assets/industries/residential/residential-hero.webp" alt="Preserving the integrity of residential portfolios" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+      </div>
+
+      {/* What We Buy - Grid Layout */}
+      <div className="mb-20">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-8 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
+          Acquisition Criteria
+        </div>
+        <h2 className="text-3xl font-bold text-[#333333] mb-10">What We Acquire</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 rounded-full bg-[#52D017]/20 flex items-center justify-center shrink-0 mt-1">
+              <span className="text-[#52D017] text-sm font-bold">✓</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Houses in any condition</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Ugly, outdated, or worn-out properties looking for a fresh start.</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 rounded-full bg-[#52D017]/20 flex items-center justify-center shrink-0 mt-1">
+              <span className="text-[#52D017] text-sm font-bold">✓</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Properties with major repairs</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Fire/water damage, severe mold, or strict structural code issues.</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 rounded-full bg-[#52D017]/20 flex items-center justify-center shrink-0 mt-1">
+              <span className="text-[#52D017] text-sm font-bold">✓</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Inherited properties</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Probate processes or long-distance out-of-state ownership situations.</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 rounded-full bg-[#52D017]/20 flex items-center justify-center shrink-0 mt-1">
+              <span className="text-[#52D017] text-sm font-bold">✓</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Problematic situations</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Difficult tenant issues, pre-foreclosure timelines, or existing title liens.</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 rounded-full bg-[#52D017]/20 flex items-center justify-center shrink-0 mt-1">
+              <span className="text-[#52D017] text-sm font-bold">✓</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Extreme cleanouts</h3>
+              <p className="text-[#333333]/80 leading-relaxed">Hoarder homes, junk-filled properties, or long-term vacant houses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* The Process - Three Step Layout */}
+      <div className="mb-20 bg-[#f9fafb] p-8 md:p-12 rounded-sm border border-gray-200 border-l-4 border-l-[#52D017]">
+        <h2 className="text-3xl font-bold text-[#333333] mb-12 text-center md:text-left">A Simple, Predictable Closing</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          {/* Connecting line for desktop */}
+          <div className="hidden md:block absolute top-8 left-[10%] right-[10%] h-[2px] bg-gray-200 z-0"></div>
+
+          <div className="relative z-10 bg-white p-6 rounded-sm border border-gray-200 shadow-sm text-center md:text-left">
+            <div className="w-16 h-16 rounded-full bg-[#52D017] text-white flex items-center justify-center text-2xl font-bold mb-6 mx-auto md:mx-0 shadow-md">1</div>
+            <h3 className="text-xl font-bold text-[#333333] mb-3">Connect</h3>
+            <p className="text-[#333333]/80 leading-relaxed">Submit your property details through our secure form for a confidential evaluation.</p>
+          </div>
+
+          <div className="relative z-10 bg-white p-6 rounded-sm border border-gray-200 shadow-sm text-center md:text-left">
+            <div className="w-16 h-16 rounded-full bg-[#52D017] text-white flex items-center justify-center text-2xl font-bold mb-6 mx-auto md:mx-0 shadow-md">2</div>
+            <h3 className="text-xl font-bold text-[#333333] mb-3">Offer</h3>
+            <p className="text-[#333333]/80 leading-relaxed">Receive a clean, no-obligation cash offer based precisely on the current condition.</p>
+          </div>
+
+          <div className="relative z-10 bg-white p-6 rounded-sm border border-[#52D017]/50 shadow-md text-center md:text-left ring-1 ring-[#52D017]/20">
+            <div className="w-16 h-16 rounded-full bg-[#111827] text-white flex items-center justify-center text-2xl font-bold mb-6 mx-auto md:mx-0 shadow-md">3</div>
+            <h3 className="text-xl font-bold text-[#333333] mb-3">Close</h3>
+            <p className="text-[#333333]/80 leading-relaxed">Choose your timeline and date. Get paid and transfer the keys in as little as 7–14 days.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 pt-12 border-t border-gray-200">
+        <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-sm/10">
+          Request Confidential Conversation
         </Link>
-
-        {/* Page Header */}
-        <div className="mb-16 border-b border-gray-200 pb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
-            Sector Overview
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-            Residential Homes
-          </h1>
-          <p className="text-xl text-slate-900 leading-relaxed">
-            Specialized residential acquisitions designed for owners seeking a quiet, direct, and professional transition.
-          </p>
-        </div>
-
-        {/* Three-Point Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <div className="md:col-span-2 h-64 md:h-[400px] w-full overflow-hidden rounded-sm relative group">
-             <img src="/images/residential-hero.jpg" alt="Preserving the integrity of residential portfolios" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-             <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors"></div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:h-[400px]">
-             <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" alt="A seamless path to your next chapter" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-             </div>
-             <div className="h-32 md:h-[192px] w-full overflow-hidden rounded-sm relative group">
-               <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600" alt="Confidential residential transactions" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-             </div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Main Content Area */}
-          <div className="md:col-span-2 space-y-8 text-slate-900 leading-relaxed text-lg">
-            <p>
-              We execute confidential residential transactions nationwide, offering a direct path to liquidity without the disruptions of a public listing.
-            </p>
-
-            {/* Callout Box */}
-            <div className="mt-16 bg-white border-l-4 border-[#52D017] p-8 rounded-r-sm">
-              <h4 className="text-sm font-bold tracking-widest text-[#52D017] uppercase mb-4">
-                The XitSource Perspective
-              </h4>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-white rounded-full border border-gray-200 flex items-center justify-center overflow-hidden">
-                  <span className="text-sm text-slate-900/80 font-bold">RP</span>
-                </div>
-                <div>
-                  <div className="font-bold text-slate-900">Ryan Peterson</div>
-                  <div className="text-xs text-slate-900/70 uppercase tracking-widest">Lead Consultant - South Lake Tahoe, CA</div>
-                </div>
-              </div>
-              <blockquote className="text-base italic text-slate-900 leading-relaxed">
-                &quot;Based in South Lake Tahoe. Specializes in real estate acquisitions, with a particular emphasis on residential properties. He possesses expertise in generating revenue-generating assets, encompassing mobile home parks, RV parks, laundromats, co-living spaces, and raw land development.&quot;
-              </blockquote>
-            </div>
-          </div>
-
-          {/* Sidebar Data */}
-          <div className="md:col-span-1 border-t md:border-t-0 md:border-l border-gray-200 pt-12 md:pt-0 md:pl-12">
-            <div className="mt-6 pt-6 border-t border-gray-200">
-              <Link href="/sell" className="block w-full py-4 px-6 bg-[#52D017]/10 border border-[#52D017] text-[#52D017] font-semibold text-center rounded-sm hover:bg-[#52D017] hover:text-slate-900 transition-colors">
-                Request Confidential Conversation
-              </Link>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
