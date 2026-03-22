@@ -132,7 +132,7 @@ export default function ScorecardPage() {
           If you answered &apos;Yes&apos; to more than two of these questions, it may be time for a quiet, professional transition. You don&apos;t have to keep carrying the burden alone.
         </p>
         <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg">
-          Request Your No-Obligation Valuation
+          👉 Request a Confidential Call
         </Link>
       </div>
 

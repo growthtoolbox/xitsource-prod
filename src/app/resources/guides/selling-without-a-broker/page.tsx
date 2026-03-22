@@ -24,7 +24,7 @@ export default function SellingWithoutABrokerGuide() {
             Keep your equity and your privacy. How to execute a direct private acquisition and bypass traditional 6-10% brokerage fees.
           </p>
           <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default function SellingWithoutABrokerGuide() {
             If you are exploring a direct, private acquisition to preserve your equity and confidentiality, we are ready to listen.
           </p>
           <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </section>
 

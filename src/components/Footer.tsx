@@ -17,7 +17,7 @@ export default function Footer() {
             Acquire. Optimize. Scale.
           </p>
           <address className="not-italic text-sm text-[#111827] leading-relaxed">
-            We acquire multifamily and value-add real estate and business assets across the United States, focusing on opportunities where operational improvements drive performance.
+            We work with owners across the United States to acquire and improve multifamily and value-add assets.
           </address>
         </div>
 
@@ -29,8 +29,8 @@ export default function Footer() {
             <li><Link href="/industries/rv-parks" className="hover:text-[#52D017] inline-flex items-center">RV Parks</Link></li>
             <li><Link href="/industries/laundromat" className="hover:text-[#52D017] inline-flex items-center">Laundromats</Link></li>
             <li><Link href="/resources/mobile-home-community-acquisitions" className="hover:text-[#52D017] inline-flex items-center">Mobile Home Communities</Link></li>
-            <li><Link href="/industries/raw-land" className="hover:text-[#52D017] inline-flex items-center">Raw Land</Link></li>
             <li><Link href="/industries/self-storage" className="hover:text-[#52D017] inline-flex items-center">Self Storage</Link></li>
+            <li><Link href="/industries/raw-land" className="hover:text-[#52D017] inline-flex items-center">Raw Land</Link></li>
           </ul>
         </div>
         
@@ -38,8 +38,8 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Company</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
-            <li><Link href="/partnership" className="hover:text-[#52D017] inline-flex items-center">About</Link></li>
-            <li><Link href="/the-letter" className="hover:text-[#52D017] inline-flex items-center">Investment Strategy</Link></li>
+            <li><Link href="/about" className="hover:text-[#52D017] inline-flex items-center">About</Link></li>
+            <li><Link href="/partnership" className="hover:text-[#52D017] inline-flex items-center">Partnership</Link></li>
             <li><Link href="/sell" className="hover:text-[#52D017] inline-flex items-center">Contact</Link></li>
           </ul>
         </div>
@@ -48,11 +48,10 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Have an Opportunity?</h3>
           <p className="text-sm text-[#111827] mb-6">
-            Submit your deal for evaluation.
+            Start a confidential conversation.
           </p>
           <ul className="space-y-4 text-sm text-[#111827]">
-            <li><Link href="/sell" className="hover:text-[#52D017] font-semibold inline-flex items-center gap-2">👉 Submit a Deal</Link></li>
-            <li><Link href="/sell" className="hover:text-[#52D017] font-semibold inline-flex items-center gap-2">👉 Schedule a Call</Link></li>
+            <li><Link href="/sell" className="hover:text-[#52D017] font-semibold inline-flex items-center gap-2">👉 Request a Confidential Call</Link></li>
           </ul>
         </div>
 

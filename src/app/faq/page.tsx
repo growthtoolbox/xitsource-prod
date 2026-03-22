@@ -126,7 +126,7 @@ export default function FAQPage() {
           <p className="text-[#111827] mb-8 max-w-xl mx-auto">Every operational transition is unique. We are happy to review your specific situation confidentially.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-[#111827] font-semibold rounded-sm hover:bg-[#45b312] transition-colors">
-                Request a Confidential Conversation
+                👉 Request a Confidential Call
              </Link>
           </div>
         </div>

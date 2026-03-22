@@ -31,7 +31,7 @@ export default function PrivateAcquisitionProcessGuidePage() {
             This guide outlines exactly how the process works from first conversation to closing.
           </p>
           <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </div>
       </div>
@@ -297,7 +297,7 @@ export default function PrivateAcquisitionProcessGuidePage() {
             If you are considering a sale and want a straightforward, confidential process without unnecessary complexity, we are ready to have that conversation.
           </p>
           <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </section>
 

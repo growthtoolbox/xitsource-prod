@@ -27,27 +27,42 @@ export default function LetterPage() {
           <div className={`space-y-6 text-[#111827] text-lg md:text-xl leading-relaxed ${serif.className}`}>
             <p>Dear Owner,</p>
             
-            <p>When we founded XitSource, we did it with a simple realization: selling a business or a property isn&apos;t just a financial transaction. For most of the people we work with, it&apos;s the culmination of decades of hard work, late nights, and a deep commitment to their community.</p>
-            
-            <p>We&apos;ve heard the same concerns from owners across the country: Is the process going to be a headache? Will my tenants or employees be blindsided? Can I trust the person on the other side of the table?</p>
+            <p>We know that selling a property or business is not a small decision.</p>
 
-            <p>We live and work where we value the pace and the people, but our partnership is designed to serve owners nationwide. Distance is never an issue. We utilize modern, secure systems to handle the heavy lifting and paperwork remotely, so you never have to worry about travel or office visits. These tools allow us to stay in close, personal contact through every step of the process, ensuring you are always informed and your time is respected.</p>
+            <p>In many cases, it represents years of work, relationships, and responsibility. It is not just about the transaction. It is about what comes next.</p>
 
-            <p>Our goal is to be the easiest, most respectful &apos;exit&apos; you&apos;ll ever have. Whether your facility is down the road from us or halfway across the country, we treat your legacy with the same level of integrity you used to build it.</p>
+            <p>We work with owners across the country who are thinking about selling, transitioning, or simply exploring their options. Some are ready to move forward now. Others are just starting to consider what the right path might look like.</p>
 
-            <p>If you&apos;re ready to start thinking about your next chapter, we&apos;d welcome a confidential conversation—no pressure, no brokers, just a clear path forward.</p>
+            <p>Our approach is straightforward.</p>
+
+            <p>We focus on understanding the situation, evaluating the opportunity, and giving a clear answer. If it makes sense to move forward, we will. If it does not, we will say that directly.</p>
+
+            <p>We are not here to complicate the process or create unnecessary pressure. The goal is to provide a path that is simple, honest, and aligned with what you are trying to accomplish.</p>
+
+            <p>We focus primarily on multifamily properties and other cash-flowing assets including RV parks, laundromats, mobile home communities, self storage, and select land opportunities.</p>
+
+            <p>If you are considering a sale, a partnership, or just want a second perspective, we are always open to a direct conversation.</p>
+
+            <p>We work together across acquisitions and operations, taking a hands-on approach to every opportunity we evaluate.</p>
             
             <div className="pt-8 pb-4">
               <p>Sincerely,</p>
-              <p className={`text-4xl md:text-5xl mt-4 text-[#111827] ${script.className}`}>John Poindexter</p>
-              <p className={`text-sm mt-2 text-[#111827]/70 font-sans ${inter.className}`}>Partner, XitSource</p>
+              <div className="mt-4 flex flex-col items-start">
+                  <p className={`text-4xl md:text-5xl text-[#111827] ${script.className}`}>John Poindexter</p>
+                  <p className={`text-4xl md:text-5xl text-[#111827] mt-2 ${script.className}`}>Ryan Peterson</p>
+              </div>
+              <p className={`text-sm mt-4 text-[#111827]/70 font-sans font-bold uppercase tracking-widest ${inter.className}`}>XitSource</p>
             </div>
+
+            <p className="mt-8 pt-8 border-t border-gray-200 text-base italic text-[#111827]/70">
+              We approach every opportunity with a focus on clarity, follow-through, and doing what we say we&apos;ll do.
+            </p>
           </div>
         </div>
 
         <div className="mt-16 text-center">
-          <a href="/sell" className="inline-block px-10 py-5 bg-[#111827] text-white font-semibold rounded-sm hover:bg-gray-800 transition-colors shadow-lg shadow-[#111827]/10 text-lg">
-            Begin a Confidential Conversation
+          <a href="/sell" className="inline-flex items-center gap-2 px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-[#52D017]/20 text-lg">
+            👉 Request a Confidential Call
           </a>
         </div>
       </div>

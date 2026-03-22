@@ -31,7 +31,7 @@ export default function PreparingStaffGuidePage() {
             This guide outlines how to manage communication, timing, and expectations during a private ownership transition.
           </p>
           <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </div>
       </div>
@@ -302,7 +302,7 @@ export default function PreparingStaffGuidePage() {
             If you are planning an ownership change and want to ensure a stable, professional transition for your employees, we can help you structure it correctly from the beginning.
           </p>
           <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </section>
 

@@ -30,7 +30,7 @@ export default function TimelineToSellGuidePage() {
             The traditional market can leave an asset sitting for months or years. A direct sale to a private partner provides a predictable, accelerated timeline that works around your needs.
           </p>
           <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-sm">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </div>
       </div>
@@ -274,7 +274,7 @@ export default function TimelineToSellGuidePage() {
             Your time is your most valuable asset. Build a timeline that respects it and aligns with your goals.
           </p>
           <Link href="https://www.xitsource.com/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors">
-            Request Confidential Conversation
+            👉 Request a Confidential Call
           </Link>
         </section>
 

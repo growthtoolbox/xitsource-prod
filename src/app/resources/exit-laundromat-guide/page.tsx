@@ -45,7 +45,7 @@ export default function LaundromatGuidePage() {
 
       <div className="mt-16 pt-12 border-t border-gray-200">
         <Link href="/sell" className="inline-block px-8 py-4 bg-[#52D017] text-slate-900 font-semibold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-sm/10">
-          Request a Confidential Conversation
+          👉 Request a Confidential Call
         </Link>
       </div>
     </div>

@@ -7,8 +7,8 @@ const businesses = [
   { id: 2, name: "RV Parks & Campgrounds", desc: "Demand-driven assets with opportunities for improved management and revenue optimization.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/mobile-home-park-1.jpg" },
   { id: 3, name: "Laundromats", desc: "Cash-flowing businesses with modernization potential and operational upside.", href: "/industries/laundromat", img: "/laundromat-business-exit-strategies-1.jpg" },
   { id: 4, name: "Mobile Home Communities", desc: "Stable, income-producing assets with strong tenant retention and operational leverage.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Raw Land Development", desc: "Strategic land opportunities aligned with long-term development and growth.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 6, name: "Self Storage", desc: "We acquire self storage facilities with operational upside, revenue optimization potential, and strong local demand fundamentals.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 5, name: "Self Storage", desc: "We acquire self storage facilities with operational upside, revenue optimization potential, and strong local demand fundamentals.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 6, name: "Raw Land Development", desc: "Strategic land opportunities aligned with long-term development and growth.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
 ];
 
 export default function Home() {
@@ -28,25 +28,38 @@ export default function Home() {
             Multifamily &amp; Value-Add <br className="hidden md:block" />
             <span className="text-[#52D017]">Asset Acquisition</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            We acquire, optimize, and scale multifamily properties and complementary cash-flowing assets across the United States.
+          <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-6">
+            We work with property and business owners across the country who are ready for a clear, straightforward path forward.
+          </p>
+          <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl font-bold leading-relaxed mb-10">
+            No noise. No unnecessary complexity. Just execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] flex items-center gap-2 justify-center">
-                👉 Submit a Deal
-             </Link>
-             <Link href="/the-letter" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 hover:-translate-y-1 transition-all">
-                View Acquisition Criteria
+                👉 Request a Confidential Call
              </Link>
           </div>
           
           <div className="w-full h-64 md:h-[500px] overflow-hidden rounded-sm relative group mt-16 max-w-5xl mx-auto shadow-2xl">
-             <img src="/assets/home/home_hero_multifamily.png" alt="Multifamily Home Hero" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="/assets/home/home_hero_multifamily.png" alt="Multifamily & Value-Add Strategy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+        </section>
+
+        {/* Intro Section */}
+        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-[#111827] mb-8">We are operators first.</h2>
+            <p className="text-xl text-[#111827]/90 leading-relaxed mb-8">
+              We work with owners who are thinking about selling, transitioning, or improving their properties and businesses. Our focus is simple. Understand the situation, evaluate the opportunity, and provide a clear path forward.
+            </p>
+            <p className="text-xl text-[#111827]/90 leading-relaxed">
+              We focus on multifamily and other cash-flowing assets where hands-on execution makes the difference.
+            </p>
           </div>
         </section>
 
         {/* Sector Grid (What We Acquire) */}
-        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50">
+        <section id="what-we-acquire" className="container mx-auto px-6 py-24 border-t border-gray-200/50">
           <div className="mb-16 border-l-4 border-[#52D017] pl-6 max-w-3xl">
             <h2 className="text-3xl font-bold text-[#111827] mb-4">Value-Driven <span className="text-[#52D017]">Acquisition Focus.</span></h2>
             <p className="text-[#111827] text-lg">
@@ -79,13 +92,13 @@ export default function Home() {
         <section className="container mx-auto px-6 py-24 border-t border-gray-200/50 bg-[#f9fafb]">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2 h-64 md:h-[400px] overflow-hidden rounded-sm relative group shadow-xl">
-               <img src="/assets/home/multifamily_focus_courtyard.png" alt="Execution-Driven Focus" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+               <img src="/assets/home/multifamily_focus_courtyard.png" alt="Execution-Driven Approach" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-center">
               <div className="w-12 h-1 bg-[#52D017] mb-6 rounded-full"></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6">Execution-Driven Investment Strategy</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6">Execution-Driven Approach</h2>
               <p className="text-lg text-[#111827]/90 leading-relaxed">
-                We focus on assets where disciplined operations, targeted improvements, and strategic positioning can significantly enhance performance. Each opportunity is evaluated based on its ability to generate consistent income and long-term value.
+                We focus on opportunities where better operations, clear decision-making, and follow-through create measurable results. Every deal is evaluated based on real-world performance, not just projections.
               </p>
             </div>
           </div>
@@ -96,11 +109,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Have an Opportunity?</h2>
             <p className="text-lg md:text-xl text-[#111827] mb-10 leading-relaxed border-l-4 border-l-[#52D017] pl-4 inline-block text-left mx-auto">
-              We evaluate multifamily and value-add assets nationwide. Submit your deal for review and receive a clear next step.
+              If you are considering a sale or just want to explore your options, we are open to a direct conversation.
             </p>
             <div>
-              <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-all shadow-lg hover:-translate-y-1 flex justify-center items-center gap-2 max-w-xs mx-auto">
-                👉 Submit a Deal
+              <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-all shadow-lg hover:-translate-y-1 flex justify-center items-center gap-2 max-w-sm mx-auto">
+                👉 Request a Confidential Call
               </Link>
             </div>
           </div>

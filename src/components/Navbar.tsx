@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
@@ -14,13 +13,8 @@ export default function Navbar() {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-      setOpenAccordion(null); // Reset accordion on close
     }
   }, [isMobileMenuOpen]);
-
-  const toggleAccordion = (section: string) => {
-    setOpenAccordion(openAccordion === section ? null : section);
-  };
 
   const closeMenu = () => setIsMobileMenuOpen(false);
 
@@ -44,44 +38,28 @@ export default function Navbar() {
             />
           </Link>
           
-          {/* Desktop Menu */}
+          {/* Desktop Menu - Extracted to Simple Links */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link href="/" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Home
             </Link>
-
-            <div className="relative group">
-              <span className="cursor-default text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors inline-flex items-center">
-                What We Acquire <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-              </span>
-              <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <Link href="/industries/multi-family-homes" className="block px-4 py-3 text-sm font-semibold text-[#111827] bg-[#f9fafb] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Multi-Family Homes</Link>
-                <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks & Campgrounds</Link>
-                <Link href="/industries/laundromat" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
-                <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Mobile Home Communities</Link>
-                <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land Development</Link>
-                <Link href="/industries/self-storage" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Self Storage</Link>
-              </div>
-            </div>
-
-            <Link href="/the-letter" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
-              Investment Strategy
+            <Link href="/#what-we-acquire" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              What We Acquire
             </Link>
-
-            <div className="relative group">
-              <span className="cursor-default text-sm font-medium text-[#111827] hover:text-[#111827] transition-colors inline-flex items-center">
-                Company <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-              </span>
-              <div className="absolute left-0 mt-2 w-56 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <Link href="/partnership" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">About</Link>
-                <Link href="/sell" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Contact</Link>
-              </div>
-            </div>
+            <Link href="/partnership" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              Partnership
+            </Link>
+            <Link href="/about" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              Company
+            </Link>
+            <Link href="/sell" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              Contact
+            </Link>
           </div>
 
           <div className="hidden lg:flex">
             <Link href="/sell" className="px-6 py-3 text-sm font-bold bg-[#52D017] text-[#111827] hover:bg-[#45b312] transition-colors rounded-sm shadow-sm hover:shadow-md flex items-center gap-2">
-              👉 Submit a Deal
+              👉 Request a Confidential Call
             </Link>
           </div>
 
@@ -109,65 +87,32 @@ export default function Navbar() {
           <div className="lg:hidden fixed inset-0 top-[130px] sm:top-[154px] bg-white z-40 overflow-y-auto w-full h-[calc(100vh-130px)] overscroll-contain">
             <div className="px-6 py-6 flex flex-col space-y-5 max-w-sm mx-auto h-full pb-24">
               
-              {/* 1. Prioritized Button */}
               <Link 
                 href="/sell" 
                 onClick={closeMenu} 
                 className="w-full text-center py-4 bg-[#52D017] text-[#111827] text-lg font-bold rounded-sm shadow-md transition-opacity hover:opacity-90 flex items-center justify-center gap-2"
               >
-                👉 Submit a Deal
+                👉 Request a Confidential Call
               </Link>
 
               <div className="bg-gray-200 w-full h-[1px] my-2"></div>
 
-              {/* 2. Accordion Structure */}
               <div className="space-y-4 flex-grow">
-                
                 <Link href="/" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Home
                 </Link>
-
-                {/* Accordion 1: What We Acquire */}
-                <div className="border border-gray-200 rounded-sm overflow-hidden bg-white">
-                  <button 
-                    onClick={() => toggleAccordion('acquire')}
-                    className="w-full px-5 py-4 flex justify-between items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors"
-                  >
-                    What We Acquire
-                    <svg className={`w-5 h-5 transform transition-transform ${openAccordion === 'acquire' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                  </button>
-                  {openAccordion === 'acquire' && (
-                    <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
-                      <Link href="/industries/multi-family-homes" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-bold block">Multi-Family Homes</Link>
-                      <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks & Campgrounds</Link>
-                      <Link href="/industries/laundromat" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
-                      <Link href="/resources/mobile-home-community-acquisitions" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Mobile Home Communities</Link>
-                      <Link href="/industries/raw-land" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Raw Land Development</Link>
-                    </div>
-                  )}
-                </div>
-
-                <Link href="/the-letter" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
-                  Investment Strategy
+                <Link href="/#what-we-acquire" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  What We Acquire
                 </Link>
-
-                {/* Accordion 2: Company */}
-                <div className="border border-gray-200 rounded-sm overflow-hidden bg-white">
-                  <button 
-                    onClick={() => toggleAccordion('company')}
-                    className="w-full px-5 py-4 flex justify-between items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors"
-                  >
-                    Company
-                    <svg className={`w-5 h-5 transform transition-transform ${openAccordion === 'company' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                  </button>
-                  {openAccordion === 'company' && (
-                    <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
-                      <Link href="/partnership" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">About</Link>
-                      <Link href="/sell" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Contact</Link>
-                    </div>
-                  )}
-                </div>
-
+                <Link href="/partnership" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  Partnership
+                </Link>
+                <Link href="/about" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  Company
+                </Link>
+                <Link href="/sell" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
