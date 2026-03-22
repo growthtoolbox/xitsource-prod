@@ -35,9 +35,12 @@ export default function Home() {
             No noise. No unnecessary complexity. Just execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] flex items-center gap-2 justify-center">
-                👉 Request a Confidential Call
-             </Link>
+             <div className="flex flex-col items-center">
+               <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] flex items-center gap-2 justify-center">
+                  👉 Request a Confidential Call
+               </Link>
+               <p className="text-sm text-[#111827]/60 mt-4 italic font-medium">We are ready, when you are ready.</p>
+             </div>
           </div>
           
           <div className="w-full h-64 md:h-[500px] overflow-hidden rounded-sm relative group mt-16 max-w-5xl mx-auto shadow-2xl">
@@ -115,6 +118,7 @@ export default function Home() {
               <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-all shadow-lg hover:-translate-y-1 flex justify-center items-center gap-2 max-w-sm mx-auto">
                 👉 Request a Confidential Call
               </Link>
+              <p className="text-sm text-[#111827]/60 mt-6 italic font-medium">We are ready, when you are ready.</p>
             </div>
           </div>
         </section>

@@ -64,6 +64,7 @@ export default function LetterPage() {
           <a href="/sell" className="inline-flex items-center gap-2 px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:bg-[#45b312] transition-colors shadow-lg shadow-[#52D017]/20 text-lg">
             👉 Request a Confidential Call
           </a>
+          <p className="text-sm text-[#111827]/60 mt-6 italic font-medium">We are ready, when you are ready.</p>
         </div>
       </div>
     </div>

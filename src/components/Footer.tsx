@@ -14,10 +14,10 @@ export default function Footer() {
             XITSOURCE
           </div>
           <p className="not-italic text-sm text-[#111827] font-semibold mb-3 tracking-widest uppercase text-[#52D017]">
-            Acquire. Optimize. Scale.
+            We work with owners who are ready for a clear next step.
           </p>
           <address className="not-italic text-sm text-[#111827] leading-relaxed">
-            We work with owners across the United States to acquire and improve multifamily and value-add assets.
+            We focus on multifamily and cash-flowing assets across the United States.
           </address>
         </div>
 
@@ -52,6 +52,7 @@ export default function Footer() {
           </p>
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/sell" className="hover:text-[#52D017] font-semibold inline-flex items-center gap-2">👉 Request a Confidential Call</Link></li>
+            <li className="text-xs text-gray-500 italic mt-2">We are ready, when you are ready.</li>
           </ul>
         </div>
 
