@@ -3,12 +3,9 @@
 import Link from 'next/link';
 
 const businesses = [
-  { id: 1, name: "Residential Real Estate", desc: "A direct, quiet path to selling your residential portfolio without the stress of public showings.", href: "/industries/residential-homes", img: "/assets/industries/residential/modern-home.jpg" },
-  { id: 2, name: "Raw Land Development", desc: "A respectful approach to land acquisition that honors the future potential of your acreage.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
-  { id: 3, name: "RV Parks & Campgrounds", desc: "We acquire RV parks and campgrounds nationwide, offering a direct exit for owners ready for a simpler path.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/mobile-home-park-1.jpg" },
-  { id: 4, name: "Mobile Home Communities", desc: "Dedicated to the long-term health of your community and the security of your residents.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
-  { id: 5, name: "Laundromat Businesses", desc: "Continuing the reliable local service you’ve provided to your neighborhood for years.", href: "/industries/laundromat", img: "/laundromat-business-exit-strategies-1.jpg" },
-  { id: 6, name: "Self Storage Facilities", desc: "Maintaining the high standards of security and convenience your customers expect.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
+  { id: 1, name: "Multi-Family Homes", desc: "We acquire apartment communities and multifamily assets where operational improvements and repositioning can unlock long-term value.", href: "/industries/multi-family-homes", img: "/assets/industries/multi-family-homes/clean_exterior_entrance.png" },
+  { id: 2, name: "RV Parks & Campgrounds", desc: "We target well-located parks with stable demand and opportunities for operational improvement and revenue optimization.", href: "/industries/rv-parks", img: "/assets/industries/rv-parks/mobile-home-park-1.jpg" },
+  { id: 3, name: "Raw Land Development", desc: "We evaluate land with strategic development potential aligned with long-term growth and market demand.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
 ];
 
 export default function Home() {
@@ -21,29 +18,37 @@ export default function Home() {
       </div>
 
       <main className="relative z-10">
-        {/* Hero Section */}
-        <section className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center justify-center text-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6">
-            When You&apos;re Ready, <br className="hidden md:block" />
-            <span className="text-[#52D017]">We&apos;re Ready.</span>
+        
+        {/* NEW HERO SECTION */}
+        <section className="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-20 flex flex-col items-center justify-center text-center">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#111827] mb-6 max-w-5xl">
+            Multifamily Acquisition <br className="hidden md:block" />
+            <span className="text-[#52D017]">&amp; Investment</span>
           </h1>
           <p className="max-w-2xl mx-auto text-[#111827] text-lg md:text-xl leading-relaxed mb-10">
-            No listings. No drawn-out process. Just a direct conversation and a clear path forward. We handle the details so you can move on with confidence.
+            We acquire and optimize multifamily apartment communities through disciplined operations and long-term value creation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Link href="/scorecard" className="px-8 py-4 bg-white text-[#111827] font-semibold rounded-sm hover:bg-gray-200 transition-colors shadow-lg shadow-white/5 border border-gray-200">
-                Take the Seller Scorecard
+             <Link href="/sell" className="px-8 py-4 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] flex items-center gap-2 justify-center">
+                👉 Submit a Deal
              </Link>
-             <Link href="/sell" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 transition-colors">
-                Request Confidential Conversation
+             <Link href="/the-letter" className="px-8 py-4 bg-[#111827] text-white font-semibold rounded-sm hover:bg-[#111827]/80 hover:-translate-y-1 transition-all">
+                View Acquisition Criteria
              </Link>
           </div>
+          
+          <div className="w-full h-64 md:h-[500px] overflow-hidden rounded-sm relative group mt-16 max-w-5xl mx-auto shadow-2xl">
+             <img src="/assets/home/home_hero_multifamily.png" alt="Multifamily Home Hero" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
         </section>
-          {/* Sector Grid (Subsidiaries) */}
+
+        {/* Sector Grid (What We Acquire) */}
         <section className="container mx-auto px-6 py-24 border-t border-gray-200/50">
-          <div className="mb-16 border-l-4 border-[#52D017] pl-6">
-            <h2 className="text-3xl font-bold text-[#111827] mb-4">Direct, as-is acquisitions <span className="text-[#52D017]">for business owners.</span></h2>
-            <p className="text-[#111827] max-w-2xl">We specialize in acquiring properties with a long history of community service. Our goal is to provide a seamless transition of ownership for the following types of assets:</p>
+          <div className="mb-16 border-l-4 border-[#52D017] pl-6 max-w-3xl">
+            <h2 className="text-3xl font-bold text-[#111827] mb-4">Value-Driven <span className="text-[#52D017]">Acquisition Focus.</span></h2>
+            <p className="text-[#111827] text-lg">
+               We focus on acquiring and improving real estate assets with strong underlying fundamentals. Our approach prioritizes operational discipline, strategic upgrades, and long-term performance over short-term speculation.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -67,18 +72,34 @@ export default function Home() {
           </div>
         </section>
 
-        
+        {/* NEW Multifamily Focus Section */}
+        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50 bg-[#f9fafb]">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div className="w-full md:w-1/2 h-64 md:h-[400px] overflow-hidden rounded-sm relative group shadow-xl">
+               <img src="/assets/home/multifamily_focus_courtyard.png" alt="Multifamily Focus Courtyard" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="w-full md:w-1/2 flex flex-col justify-center">
+              <div className="w-12 h-1 bg-[#52D017] mb-6 rounded-full"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6">Why Multifamily</h2>
+              <p className="text-lg text-[#111827]/90 leading-relaxed">
+                Multifamily assets provide scalable, resilient income with multiple levers for value creation. We focus on properties where improved management, targeted upgrades, and disciplined execution can drive meaningful performance gains.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        {/* High-Impact CTA Section */}
+        {/* CTA Section */}
         <section className="container mx-auto px-6 py-32 border-t border-gray-200/50 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Start a Confidential Conversation.</h2>
-            <p className="text-lg md:text-xl text-[#111827] mb-10 leading-relaxed">
-              Whether you are ready to sell now or are simply exploring your options for the future, we are here to listen. John and Ryan personally review every inquiry to ensure your legacy is treated with the respect it deserves.
+            <h2 className="text-3xl md:text-5xl font-bold text-[#111827] mb-6">Have a Multifamily Opportunity?</h2>
+            <p className="text-lg md:text-xl text-[#111827] mb-10 leading-relaxed border-l-4 border-l-[#52D017] pl-4 inline-block text-left mx-auto">
+              We evaluate acquisition, repositioning, and partnership opportunities across Northern California.
             </p>
-            <Link href="/sell" className="inline-block px-8 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-colors shadow-lg">
-              Request Confidential Conversation
-            </Link>
+            <div>
+              <Link href="/sell" className="inline-block px-10 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:bg-[#52D017]/90 transition-all shadow-lg hover:-translate-y-1">
+                Submit Property
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -104,32 +125,12 @@ export default function Home() {
                      "@type": "Country",
                      "name": "United States"
                    },
-                   "knowsAbout": ["RV Park Acquisitions", "Laundromat Business Sales", "Raw Land Development", "National Off-Market Real Estate"]
+                   "knowsAbout": ["Multifamily Real Estate", "Value-Add Assets", "Private Acquisitions", "Northern California Investments"]
                  }
                ]
              })
           }}
         />
-
-
-
-
-
-
-
-
-
-
-        {/* FAQ Teaser */}
-        <section className="container mx-auto px-6 py-24 border-t border-gray-200/50 text-center">
-          <h2 className="text-3xl font-bold text-[#111827] mb-6">Have Questions?</h2>
-          <p className="text-lg text-[#111827] mb-8 max-w-2xl mx-auto">
-            We believe in transparency. Review our frequently asked questions to understand our process, confidentiality standards, and acquisition criteria.
-          </p>
-          <Link href="/faq" className="inline-block px-8 py-4 bg-white border border-gray-200 text-[#111827] font-semibold rounded-sm hover:border-[#52D017] hover:text-[#52D017] transition-colors shadow-sm">
-            View Our Frequently Asked Questions
-          </Link>
-        </section>
 
       </main>
     </div>
