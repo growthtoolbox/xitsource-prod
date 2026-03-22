@@ -17,7 +17,7 @@ export default function Footer() {
             Acquire. Optimize. Scale.
           </p>
           <address className="not-italic text-sm text-[#111827] leading-relaxed">
-            We work with owners and investors to acquire and improve multifamily and value-add real estate assets across Northern California.
+            We acquire multifamily and value-add real estate and business assets across the United States, focusing on opportunities where operational improvements drive performance.
           </address>
         </div>
 
@@ -27,6 +27,7 @@ export default function Footer() {
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/industries/multi-family-homes" className="hover:text-[#52D017] inline-flex items-center">Multi-Family Homes</Link></li>
             <li><Link href="/industries/rv-parks" className="hover:text-[#52D017] inline-flex items-center">RV Parks</Link></li>
+            <li><Link href="/industries/laundromat" className="hover:text-[#52D017] inline-flex items-center">Laundromats</Link></li>
             <li><Link href="/resources/mobile-home-community-acquisitions" className="hover:text-[#52D017] inline-flex items-center">Mobile Home Communities</Link></li>
             <li><Link href="/industries/raw-land" className="hover:text-[#52D017] inline-flex items-center">Raw Land</Link></li>
           </ul>
@@ -46,7 +47,7 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Have an Opportunity?</h3>
           <p className="text-sm text-[#111827] mb-6">
-            Submit your property for evaluation.
+            Submit your deal for evaluation.
           </p>
           <ul className="space-y-4 text-sm text-[#111827]">
             <li><Link href="/sell" className="hover:text-[#52D017] font-semibold inline-flex items-center gap-2">👉 Submit a Deal</Link></li>
@@ -63,7 +64,7 @@ export default function Footer() {
               &copy; 2026 XitSource. All rights reserved.
             </p>
             <p className="text-xs font-semibold text-[#52D017] uppercase tracking-wider">
-              Northern California Focus. Built for Long-Term Value.
+              Nationwide Focus. Built for Long-Term Value.
             </p>
           </div>
           

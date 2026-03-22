@@ -28,7 +28,7 @@ export default function Navbar() {
     <>
       {/* Top Bar */}
       <div className="fixed top-0 left-0 right-0 z-[60] bg-[#111827] text-white text-center py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-widest px-4">
-        Focused on Multifamily & Value-Add Investment Opportunities in Northern California
+        Nationwide Real Estate & Business Acquisition Platform
       </div>
       
       <nav className="fixed top-[32px] sm:top-[34px] left-0 right-0 z-50 bg-white border-b border-[#52D017]/20">
@@ -57,6 +57,7 @@ export default function Navbar() {
               <div className="absolute left-0 mt-2 w-64 rounded-sm shadow-xl bg-white border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <Link href="/industries/multi-family-homes" className="block px-4 py-3 text-sm font-semibold text-[#111827] bg-[#f9fafb] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Multi-Family Homes</Link>
                 <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks & Campgrounds</Link>
+                <Link href="/industries/laundromat" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
                 <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Mobile Home Communities</Link>
                 <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Raw Land Development</Link>
               </div>
@@ -138,6 +139,7 @@ export default function Navbar() {
                     <div className="px-5 py-4 space-y-4 border-t border-gray-100 flex flex-col">
                       <Link href="/industries/multi-family-homes" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-bold block">Multi-Family Homes</Link>
                       <Link href="/industries/rv-parks" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">RV Parks & Campgrounds</Link>
+                      <Link href="/industries/laundromat" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Laundromats</Link>
                       <Link href="/resources/mobile-home-community-acquisitions" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Mobile Home Communities</Link>
                       <Link href="/industries/raw-land" onClick={closeMenu} className="text-[18px] text-[#333333] hover:text-[#52D017] font-medium block">Raw Land Development</Link>
                     </div>
