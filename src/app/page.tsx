@@ -8,6 +8,7 @@ const businesses = [
   { id: 3, name: "Laundromats", desc: "Cash-flowing businesses with modernization potential and operational upside.", href: "/industries/laundromat", img: "/laundromat-business-exit-strategies-1.jpg" },
   { id: 4, name: "Mobile Home Communities", desc: "Stable, income-producing assets with strong tenant retention and operational leverage.", href: "/resources/mobile-home-community-acquisitions", img: "/assets/resources/mhc/mhc-community-hero.webp" },
   { id: 5, name: "Raw Land Development", desc: "Strategic land opportunities aligned with long-term development and growth.", href: "/industries/raw-land", img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" },
+  { id: 6, name: "Self Storage", desc: "We acquire self storage facilities with operational upside, revenue optimization potential, and strong local demand fundamentals.", href: "/industries/self-storage", img: "/assets/resources/storage/storage-facility-hero.webp" },
 ];
 
 export default function Home() {

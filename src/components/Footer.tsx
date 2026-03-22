@@ -30,6 +30,7 @@ export default function Footer() {
             <li><Link href="/industries/laundromat" className="hover:text-[#52D017] inline-flex items-center">Laundromats</Link></li>
             <li><Link href="/resources/mobile-home-community-acquisitions" className="hover:text-[#52D017] inline-flex items-center">Mobile Home Communities</Link></li>
             <li><Link href="/industries/raw-land" className="hover:text-[#52D017] inline-flex items-center">Raw Land</Link></li>
+            <li><Link href="/industries/self-storage" className="hover:text-[#52D017] inline-flex items-center">Self Storage</Link></li>
           </ul>
         </div>
         

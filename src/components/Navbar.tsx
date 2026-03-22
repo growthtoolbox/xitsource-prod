@@ -59,7 +59,8 @@ export default function Navbar() {
                 <Link href="/industries/rv-parks" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">RV Parks & Campgrounds</Link>
                 <Link href="/industries/laundromat" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Laundromats</Link>
                 <Link href="/resources/mobile-home-community-acquisitions" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Mobile Home Communities</Link>
-                <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Raw Land Development</Link>
+                <Link href="/industries/raw-land" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017] border-b border-gray-200">Raw Land Development</Link>
+                <Link href="/industries/self-storage" className="block px-4 py-3 text-sm text-[#111827] hover:bg-white hover:text-[#52D017]">Self Storage</Link>
               </div>
             </div>
 
