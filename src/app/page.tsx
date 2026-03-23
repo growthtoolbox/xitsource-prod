@@ -40,6 +40,7 @@ export default function Home() {
                   👉 Request a Confidential Call
                </Link>
                <p className="text-sm text-[#111827]/60 mt-4 italic font-medium">We are ready, when you are ready.</p>
+               <Link href="/resources/guides" className="mt-8 text-sm font-semibold text-[#111827] hover:text-[#52D017] transition-colors underline decoration-[#52D017]/50 underline-offset-4">Prefer to learn first? Explore our guides.</Link>
              </div>
           </div>
           

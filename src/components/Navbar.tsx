@@ -49,6 +49,9 @@ export default function Navbar() {
             <Link href="/partnership" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Partnership
             </Link>
+            <Link href="/resources" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              Resources
+            </Link>
             <Link href="/about" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Company
             </Link>
@@ -106,6 +109,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="/partnership" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Partnership
+                </Link>
+                <Link href="/resources" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  Resources
                 </Link>
                 <Link href="/about" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Company
