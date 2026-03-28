@@ -58,6 +58,18 @@ export default function TransitionGuidesPage() {
                Read Guide →
             </span>
           </Link>
+
+          {/* Guide 4 */}
+          <Link href="/resources/tenant-closed-equipment-left-behind" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative cursor-pointer block">
+            <p className="text-xs font-bold text-[#52D017] uppercase tracking-widest mb-4">Operations & Liability</p>
+            <h2 className="text-2xl font-bold text-[#111827] mb-4">Tenant Closed. Equipment Left Behind.</h2>
+            <p className="text-gray-600 text-base leading-relaxed mb-8 flex-grow">
+              Navigating the legal, financial, and operational decisions when a commercial tenant abandons their space and assets.
+            </p>
+            <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">
+               Read Guide →
+            </span>
+          </Link>
         </div>
 
         {/* Global CTA */}
