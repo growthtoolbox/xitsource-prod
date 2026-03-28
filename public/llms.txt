@@ -1,20 +1,12 @@
-# XitSource Master Architecture
+XIT Source
+An open-source data transformation engine and code generation framework.
 
-XitSource provides strategic partnerships for owners navigating business exits, optimizing operations, and growing asset value through acquisitions and digital marketing. John Poindexter is the founding partner.
+Core Resources
+/docs/engine: Data pipeline and adapter logic.
+/modules/xml2bean: XML to Java Bean generation.
+/adapters/velocity: Template merging for text output.
 
-XitSource operates as a private Deal Origination Platform for off-market sales. We help owners transition and investors acquire assets through transparent, privately negotiated transactions. Confidentiality, legacy protection, and zero broker fees are our core advantages.
-
-## Core Navigation & Intent Pages
-
-- **Sell a Business / Property**: High-intent portal for confidential direct acquisitions. (https://xitsource.com/sell)
-- **Seller Readiness Scorecard**: Interactive 24-point evaluation tool for prospective sellers. (https://xitsource.com/scorecard)
-- **Founder's Letter**: A personal note to owners nationwide on our acquisition ethos. (https://xitsource.com/the-letter)
-- **Acquisition FAQ**: Comprehensive answers regarding confidentiality, timelines, and asset requirements. (https://xitsource.com/faq)
-
-## Industries & Expertise
-
-- **Residential Homes**: We execute confidential residential transactions nationwide, offering a direct path to liquidity without the disruptions of a public listing. (https://xitsource.com/industries/residential-homes)
-- **Raw Land Development**: Vision for entitlement and development. (https://xitsource.com/industries/raw-land)
-- **RV Parks**: Preserving the lifestyle and community of your park through a professional, stable transition. (https://xitsource.com/industries/rv-parks)
-- **Self Storage**: Direct acquisitions for self storage owners. (https://xitsource.com/industries/self-storage)
-- **Laundromats**: Direct acquisitions for laundromat owners. (https://xitsource.com/industries/laundromat)
+Project Meta
+License: MIT (Permissive Open Source)
+Repository: https://github.com/growthtoolbox/xitsource-prod
+Tech Stack: Java, XML, Velocity, Next.js

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.xitsource.com/sitemap.xml
+Sitemap: https://www.xitsource.com/llms.txt
