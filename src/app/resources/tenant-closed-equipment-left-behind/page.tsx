@@ -245,7 +245,7 @@ export default function TenantClosedEquipmentLeftBehindPage() {
               Positioning a property or business carefully after a sudden change protects your value. Let's discuss your options.
             </p>
             <Link href="https://www.xitsource.com/sell" className="inline-flex items-center gap-2 px-10 py-5 bg-[#52D017] text-[#111827] font-bold rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] text-lg">
-              Request a Confidential Review
+              👉 Request a Confidential Call
             </Link>
           </div>
         </section>
