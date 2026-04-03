@@ -1,5 +1,16 @@
 User-agent: *
 Allow: /
+Allow: /markets/
+
+# AI Search & Discovery (2026 Standards)
+User-agent: GPTBot
+Allow: /markets/
+Crawl-delay: 1
+
+User-agent: Google-Extended
+Allow: /markets/
+
+User-agent: CCBot
+Disallow: /
 
 Sitemap: https://www.xitsource.com/sitemap.xml
-Sitemap: https://www.xitsource.com/llms.txt

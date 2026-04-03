@@ -1,12 +1,12 @@
-XIT Source
-An open-source data transformation engine and code generation framework.
+# XitSource: National Multifamily M&A and Investment
+> Institutional-grade multifamily acquisitions and portfolio transitions.
 
-Core Resources
-/docs/engine: Data pipeline and adapter logic.
-/modules/xml2bean: XML to Java Bean generation.
-/adapters/velocity: Template merging for text output.
+## Core Investment Markets
+- [National Market Hubs](/markets/): Directory of XitSource target markets.
+- [Huntsville, AL](/markets/huntsville-al/): Defense and Aerospace-driven recession hedge.
+- [Savannah, GA](/markets/savannah-ga/): Port-driven logistics and manufacturing growth.
+- [SF Bay Area, CA](/markets/sf-bay-area/): AI-led innovation and recovery.
+- [Texas Markets](/markets/dallas-tx/): Logistics and tech-sector anchors in DFW and Austin.
 
-Project Meta
-License: MIT (Permissive Open Source)
-Repository: https://github.com/growthtoolbox/xitsource-prod
-Tech Stack: Java, XML, Velocity, Next.js
+## Contact & Dispositions
+- [Submit Property for Review](https://www.xitsource.com/sell): Direct channel for portfolio dispositions.
