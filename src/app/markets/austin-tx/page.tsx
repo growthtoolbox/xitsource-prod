@@ -28,7 +28,7 @@ export default function AustinMarketPage() {
           <div>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Investment Thesis</h2>
             <p className="leading-relaxed font-medium">
-              Acquisition of under-performing "Supply-Shock" assets for long-term hold through the 2027 recovery.
+              Acquisition of under-performing &quot;Supply-Shock&quot; assets for long-term hold through the 2027 recovery.
             </p>
           </div>
         </div>

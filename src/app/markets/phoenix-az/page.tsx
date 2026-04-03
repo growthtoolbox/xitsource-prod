@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Phoenix Multifamily: The $65B Semiconductor Corridor | XitSource',
-  description: 'TSMC’s massive investment in North Phoenix has transformed the "Silicon Desert." With vacancy holding steady at 7.5% despite record 2025 deliveries, 2...',
+  description: 'TSMC’s massive investment in North Phoenix has transformed the &quot;Silicon Desert.&quot; With vacancy holding steady at 7.5% despite record 2025 deliveries, 2...',
 };
 
 export default function PhoenixMarketPage() {
@@ -21,7 +21,7 @@ export default function PhoenixMarketPage() {
             Phoenix Multifamily: The $65B Semiconductor Corridor
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            TSMC’s massive investment in North Phoenix has transformed the "Silicon Desert." With vacancy holding steady at 7.5% despite record 2025 deliveries, 2026 is the year of absorption. The influx of Tier 1 suppliers from California is creating a layered economy of engineering and logistics.
+            TSMC’s massive investment in North Phoenix has transformed the &quot;Silicon Desert.&quot; With vacancy holding steady at 7.5% despite record 2025 deliveries, 2026 is the year of absorption. The influx of Tier 1 suppliers from California is creating a layered economy of engineering and logistics.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">

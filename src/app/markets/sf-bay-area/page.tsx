@@ -21,7 +21,7 @@ export default function SFBayAreaMarketPage() {
             San Francisco Bay Area Multifamily: The AI Recovery
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            The Bay Area is entering a structural recovery phase in 2026. Driven by an 11% surge in downtown office-to-lab conversions for AI startups, we are seeing a "Triple-Digit Basis Point" drop in vacancy in core submarkets like SoMa and Mission Bay. XitSource focuses on high-barrier assets where supply is permanently constrained.
+            The Bay Area is entering a structural recovery phase in 2026. Driven by an 11% surge in downtown office-to-lab conversions for AI startups, we are seeing a &quot;Triple-Digit Basis Point&quot; drop in vacancy in core submarkets like SoMa and Mission Bay. XitSource focuses on high-barrier assets where supply is permanently constrained.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">

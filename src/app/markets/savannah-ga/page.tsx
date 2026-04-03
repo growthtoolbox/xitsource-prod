@@ -28,7 +28,7 @@ export default function SavannahMarketPage() {
           <div>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Investment Thesis</h2>
             <p className="leading-relaxed font-medium">
-              Institutionalizing under-managed portfolios in West Chatham to serve the "Logistics Engine."
+              Institutionalizing under-managed portfolios in West Chatham to serve the &quot;Logistics Engine.&quot;
             </p>
           </div>
         </div>

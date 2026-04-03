@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Greenville-Spartanburg Multifamily: The BMW Corridor | XitSource',
-  description: 'The I-85 "Path of Productivity" is fueled by BMW, Michelin, and Inland Port Greer. We see strong durable income in assets that combine logistics infra...',
+  description: 'The I-85 &quot;Path of Productivity&quot; is fueled by BMW, Michelin, and Inland Port Greer. We see strong durable income in assets that combine logistics infra...',
 };
 
 export default function GreenvilleMarketPage() {
@@ -21,7 +21,7 @@ export default function GreenvilleMarketPage() {
             Greenville-Spartanburg Multifamily: The BMW Corridor
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            The I-85 "Path of Productivity" is fueled by BMW, Michelin, and Inland Port Greer. We see strong durable income in assets that combine logistics infrastructure with regional manufacturing growth. 2026 is a year for "Operational Improvement" plays.
+            The I-85 &quot;Path of Productivity&quot; is fueled by BMW, Michelin, and Inland Port Greer. We see strong durable income in assets that combine logistics infrastructure with regional manufacturing growth. 2026 is a year for &quot;Operational Improvement&quot; plays.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">

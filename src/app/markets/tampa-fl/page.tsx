@@ -21,14 +21,14 @@ export default function TampaMarketPage() {
             Florida Multifamily: The Migration-Led Boom
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            Florida dominates 8 of the top 10 metros for migration growth in 2026. Population growth—not historical prominence—is the driver. Tampa and Jacksonville benefit from port logistics and a significant "Tax-Friendly" capital inflow.
+            Florida dominates 8 of the top 10 metros for migration growth in 2026. Population growth—not historical prominence—is the driver. Tampa and Jacksonville benefit from port logistics and a significant &quot;Tax-Friendly&quot; capital inflow.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">
           <div>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Investment Thesis</h2>
             <p className="leading-relaxed font-medium">
-              Capturing "Net Inbound" wealth through lifestyle-oriented Class B upgrades.
+              Capturing &quot;Net Inbound&quot; wealth through lifestyle-oriented Class B upgrades.
             </p>
           </div>
         </div>

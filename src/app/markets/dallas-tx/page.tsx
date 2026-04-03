@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'DFW Multifamily: The National Logistics Anchor | XitSource',
-  description: 'DFW remains the most diversified economy in the Sunbelt. While 2025 was a "breather," 2026 demand is forecast to hit 25k+ units as the construction pi...',
+  description: 'DFW remains the most diversified economy in the Sunbelt. While 2025 was a &quot;breather,&quot; 2026 demand is forecast to hit 25k+ units as the construction pi...',
 };
 
 export default function DallasMarketPage() {
@@ -21,7 +21,7 @@ export default function DallasMarketPage() {
             DFW Multifamily: The National Logistics Anchor
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            DFW remains the most diversified economy in the Sunbelt. While 2025 was a "breather," 2026 demand is forecast to hit 25k+ units as the construction pipeline slows. The market is rebalancing, offering renewed opportunity for value-add operators in high-growth suburban rings.
+            DFW remains the most diversified economy in the Sunbelt. While 2025 was a &quot;breather,&quot; 2026 demand is forecast to hit 25k+ units as the construction pipeline slows. The market is rebalancing, offering renewed opportunity for value-add operators in high-growth suburban rings.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">

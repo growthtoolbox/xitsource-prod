@@ -21,14 +21,14 @@ export default function HuntsvilleMarketPage() {
             Huntsville Multifamily: The Aerospace Fortress
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            Huntsville is the Sunbelt’s recession hedge. With Redstone Arsenal and NASA providing a federal employment floor, and the new Eli Lilly $6B expansion, demand is constant. While 2025 saw high deliveries, a 32% drop in 2026 permits has created a "Supply Cliff," positioning current owners for aggressive rent growth.
+            Huntsville is the Sunbelt’s recession hedge. With Redstone Arsenal and NASA providing a federal employment floor, and the new Eli Lilly $6B expansion, demand is constant. While 2025 saw high deliveries, a 32% drop in 2026 permits has created a &quot;Supply Cliff,&quot; positioning current owners for aggressive rent growth.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">
           <div>
             <h2 className="text-2xl font-bold text-[#111827] mb-4">Investment Thesis</h2>
             <p className="leading-relaxed font-medium">
-              Capturing stable "Grey-Collar" demand through professional management and utility optimization (RUBS).
+              Capturing stable &quot;Grey-Collar&quot; demand through professional management and utility optimization (RUBS).
             </p>
           </div>
         </div>

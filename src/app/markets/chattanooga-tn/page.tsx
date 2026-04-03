@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Chattanooga Multifamily: Infrastructure & Gig-City Growth | XitSource',
-  description: 'Chattanooga is a "Plug-and-Play" manufacturing hub. With a $20M city investment in mixed-income housing and a world-class fiber network, the city attr...',
+  description: 'Chattanooga is a &quot;Plug-and-Play&quot; manufacturing hub. With a $20M city investment in mixed-income housing and a world-class fiber network, the city attr...',
 };
 
 export default function ChattanoogaMarketPage() {
@@ -21,7 +21,7 @@ export default function ChattanoogaMarketPage() {
             Chattanooga Multifamily: Infrastructure & Gig-City Growth
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            Chattanooga is a "Plug-and-Play" manufacturing hub. With a $20M city investment in mixed-income housing and a world-class fiber network, the city attracts a mix of VW assembly talent and remote-tech professionals.
+            Chattanooga is a &quot;Plug-and-Play&quot; manufacturing hub. With a $20M city investment in mixed-income housing and a world-class fiber network, the city attracts a mix of VW assembly talent and remote-tech professionals.
           </p>
         </div>
         <div className="prose prose-lg max-w-none text-gray-700 space-y-8 mb-20 text-lg">
