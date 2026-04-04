@@ -35,7 +35,7 @@ export default function ThankYouPage() {
               <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors mb-2">The Letter to Owners</h3>
               <p className="text-sm text-[#333333]/80">Read our philosophy on direct acquisitions.</p>
             </Link>
-            <Link href="/resources/guides" className="block p-6 bg-white border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
+            <Link href="/resources" className="block p-6 bg-white border border-gray-200 rounded-sm hover:border-[#52D017] hover:shadow-md transition-all group">
               <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#52D017] transition-colors mb-2">Transition Guides</h3>
               <p className="text-sm text-[#333333]/80">Explore resources on the selling process.</p>
             </Link>

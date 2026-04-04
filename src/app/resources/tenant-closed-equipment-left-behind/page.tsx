@@ -15,7 +15,7 @@ export default function TenantClosedEquipmentLeftBehindPage() {
       {/* 1. HERO SECTION */}
       <div className="bg-[#f9fafb] border-b border-gray-200 pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-6 max-w-4xl">
-          <Link href="/resources/guides" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
+          <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-semibold text-[#333333] hover:text-[#52D017] transition-colors mb-12 uppercase tracking-widest">
             <span>←</span> Back to Guides
           </Link>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm border border-[#52D017]/30 bg-[#52D017]/10 mb-6 text-xs font-semibold tracking-widest text-[#52D017] uppercase">
