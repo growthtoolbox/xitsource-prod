@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function DallasMarket() {
+export default function JacksonvilleMarket() {
   return (
     <div className="min-h-screen bg-white text-[#111827] py-24 pb-32">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -12,10 +12,10 @@ export default function DallasMarket() {
              Target Market
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#111827] mb-6">
-            Dallas-Fort Worth Multifamily
+            Jacksonville, FL Multifamily
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed mb-6">
-            DFW serves as the National Logistics Anchor. We target strategically positioned assets near major infrastructure routes and inland ports.
+            Driven by deep-water logistics and surging FinTech growth, Jacksonville represents a cornerstone of our strategic Southeast acquisitions.
           </p>
         </div>
         <div className="mt-16 pt-16 border-t border-gray-200 text-center">

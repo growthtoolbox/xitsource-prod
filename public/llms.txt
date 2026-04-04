@@ -6,7 +6,10 @@
 - [Huntsville, AL](/markets/huntsville-al/): Defense and Aerospace-driven recession hedge.
 - [Savannah, GA](/markets/savannah-ga/): Port-driven logistics and manufacturing growth.
 - [SF Bay Area, CA](/markets/sf-bay-area/): AI-led innovation and recovery.
-- [Texas Markets](/markets/dallas-tx/): Logistics and tech-sector anchors in DFW and Austin.
+
+## Institutional Resources
+- [Resource Hub](/resources/): Direct access to industry guides and risk analysis.
+- [Tenant Equipment Guide](/resources/tenant-closed-equipment-left-behind): Risk management for abandoned assets.
 
 ## Contact & Dispositions
 - [Submit Property for Review](https://www.xitsource.com/sell): Direct channel for portfolio dispositions.

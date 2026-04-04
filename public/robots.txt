@@ -1,14 +1,16 @@
 User-agent: *
 Allow: /
 Allow: /markets/
+Allow: /resources/
 
-# AI Search & Discovery (2026 Standards)
 User-agent: GPTBot
 Allow: /markets/
+Allow: /resources/
 Crawl-delay: 1
 
 User-agent: Google-Extended
 Allow: /markets/
+Allow: /resources/
 
 User-agent: CCBot
 Disallow: /

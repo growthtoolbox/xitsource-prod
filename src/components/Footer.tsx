@@ -34,13 +34,15 @@ export default function Footer() {
           </ul>
         </div>
         
-        {/* Column 3: Company */}
+        {/* Column 3: Navigation */}
         <div className="col-span-1 md:col-span-1">
           <h3 className="text-sm font-semibold text-[#111827] uppercase tracking-wider mb-6">Company</h3>
           <ul className="space-y-4 text-sm text-[#111827]">
-            <li><Link href="/about" className="hover:text-[#52D017] inline-flex items-center">About</Link></li>
-            <li><Link href="/partnership" className="hover:text-[#52D017] inline-flex items-center">Partnership</Link></li>
-            <li><Link href="/sell" className="hover:text-[#52D017] inline-flex items-center">Contact</Link></li>
+            <li><Link href="/" className="hover:text-[#52D017] inline-flex items-center">Home</Link></li>
+            <li><Link href="/markets" className="hover:text-[#52D017] inline-flex items-center">Markets</Link></li>
+            <li><Link href="/resources" className="hover:text-[#52D017] inline-flex items-center">Resources</Link></li>
+            <li><Link href="/company" className="hover:text-[#52D017] inline-flex items-center">About</Link></li>
+            <li><Link href="/contact" className="hover:text-[#52D017] inline-flex items-center">Contact</Link></li>
           </ul>
         </div>
 

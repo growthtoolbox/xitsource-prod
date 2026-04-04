@@ -43,19 +43,16 @@ export default function Navbar() {
             <Link href="/" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Home
             </Link>
-            <Link href="/#what-we-acquire" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
-              What We Acquire
-            </Link>
-            <Link href="/partnership" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
-              Partnership
+            <Link href="/markets" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              Markets
             </Link>
             <Link href="/resources" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Resources
             </Link>
-            <Link href="/about" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
-              Company
+            <Link href="/company" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+              About
             </Link>
-            <Link href="/sell" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
+            <Link href="/contact" className="text-sm font-medium text-[#111827] hover:text-[#52D017] transition-colors">
               Contact
             </Link>
           </div>
@@ -104,19 +101,16 @@ export default function Navbar() {
                 <Link href="/" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Home
                 </Link>
-                <Link href="/#what-we-acquire" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
-                  What We Acquire
-                </Link>
-                <Link href="/partnership" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
-                  Partnership
+                <Link href="/markets" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  Markets
                 </Link>
                 <Link href="/resources" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Resources
                 </Link>
-                <Link href="/about" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
-                  Company
+                <Link href="/company" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                  About
                 </Link>
-                <Link href="/sell" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
+                <Link href="/contact" onClick={closeMenu} className="w-full px-5 py-4 flex items-center text-lg font-bold text-[#333333] bg-[#f9fafb] hover:bg-gray-100 transition-colors border border-gray-200 rounded-sm">
                   Contact
                 </Link>
               </div>
