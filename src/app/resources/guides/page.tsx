@@ -79,61 +79,6 @@ export default function TransitionGuidesPage() {
             Explore our target markets and thesis-driven approach to multifamily acquisitions across the Sunbelt and strategic national hubs.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/markets/sf-bay-area" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">SF Bay Area, CA</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The AI Recovery</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/huntsville-al" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Huntsville, AL</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The Aerospace Fortress</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/savannah-ga" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Savannah, GA</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">Port-Driven Performance</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/phoenix-az" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Phoenix, AZ</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The Semiconductor Corridor</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/austin-tx" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Austin, TX</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The Silicon Hills Turnaround</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/dallas-tx" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Dallas-Fort Worth, TX</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The National Logistics Anchor</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/greenville-sc" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Greenville, SC</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The BMW Corridor</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/chattanooga-tn" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Chattanooga, TN</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">Infrastructure & Gig-City Growth</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-            <Link href="/markets/tampa-fl" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block">
-              <h3 className="text-xl font-bold text-[#111827] mb-2">Florida Markets</h3>
-              <p className="text-gray-600 text-sm mb-4 flex-grow">The Migration-Led Boom</p>
-              <span className="text-[#52D017] text-sm font-bold flex items-center mt-auto group-hover:underline">View Profile →</span>
-            </Link>
-          </div>
-        </div>
-
-        {/* Market Profiles */}
-        <div className="mt-24 mb-12">
-          <h2 className="text-3xl font-bold text-[#111827] mb-4">National Market Profiles</h2>
-          <p className="text-lg text-[#111827]/80 mb-8 max-w-2xl">
-            Explore our target markets and thesis-driven approach to multifamily acquisitions across the Sunbelt and strategic national hubs.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link href="/markets/sf-bay-area" className="bg-[#fcfcfc] border border-gray-200 hover:border-[#52D017] p-8 rounded-sm group transition-all duration-300 hover:shadow-xl hover:shadow-black/5 flex flex-col h-full relative block cursor-pointer">
               <h3 className="text-xl font-bold text-[#111827] mb-2">SF Bay Area, CA</h3>
               <p className="text-gray-600 text-sm mb-4 flex-grow">The AI Recovery</p>
