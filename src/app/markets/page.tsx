@@ -9,7 +9,7 @@ export default function MarketsHub() {
             National Market Hubs
           </h1>
           <p className="text-xl text-[#111827] leading-relaxed max-w-3xl">
-            An institutional directory of our 9 strategic target markets, driven by strong fundamentals, infrastructure growth, and supply constraints.
+            We focus on markets where we have a personal conviction. These aren&apos;t just dots on a map; they are the communities where we are actively deploying our team and capital.
           </p>
         </div>
 

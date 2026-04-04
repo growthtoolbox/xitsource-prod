@@ -17,11 +17,18 @@ export default function HuntsvilleMarket() {
           <p className="text-xl text-[#111827] leading-relaxed mb-6">
             Built around Aerospace and Defense moats, we are acquiring workforce assets ahead of the projected 2026 supply cliff.
           </p>
+          <div className="mt-8 bg-[#F9FAFB] border-l-4 border-[#52D017] p-6 rounded-r-sm">
+            <h3 className="text-sm font-bold text-[#111827] uppercase tracking-widest mb-2">The Operator&apos;s Take</h3>
+            <p className="text-lg text-[#111827]/80 italic">
+              &quot;When we walked the I-565 corridor last month, the most striking thing wasn\&apos;t the new construction—it was the resilience of the existing workforce housing. This is where we see the real upside.&quot;
+            </p>
+          </div>
         </div>
         <div className="mt-16 pt-16 border-t border-gray-200 text-center">
             <Link href="/sell" className="inline-flex px-10 py-5 bg-[#52D017] text-[#111827] font-bold text-lg rounded-sm hover:-translate-y-1 transition-all shadow-lg border border-[#52D017] justify-center items-center gap-2 max-w-sm mx-auto w-full">
-              👉 Request a Confidential Call
+              👉 Request a Confidential Review
             </Link>
+            <p className="text-sm text-[#111827]/60 mt-6 italic font-medium">Direct principal-to-principal communication.</p>
         </div>
       </div>
     </div>

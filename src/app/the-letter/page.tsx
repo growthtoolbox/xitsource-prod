@@ -23,6 +23,12 @@ export default function LetterPage() {
           </h1>
         </div>
 
+        <div className="bg-[#111827] border border-[#52D017]/30 p-8 md:p-10 rounded-sm mb-12 shadow-lg">
+          <p className="text-xl md:text-2xl text-white font-medium leading-relaxed italic">
+            &quot;XitSource is led by John and Ryan—operators who believe that national scale requires a local handshake. We don&apos;t just deploy capital; we deploy ourselves to every market we enter.&quot;
+          </p>
+        </div>
+
         <div className="bg-[#F9FAFB] border border-gray-200 p-10 md:p-16 rounded-sm shadow-sm relative">
           <div className={`space-y-6 text-[#111827] text-lg md:text-xl leading-relaxed ${serif.className}`}>
             <p>Dear Owner,</p>
